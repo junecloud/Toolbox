@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		272AA475165DC209008C740E /* donate-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA46C165DC209008C740E /* donate-red.png */; };
+		272AA476165DC209008C740E /* donate-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA46D165DC209008C740E /* donate-red@2x.png */; };
+		272AA477165DC209008C740E /* donate.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA46E165DC209008C740E /* donate.png */; };
+		272AA478165DC209008C740E /* donate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA46F165DC209008C740E /* donate@2x.png */; };
+		272AA479165DC209008C740E /* JUNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 272AA472165DC209008C740E /* JUNButton.m */; };
+		272AA47A165DC209008C740E /* JUNButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 272AA474165DC209008C740E /* JUNButtonCell.m */; };
+		2770A64E1658451D00725BD1 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2770A64D1658451D00725BD1 /* OSAKit.framework */; };
+		27D80F1D16574798007BBA5C /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D80F1C16574798007BBA5C /* Automator.framework */; };
+		27D80F1F16574798007BBA5C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D80F1E16574798007BBA5C /* Cocoa.framework */; };
+		27D80F2916574798007BBA5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27D80F2716574798007BBA5C /* InfoPlist.strings */; };
+		27D80F2C16574798007BBA5C /* Save_for_Web.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D80F2B16574798007BBA5C /* Save_for_Web.m */; };
+		27D80F3716574F5C007BBA5C /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D80F3616574F5C007BBA5C /* ScriptingBridge.framework */; };
+		27DF810419BA5FA8000AE683 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DF810219BA5FA8000AE683 /* main.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		272AA46C165DC209008C740E /* donate-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-red.png"; sourceTree = "<group>"; };
+		272AA46D165DC209008C740E /* donate-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-red@2x.png"; sourceTree = "<group>"; };
+		272AA46E165DC209008C740E /* donate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donate.png; sourceTree = "<group>"; };
+		272AA46F165DC209008C740E /* donate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate@2x.png"; sourceTree = "<group>"; };
+		272AA471165DC209008C740E /* JUNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUNButton.h; sourceTree = "<group>"; };
+		272AA472165DC209008C740E /* JUNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUNButton.m; sourceTree = "<group>"; };
+		272AA473165DC209008C740E /* JUNButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUNButtonCell.h; sourceTree = "<group>"; };
+		272AA474165DC209008C740E /* JUNButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUNButtonCell.m; sourceTree = "<group>"; };
+		2770A64D1658451D00725BD1 /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = System/Library/Frameworks/OSAKit.framework; sourceTree = SDKROOT; };
+		27BFE4B31A15B278008AFACC /* PhotoshopCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoshopCC.h; sourceTree = "<group>"; };
+		27D80F1916574798007BBA5C /* Save for Web.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Save for Web.action"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D80F1C16574798007BBA5C /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = System/Library/Frameworks/Automator.framework; sourceTree = SDKROOT; };
+		27D80F1E16574798007BBA5C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		27D80F2116574798007BBA5C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		27D80F2216574798007BBA5C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		27D80F2316574798007BBA5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27D80F2616574798007BBA5C /* Save for Web-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Save for Web-Info.plist"; sourceTree = "<group>"; };
+		27D80F2816574798007BBA5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27D80F2A16574798007BBA5C /* Save_for_Web.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Save_for_Web.h; sourceTree = "<group>"; };
+		27D80F2B16574798007BBA5C /* Save_for_Web.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Save_for_Web.m; sourceTree = "<group>"; };
+		27D80F3016574798007BBA5C /* Save for Web-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Save for Web-Prefix.pch"; sourceTree = "<group>"; };
+		27D80F3616574F5C007BBA5C /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		27D80F381657543A007BBA5C /* Photoshop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photoshop.h; sourceTree = "<group>"; };
+		27DF810319BA5FA8000AE683 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27D80F1516574798007BBA5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2770A64E1658451D00725BD1 /* OSAKit.framework in Frameworks */,
+				27D80F3716574F5C007BBA5C /* ScriptingBridge.framework in Frameworks */,
+				27D80F1D16574798007BBA5C /* Automator.framework in Frameworks */,
+				27D80F1F16574798007BBA5C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		272AA46B165DC209008C740E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				272AA46C165DC209008C740E /* donate-red.png */,
+				272AA46D165DC209008C740E /* donate-red@2x.png */,
+				272AA46E165DC209008C740E /* donate.png */,
+				272AA46F165DC209008C740E /* donate@2x.png */,
+			);
+			name = Images;
+			path = ../../Shared/Images;
+			sourceTree = "<group>";
+		};
+		272AA470165DC209008C740E /* JUNButton */ = {
+			isa = PBXGroup;
+			children = (
+				272AA471165DC209008C740E /* JUNButton.h */,
+				272AA472165DC209008C740E /* JUNButton.m */,
+				272AA473165DC209008C740E /* JUNButtonCell.h */,
+				272AA474165DC209008C740E /* JUNButtonCell.m */,
+			);
+			name = JUNButton;
+			path = ../../Shared/JUNButton;
+			sourceTree = "<group>";
+		};
+		27D80F0F16574798007BBA5C = {
+			isa = PBXGroup;
+			children = (
+				27D80F2416574798007BBA5C /* Save for Web */,
+				27D80F1B16574798007BBA5C /* Frameworks */,
+				27D80F1A16574798007BBA5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27D80F1A16574798007BBA5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D80F1916574798007BBA5C /* Save for Web.action */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27D80F1B16574798007BBA5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27D80F1C16574798007BBA5C /* Automator.framework */,
+				27D80F1E16574798007BBA5C /* Cocoa.framework */,
+				27D80F3616574F5C007BBA5C /* ScriptingBridge.framework */,
+				2770A64D1658451D00725BD1 /* OSAKit.framework */,
+				27D80F2016574798007BBA5C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27D80F2016574798007BBA5C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27D80F2116574798007BBA5C /* AppKit.framework */,
+				27D80F2216574798007BBA5C /* CoreData.framework */,
+				27D80F2316574798007BBA5C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		27D80F2416574798007BBA5C /* Save for Web */ = {
+			isa = PBXGroup;
+			children = (
+				27D80F2A16574798007BBA5C /* Save_for_Web.h */,
+				27D80F2B16574798007BBA5C /* Save_for_Web.m */,
+				27D80F381657543A007BBA5C /* Photoshop.h */,
+				27BFE4B31A15B278008AFACC /* PhotoshopCC.h */,
+				27DF810219BA5FA8000AE683 /* main.xib */,
+				272AA470165DC209008C740E /* JUNButton */,
+				272AA46B165DC209008C740E /* Images */,
+				27D80F2516574798007BBA5C /* Supporting Files */,
+			);
+			path = "Save for Web";
+			sourceTree = "<group>";
+		};
+		27D80F2516574798007BBA5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27D80F2616574798007BBA5C /* Save for Web-Info.plist */,
+				27D80F2716574798007BBA5C /* InfoPlist.strings */,
+				27D80F3016574798007BBA5C /* Save for Web-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27D80F1816574798007BBA5C /* Save for Web */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D80F3316574798007BBA5C /* Build configuration list for PBXNativeTarget "Save for Web" */;
+			buildPhases = (
+				27D80F1416574798007BBA5C /* Sources */,
+				27D80F1516574798007BBA5C /* Frameworks */,
+				27D80F1616574798007BBA5C /* Resources */,
+				27D80F1716574798007BBA5C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Save for Web";
+			productName = "Save for Web";
+			productReference = 27D80F1916574798007BBA5C /* Save for Web.action */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27D80F1016574798007BBA5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Junecloud LLC";
+			};
+			buildConfigurationList = 27D80F1316574798007BBA5C /* Build configuration list for PBXProject "Save for Web" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27D80F0F16574798007BBA5C;
+			productRefGroup = 27D80F1A16574798007BBA5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27D80F1816574798007BBA5C /* Save for Web */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27D80F1616574798007BBA5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D80F2916574798007BBA5C /* InfoPlist.strings in Resources */,
+				272AA475165DC209008C740E /* donate-red.png in Resources */,
+				272AA476165DC209008C740E /* donate-red@2x.png in Resources */,
+				27DF810419BA5FA8000AE683 /* main.xib in Resources */,
+				272AA477165DC209008C740E /* donate.png in Resources */,
+				272AA478165DC209008C740E /* donate@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27D80F1716574798007BBA5C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "amlint \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\"\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    osascript -e \"tell application \\\"Automator\\\" to quit\"\n    rm -rf \"$INSTALL_PATH/${FULL_PRODUCT_NAME}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"$INSTALL_PATH\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27D80F1416574798007BBA5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D80F2C16574798007BBA5C /* Save_for_Web.m in Sources */,
+				272AA479165DC209008C740E /* JUNButton.m in Sources */,
+				272AA47A165DC209008C740E /* JUNButtonCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27D80F2716574798007BBA5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D80F2816574798007BBA5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27DF810219BA5FA8000AE683 /* main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DF810319BA5FA8000AE683 /* en */,
+			);
+			name = main.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27D80F3116574798007BBA5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		27D80F3216574798007BBA5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		27D80F3416574798007BBA5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Save for Web/Save for Web-Prefix.pch";
+				INFOPLIST_FILE = "Save for Web/Save for Web-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Debug;
+		};
+		27D80F3516574798007BBA5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Save for Web/Save for Web-Prefix.pch";
+				INFOPLIST_FILE = "Save for Web/Save for Web-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27D80F1316574798007BBA5C /* Build configuration list for PBXProject "Save for Web" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D80F3116574798007BBA5C /* Debug */,
+				27D80F3216574798007BBA5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D80F3316574798007BBA5C /* Build configuration list for PBXNativeTarget "Save for Web" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D80F3416574798007BBA5C /* Debug */,
+				27D80F3516574798007BBA5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27D80F1016574798007BBA5C /* Project object */;
+}

@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		272AA495165DC240008C740E /* donate-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA48C165DC240008C740E /* donate-red.png */; };
+		272AA496165DC240008C740E /* donate-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA48D165DC240008C740E /* donate-red@2x.png */; };
+		272AA497165DC240008C740E /* donate.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA48E165DC240008C740E /* donate.png */; };
+		272AA498165DC240008C740E /* donate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA48F165DC240008C740E /* donate@2x.png */; };
+		272AA499165DC240008C740E /* JUNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 272AA492165DC240008C740E /* JUNButton.m */; };
+		272AA49A165DC240008C740E /* JUNButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 272AA494165DC240008C740E /* JUNButtonCell.m */; };
+		276C9791165B0C830013956D /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276C9790165B0C830013956D /* Automator.framework */; };
+		276C9793165B0C830013956D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276C9792165B0C830013956D /* Cocoa.framework */; };
+		276C979D165B0C830013956D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 276C979B165B0C830013956D /* InfoPlist.strings */; };
+		276C97A0165B0C830013956D /* Hide_or_Show_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 276C979F165B0C830013956D /* Hide_or_Show_Extensions.m */; };
+		276C97A3165B0C830013956D /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276C97A1165B0C830013956D /* main.xib */; };
+		276C97AB165B0F3A0013956D /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276C97AA165B0F3A0013956D /* OSAKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		272AA48C165DC240008C740E /* donate-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-red.png"; sourceTree = "<group>"; };
+		272AA48D165DC240008C740E /* donate-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-red@2x.png"; sourceTree = "<group>"; };
+		272AA48E165DC240008C740E /* donate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donate.png; sourceTree = "<group>"; };
+		272AA48F165DC240008C740E /* donate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate@2x.png"; sourceTree = "<group>"; };
+		272AA491165DC240008C740E /* JUNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUNButton.h; sourceTree = "<group>"; };
+		272AA492165DC240008C740E /* JUNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUNButton.m; sourceTree = "<group>"; };
+		272AA493165DC240008C740E /* JUNButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUNButtonCell.h; sourceTree = "<group>"; };
+		272AA494165DC240008C740E /* JUNButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUNButtonCell.m; sourceTree = "<group>"; };
+		276C978D165B0C830013956D /* Hide or Show Extensions.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hide or Show Extensions.action"; sourceTree = BUILT_PRODUCTS_DIR; };
+		276C9790165B0C830013956D /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = System/Library/Frameworks/Automator.framework; sourceTree = SDKROOT; };
+		276C9792165B0C830013956D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		276C9795165B0C830013956D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		276C9796165B0C830013956D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		276C9797165B0C830013956D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		276C979A165B0C830013956D /* Hide or Show Extensions-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hide or Show Extensions-Info.plist"; sourceTree = "<group>"; };
+		276C979C165B0C830013956D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		276C979E165B0C830013956D /* Hide_or_Show_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hide_or_Show_Extensions.h; sourceTree = "<group>"; };
+		276C979F165B0C830013956D /* Hide_or_Show_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hide_or_Show_Extensions.m; sourceTree = "<group>"; };
+		276C97A2165B0C830013956D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
+		276C97A4165B0C830013956D /* Hide or Show Extensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hide or Show Extensions-Prefix.pch"; sourceTree = "<group>"; };
+		276C97AA165B0F3A0013956D /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = System/Library/Frameworks/OSAKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		276C9789165B0C830013956D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276C97AB165B0F3A0013956D /* OSAKit.framework in Frameworks */,
+				276C9791165B0C830013956D /* Automator.framework in Frameworks */,
+				276C9793165B0C830013956D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		272AA48B165DC240008C740E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				272AA48C165DC240008C740E /* donate-red.png */,
+				272AA48D165DC240008C740E /* donate-red@2x.png */,
+				272AA48E165DC240008C740E /* donate.png */,
+				272AA48F165DC240008C740E /* donate@2x.png */,
+			);
+			name = Images;
+			path = ../../Shared/Images;
+			sourceTree = "<group>";
+		};
+		272AA490165DC240008C740E /* JUNButton */ = {
+			isa = PBXGroup;
+			children = (
+				272AA491165DC240008C740E /* JUNButton.h */,
+				272AA492165DC240008C740E /* JUNButton.m */,
+				272AA493165DC240008C740E /* JUNButtonCell.h */,
+				272AA494165DC240008C740E /* JUNButtonCell.m */,
+			);
+			name = JUNButton;
+			path = ../../Shared/JUNButton;
+			sourceTree = "<group>";
+		};
+		276C9783165B0C830013956D = {
+			isa = PBXGroup;
+			children = (
+				276C9798165B0C830013956D /* Hide or Show Extensions */,
+				276C978F165B0C830013956D /* Frameworks */,
+				276C978E165B0C830013956D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		276C978E165B0C830013956D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				276C978D165B0C830013956D /* Hide or Show Extensions.action */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		276C978F165B0C830013956D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				276C9790165B0C830013956D /* Automator.framework */,
+				276C9792165B0C830013956D /* Cocoa.framework */,
+				276C97AA165B0F3A0013956D /* OSAKit.framework */,
+				276C9794165B0C830013956D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		276C9794165B0C830013956D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				276C9795165B0C830013956D /* AppKit.framework */,
+				276C9796165B0C830013956D /* CoreData.framework */,
+				276C9797165B0C830013956D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		276C9798165B0C830013956D /* Hide or Show Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				276C979E165B0C830013956D /* Hide_or_Show_Extensions.h */,
+				276C979F165B0C830013956D /* Hide_or_Show_Extensions.m */,
+				276C97A1165B0C830013956D /* main.xib */,
+				272AA490165DC240008C740E /* JUNButton */,
+				272AA48B165DC240008C740E /* Images */,
+				276C9799165B0C830013956D /* Supporting Files */,
+			);
+			path = "Hide or Show Extensions";
+			sourceTree = "<group>";
+		};
+		276C9799165B0C830013956D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				276C979A165B0C830013956D /* Hide or Show Extensions-Info.plist */,
+				276C979B165B0C830013956D /* InfoPlist.strings */,
+				276C97A4165B0C830013956D /* Hide or Show Extensions-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		276C978C165B0C830013956D /* Hide or Show Extensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276C97A7165B0C830013956D /* Build configuration list for PBXNativeTarget "Hide or Show Extensions" */;
+			buildPhases = (
+				276C9788165B0C830013956D /* Sources */,
+				276C9789165B0C830013956D /* Frameworks */,
+				276C978A165B0C830013956D /* Resources */,
+				276C978B165B0C830013956D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hide or Show Extensions";
+			productName = "Hide or Show Extensions";
+			productReference = 276C978D165B0C830013956D /* Hide or Show Extensions.action */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		276C9784165B0C830013956D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Junecloud LLC";
+			};
+			buildConfigurationList = 276C9787165B0C830013956D /* Build configuration list for PBXProject "Hide or Show Extensions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 276C9783165B0C830013956D;
+			productRefGroup = 276C978E165B0C830013956D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				276C978C165B0C830013956D /* Hide or Show Extensions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		276C978A165B0C830013956D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276C979D165B0C830013956D /* InfoPlist.strings in Resources */,
+				276C97A3165B0C830013956D /* main.xib in Resources */,
+				272AA495165DC240008C740E /* donate-red.png in Resources */,
+				272AA496165DC240008C740E /* donate-red@2x.png in Resources */,
+				272AA497165DC240008C740E /* donate.png in Resources */,
+				272AA498165DC240008C740E /* donate@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		276C978B165B0C830013956D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "amlint \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\"\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    osascript -e \"tell application \\\"Automator\\\" to quit\"\n    rm -rf \"$INSTALL_PATH/${FULL_PRODUCT_NAME}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"$INSTALL_PATH\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		276C9788165B0C830013956D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276C97A0165B0C830013956D /* Hide_or_Show_Extensions.m in Sources */,
+				272AA499165DC240008C740E /* JUNButton.m in Sources */,
+				272AA49A165DC240008C740E /* JUNButtonCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		276C979B165B0C830013956D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				276C979C165B0C830013956D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		276C97A1165B0C830013956D /* main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				276C97A2165B0C830013956D /* en */,
+			);
+			name = main.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		276C97A5165B0C830013956D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		276C97A6165B0C830013956D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		276C97A8165B0C830013956D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hide or Show Extensions/Hide or Show Extensions-Prefix.pch";
+				INFOPLIST_FILE = "Hide or Show Extensions/Hide or Show Extensions-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Debug;
+		};
+		276C97A9165B0C830013956D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hide or Show Extensions/Hide or Show Extensions-Prefix.pch";
+				INFOPLIST_FILE = "Hide or Show Extensions/Hide or Show Extensions-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		276C9787165B0C830013956D /* Build configuration list for PBXProject "Hide or Show Extensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276C97A5165B0C830013956D /* Debug */,
+				276C97A6165B0C830013956D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276C97A7165B0C830013956D /* Build configuration list for PBXNativeTarget "Hide or Show Extensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276C97A8165B0C830013956D /* Debug */,
+				276C97A9165B0C830013956D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 276C9784165B0C830013956D /* Project object */;
+}

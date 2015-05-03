@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:Create Clean Archive/Create Clean Archive.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Create Symbolic Link/Create Symbolic Link.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Download URL Pattern/Download URL Pattern.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Hide or Show Extensions/Hide or Show Extensions.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Make Names Web-Friendly/Make Names Web-Friendly.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Save for Web/Save for Web.xcodeproj">
+   </FileRef>
+</Workspace>

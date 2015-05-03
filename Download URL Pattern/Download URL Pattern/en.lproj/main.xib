@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
+        <development version="5000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6206.9"/>
+        <plugIn identifier="com.apple.automator.AutomatorPalette" version="6206.9"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="Download_URL_Pattern">
+            <connections>
+                <outlet property="view" destination="5" id="7"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customView id="5" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="83"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100010">
+                    <rect key="frame" x="10" y="54" width="72" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="URL pattern:" id="100011">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100012">
+                    <rect key="frame" x="10" y="14" width="72" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Save to:" id="100013">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <amTokenField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100014">
+                    <rect key="frame" x="88" y="52" width="303" height="19"/>
+                    <amTokenFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" allowsEditingTextAttributes="YES" id="100015">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </amTokenFieldCell>
+                    <connections>
+                        <binding destination="6" name="value" keyPath="selection.downloadString" id="100025">
+                            <dictionary key="options">
+                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </amTokenField>
+                <textField horizontalHuggingPriority="200" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100016">
+                    <rect key="frame" x="86" y="38" width="307" height="11"/>
+                    <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Use brackets to indicate number ranges, for example: file[00-09].jpg" id="100017">
+                        <font key="font" metaFont="miniSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <amPathPopUpButton verticalHuggingPriority="750" canChooseDirectories="YES" canChooseNewPaths="YES" canChooseExistingPaths="YES" showStandardPaths="YES" placeholder="" translatesAutoresizingMaskIntoConstraints="NO" id="100018">
+                    <rect key="frame" x="85" y="9" width="119" height="22"/>
+                    <amVariablePopUpButtonCell key="cell" type="push" title="Desktop" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1001" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="100019">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="100020"/>
+                    </amVariablePopUpButtonCell>
+                    <connections>
+                        <binding destination="6" name="path" keyPath="selection.downloadPath" id="100024"/>
+                    </connections>
+                </amPathPopUpButton>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="100026" customClass="JUNButton">
+                    <rect key="frame" x="372" y="6" width="25" height="32"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="donate" imagePosition="only" alignment="center" alternateImage="donate-red" inset="2" id="100027" customClass="JUNButtonCell">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openSite:" target="-2" id="100028"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="100014" firstAttribute="top" secondItem="5" secondAttribute="top" constant="12" id="1es-sr-Q7c"/>
+                <constraint firstItem="100010" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="12" id="EvN-cy-LxL"/>
+                <constraint firstItem="100016" firstAttribute="leading" secondItem="100014" secondAttribute="leading" id="GmC-9D-9vG"/>
+                <constraint firstItem="100014" firstAttribute="baseline" secondItem="100010" secondAttribute="baseline" id="HEK-op-RYs"/>
+                <constraint firstAttribute="bottom" secondItem="100026" secondAttribute="bottom" constant="6" id="Rew-yD-7Uc"/>
+                <constraint firstItem="100016" firstAttribute="trailing" secondItem="100014" secondAttribute="trailing" id="Wro-NW-wHn"/>
+                <constraint firstItem="100014" firstAttribute="leading" secondItem="100010" secondAttribute="trailing" constant="8" symbolic="YES" id="Ww7-mu-efS"/>
+                <constraint firstAttribute="trailing" secondItem="100014" secondAttribute="trailing" constant="12" id="X6v-L7-5lC"/>
+                <constraint firstItem="100012" firstAttribute="baseline" secondItem="100018" secondAttribute="baseline" id="XM6-Ui-TIV"/>
+                <constraint firstItem="100018" firstAttribute="leading" secondItem="100012" secondAttribute="trailing" constant="8" symbolic="YES" id="ZuU-h0-9Yz"/>
+                <constraint firstItem="100012" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="12" id="aQS-LV-6vL"/>
+                <constraint firstItem="100018" firstAttribute="leading" secondItem="100014" secondAttribute="leading" id="dvn-cU-3ST"/>
+                <constraint firstItem="100016" firstAttribute="top" secondItem="100014" secondAttribute="bottom" constant="3" id="kLm-uT-IFC"/>
+                <constraint firstItem="100018" firstAttribute="top" secondItem="100016" secondAttribute="bottom" constant="8" symbolic="YES" id="pfQ-Im-UZr"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="100018" secondAttribute="bottom" constant="12" id="r2f-C2-H75"/>
+                <constraint firstItem="100026" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="100018" secondAttribute="trailing" constant="6" id="u6z-I8-ics"/>
+                <constraint firstAttribute="trailing" secondItem="100026" secondAttribute="trailing" constant="6" id="wya-iI-r3P"/>
+            </constraints>
+            <point key="canvasLocation" x="-21.5" y="287.5"/>
+        </customView>
+        <objectController id="6" userLabel="Parameters">
+            <connections>
+                <binding destination="-2" name="contentObject" keyPath="parameters" id="12"/>
+            </connections>
+        </objectController>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+    </objects>
+    <resources>
+        <image name="donate" width="25" height="25"/>
+        <image name="donate-red" width="25" height="25"/>
+    </resources>
+</document>

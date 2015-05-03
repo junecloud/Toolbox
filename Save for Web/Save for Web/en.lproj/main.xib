@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <development version="5000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+        <plugIn identifier="com.apple.automator.AutomatorPalette" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="Save_for_Web">
+            <connections>
+                <outlet property="sharpenBox" destination="100019" id="100071"/>
+                <outlet property="view" destination="5" id="7"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customView id="5" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="171"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100010">
+                    <rect key="frame" x="10" y="143" width="61" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Save to:" id="100047">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <amPathPopUpButton verticalHuggingPriority="750" canChooseDirectories="YES" canChooseNewPaths="YES" canChooseExistingPaths="YES" showStandardPaths="YES" showPlaceholder="YES" placeholder="Same folder as the original" translatesAutoresizingMaskIntoConstraints="NO" id="100011">
+                    <rect key="frame" x="74" y="138" width="175" height="22"/>
+                    <amVariablePopUpButtonCell key="cell" type="push" title="Desktop" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1001" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="100045">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="100046"/>
+                    </amVariablePopUpButtonCell>
+                    <connections>
+                        <binding destination="6" name="path" keyPath="selection.outputPath" id="100049"/>
+                    </connections>
+                </amPathPopUpButton>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="100012">
+                    <rect key="frame" x="74" y="118" width="205" height="18"/>
+                    <buttonCell key="cell" type="check" title="Replace files with the same names" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="100044">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="6" name="value" keyPath="selection.replaceExisting" id="100051"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="100013">
+                    <rect key="frame" x="74" y="100" width="123" height="18"/>
+                    <buttonCell key="cell" type="check" title="Delete original files" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="100043">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="6" name="value" keyPath="selection.deleteOriginals" id="100053"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100014">
+                    <rect key="frame" x="10" y="79" width="61" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Processor:" id="100042">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100017">
+                    <rect key="frame" x="23" y="53" width="48" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Type:" id="100032">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="100018">
+                    <rect key="frame" x="74" y="28" width="111" height="18"/>
+                    <buttonCell key="cell" type="check" title="Constrain size to" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="100031">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="6" name="value" keyPath="selection.constrainSize" id="100059"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="100019">
+                    <rect key="frame" x="74" y="10" width="138" height="18"/>
+                    <buttonCell key="cell" type="check" title="Sharpen after resizing" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="100030">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="6" name="value" keyPath="selection.sharpenImage" id="100066"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100021">
+                    <rect key="frame" x="241" y="31" width="13" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="✕" id="100027">
+                        <font key="font" size="11" name="ZapfDingbatsITC"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100023">
+                    <rect key="frame" x="310" y="30" width="35" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="pixels" id="100024">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <amTokenField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100072">
+                    <rect key="frame" x="188" y="28" width="50" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="o8m-Hk-sPl"/>
+                    </constraints>
+                    <amTokenFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Width" drawsBackground="YES" allowsEditingTextAttributes="YES" id="100073">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </amTokenFieldCell>
+                    <connections>
+                        <binding destination="6" name="value" keyPath="selection.maxWidth" id="100078">
+                            <dictionary key="options">
+                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </amTokenField>
+                <amTokenField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100074">
+                    <rect key="frame" x="257" y="28" width="50" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Lv1-DR-Hrb"/>
+                    </constraints>
+                    <amTokenFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Height" drawsBackground="YES" allowsEditingTextAttributes="YES" id="100075">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </amTokenFieldCell>
+                    <connections>
+                        <binding destination="6" name="value" keyPath="selection.maxHeight" id="100080"/>
+                    </connections>
+                </amTokenField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="100081" customClass="JUNButton">
+                    <rect key="frame" x="369" y="6" width="25" height="32"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="donate" imagePosition="only" alignment="center" alternateImage="donate-red" inset="2" id="100082" customClass="JUNButtonCell">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openSite:" target="-2" id="100083"/>
+                    </connections>
+                </button>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bDv-7K-1qL">
+                    <rect key="frame" x="74" y="74" width="182" height="22"/>
+                    <popUpButtonCell key="cell" type="push" title="Built-In" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="vaE-d3-5Ic" id="2jS-bl-2vb">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" id="Px4-XW-dQC">
+                            <items>
+                                <menuItem title="Built-In" state="on" id="vaE-d3-5Ic"/>
+                                <menuItem title="Adobe Photoshop CS or CC" tag="1" id="O5Z-cJ-fMh"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changedApplication:" target="-2" id="piV-OB-cHV"/>
+                        <binding destination="6" name="selectedIndex" keyPath="selection.useApplication" id="eb0-4j-JKe"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZYS-f9-pDM">
+                    <rect key="frame" x="74" y="48" width="63" height="22"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="0GI-dX-Y1I">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" id="Q14-xk-8aZ">
+                            <items>
+                                <menuItem title="JPEG" id="N0T-a8-j07"/>
+                                <menuItem title="PNG" tag="1" id="2uj-DT-hiH"/>
+                                <menuItem title="GIF" tag="2" id="i3t-4M-h9s"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="6" name="selectedIndex" keyPath="selection.fileType" id="CCr-Nc-2Qa"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstItem="100018" firstAttribute="top" secondItem="ZYS-f9-pDM" secondAttribute="bottom" constant="8" symbolic="YES" id="4UE-RR-e5h"/>
+                <constraint firstItem="100081" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="100019" secondAttribute="trailing" constant="6" id="5Bu-W4-Kh2"/>
+                <constraint firstItem="bDv-7K-1qL" firstAttribute="leading" secondItem="100011" secondAttribute="leading" id="5aA-Jh-EkR"/>
+                <constraint firstItem="100023" firstAttribute="leading" secondItem="100074" secondAttribute="trailing" constant="5" id="6Ku-CY-eK5"/>
+                <constraint firstItem="100012" firstAttribute="leading" secondItem="100011" secondAttribute="leading" id="BOE-C8-SPu"/>
+                <constraint firstItem="100072" firstAttribute="baseline" secondItem="100018" secondAttribute="baseline" id="CS1-JC-4v8"/>
+                <constraint firstItem="ZYS-f9-pDM" firstAttribute="top" secondItem="bDv-7K-1qL" secondAttribute="bottom" constant="8" symbolic="YES" id="D9L-CF-kJb"/>
+                <constraint firstItem="100023" firstAttribute="baseline" secondItem="100018" secondAttribute="baseline" id="HWK-Yj-3h9"/>
+                <constraint firstItem="100072" firstAttribute="leading" secondItem="100018" secondAttribute="trailing" constant="5" id="IFI-y9-Yxc"/>
+                <constraint firstItem="bDv-7K-1qL" firstAttribute="baseline" secondItem="100014" secondAttribute="baseline" id="Iy1-dM-okZ"/>
+                <constraint firstItem="ZYS-f9-pDM" firstAttribute="leading" secondItem="100017" secondAttribute="trailing" constant="8" symbolic="YES" id="Jth-3S-83N"/>
+                <constraint firstItem="100017" firstAttribute="baseline" secondItem="ZYS-f9-pDM" secondAttribute="baseline" id="KI9-nS-97d"/>
+                <constraint firstItem="100021" firstAttribute="leading" secondItem="100072" secondAttribute="trailing" constant="5" id="NX0-Kw-AHt"/>
+                <constraint firstAttribute="bottom" secondItem="100081" secondAttribute="bottom" constant="6" id="OhP-dw-cE8"/>
+                <constraint firstItem="100010" firstAttribute="baseline" secondItem="100011" secondAttribute="baseline" id="Q7j-SP-iTS"/>
+                <constraint firstItem="100012" firstAttribute="top" secondItem="100011" secondAttribute="bottom" constant="8" symbolic="YES" id="RJe-hL-Lin"/>
+                <constraint firstItem="100021" firstAttribute="baseline" secondItem="100018" secondAttribute="baseline" constant="-2" id="WIR-um-rCI"/>
+                <constraint firstItem="100010" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="12" id="aBG-1w-npx"/>
+                <constraint firstItem="bDv-7K-1qL" firstAttribute="leading" secondItem="100014" secondAttribute="trailing" constant="8" symbolic="YES" id="bql-YY-NFo"/>
+                <constraint firstItem="100014" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="12" id="cfd-TU-0zG"/>
+                <constraint firstItem="100011" firstAttribute="leading" secondItem="100013" secondAttribute="leading" id="ckk-15-ZMa"/>
+                <constraint firstItem="100013" firstAttribute="top" secondItem="100012" secondAttribute="bottom" constant="6" symbolic="YES" id="dfi-0s-2kv"/>
+                <constraint firstItem="100011" firstAttribute="top" secondItem="5" secondAttribute="top" constant="12" id="gIw-zW-awb"/>
+                <constraint firstItem="bDv-7K-1qL" firstAttribute="top" secondItem="100013" secondAttribute="bottom" constant="8" symbolic="YES" id="gMy-RC-jtK"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="100019" secondAttribute="bottom" constant="12" id="gPr-OB-7EV"/>
+                <constraint firstItem="100019" firstAttribute="leading" secondItem="100011" secondAttribute="leading" id="jsr-d0-fHy"/>
+                <constraint firstItem="100011" firstAttribute="leading" secondItem="ZYS-f9-pDM" secondAttribute="leading" id="qMJ-AS-Mgi"/>
+                <constraint firstItem="100011" firstAttribute="leading" secondItem="100010" secondAttribute="trailing" constant="8" symbolic="YES" id="rWZ-BJ-eeV"/>
+                <constraint firstItem="100019" firstAttribute="top" secondItem="100018" secondAttribute="bottom" constant="6" symbolic="YES" id="wCw-FD-fWG"/>
+                <constraint firstItem="100074" firstAttribute="baseline" secondItem="100018" secondAttribute="baseline" id="wSp-C8-OUl"/>
+                <constraint firstItem="100074" firstAttribute="leading" secondItem="100021" secondAttribute="trailing" constant="5" id="xS1-m2-qlX"/>
+                <constraint firstItem="100017" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="25" id="xUD-93-qiF"/>
+                <constraint firstAttribute="trailing" secondItem="100081" secondAttribute="trailing" constant="6" id="xf3-1y-eLT"/>
+                <constraint firstItem="100011" firstAttribute="leading" secondItem="100018" secondAttribute="leading" id="yyW-MT-np9"/>
+            </constraints>
+            <point key="canvasLocation" x="381" y="333.5"/>
+        </customView>
+        <objectController id="6" userLabel="Parameters">
+            <connections>
+                <binding destination="-2" name="contentObject" keyPath="parameters" id="12"/>
+            </connections>
+        </objectController>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+    </objects>
+    <resources>
+        <image name="donate" width="25" height="25"/>
+        <image name="donate-red" width="25" height="25"/>
+    </resources>
+</document>

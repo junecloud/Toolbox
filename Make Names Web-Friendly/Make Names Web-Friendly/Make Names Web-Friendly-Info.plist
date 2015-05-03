@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>Finder</string>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<false/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryFilesAndFolders</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>convertCaseTo</key>
+		<integer>0</integer>
+		<key>convertSpacesTo</key>
+		<integer>0</integer>
+		<key>convertSymbols</key>
+		<integer>0</integer>
+		<key>convertUmlauts</key>
+		<false/>
+		<key>includeFilesInsideFolders</key>
+		<false/>
+		<key>removePeriods</key>
+		<false/>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDAlert</key>
+		<string></string>
+		<key>AMDInput</key>
+		<string></string>
+		<key>AMDNote</key>
+		<string>Setting the "Don't Change" option for spaces is not recommended for web use. It is provided for those that would like to simplify file names for other uses.</string>
+		<key>AMDOptions</key>
+		<string></string>
+		<key>AMDRelatedActions</key>
+		<string></string>
+		<key>AMDRequires</key>
+		<string></string>
+		<key>AMDResult</key>
+		<string></string>
+		<key>AMDSummary</key>
+		<string>This action converts the names of the selected files to all lowercase (if selected), removes accents, changes spaces to underscores or dashes, and converts other special characters to underscores or dashes.</string>
+		<key>AMDWebsite</key>
+		<string>http://junecloud.com</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Finder</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Junecloud</string>
+		<string>spaces</string>
+		<string>dashes</string>
+		<string>underscores</string>
+		<string>umlauts</string>
+		<string>lowercase</string>
+		<string>uppercase</string>
+		<string>symbols</string>
+		<string>periods</string>
+		<string>special</string>
+		<string>characters</string>
+	</array>
+	<key>AMName</key>
+	<string>Make Names Web-Friendly</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>AMWarning</key>
+	<dict>
+		<key>Action</key>
+		<string>com.apple.Automator.CopyFiles</string>
+		<key>ApplyButton</key>
+		<string>Add “Copy” Action</string>
+		<key>IgnoreButton</key>
+		<string>Don't Add</string>
+		<key>Level</key>
+		<integer>2</integer>
+		<key>Message</key>
+		<string>This action will change the names of the Finder items passed into it. Using the “include files inside of folders” option can even damage certain types of files like applications. Adding a “Copy Finder Items” action will preserve the original files, so only the copies are changed.</string>
+	</dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>com.junecloud.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.0.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>3.0.1</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2009–2014 Junecloud LLC</string>
+	<key>NSPrincipalClass</key>
+	<string>Make_Names_Web_Friendly</string>
+</dict>
+</plist>

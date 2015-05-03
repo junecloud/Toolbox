@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		271EB887165BFC5600D2E2CD /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271EB886165BFC5600D2E2CD /* Automator.framework */; };
+		271EB889165BFC5600D2E2CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271EB888165BFC5600D2E2CD /* Cocoa.framework */; };
+		271EB893165BFC5600D2E2CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 271EB891165BFC5600D2E2CD /* InfoPlist.strings */; };
+		271EB896165BFC5600D2E2CD /* Download_URL_Pattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 271EB895165BFC5600D2E2CD /* Download_URL_Pattern.m */; };
+		271EB899165BFC5600D2E2CD /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271EB897165BFC5600D2E2CD /* main.xib */; };
+		271EB8A1165BFD7500D2E2CD /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271EB8A0165BFD7500D2E2CD /* OSAKit.framework */; };
+		272AA4A5165DC24A008C740E /* donate-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA49C165DC24A008C740E /* donate-red.png */; };
+		272AA4A6165DC24A008C740E /* donate-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA49D165DC24A008C740E /* donate-red@2x.png */; };
+		272AA4A7165DC24A008C740E /* donate.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA49E165DC24A008C740E /* donate.png */; };
+		272AA4A8165DC24A008C740E /* donate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA49F165DC24A008C740E /* donate@2x.png */; };
+		272AA4A9165DC24A008C740E /* JUNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 272AA4A2165DC24A008C740E /* JUNButton.m */; };
+		272AA4AA165DC24A008C740E /* JUNButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 272AA4A4165DC24A008C740E /* JUNButtonCell.m */; };
+		27B902431914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B902421914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		271EB883165BFC5600D2E2CD /* Download URL Pattern.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Download URL Pattern.action"; sourceTree = BUILT_PRODUCTS_DIR; };
+		271EB886165BFC5600D2E2CD /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = System/Library/Frameworks/Automator.framework; sourceTree = SDKROOT; };
+		271EB888165BFC5600D2E2CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		271EB88B165BFC5600D2E2CD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		271EB88C165BFC5600D2E2CD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		271EB88D165BFC5600D2E2CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		271EB890165BFC5600D2E2CD /* Download URL Pattern-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Download URL Pattern-Info.plist"; sourceTree = "<group>"; };
+		271EB892165BFC5600D2E2CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		271EB894165BFC5600D2E2CD /* Download_URL_Pattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Download_URL_Pattern.h; sourceTree = "<group>"; };
+		271EB895165BFC5600D2E2CD /* Download_URL_Pattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Download_URL_Pattern.m; sourceTree = "<group>"; };
+		271EB898165BFC5600D2E2CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
+		271EB89A165BFC5600D2E2CD /* Download URL Pattern-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Download URL Pattern-Prefix.pch"; sourceTree = "<group>"; };
+		271EB8A0165BFD7500D2E2CD /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = System/Library/Frameworks/OSAKit.framework; sourceTree = SDKROOT; };
+		272AA49C165DC24A008C740E /* donate-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-red.png"; sourceTree = "<group>"; };
+		272AA49D165DC24A008C740E /* donate-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-red@2x.png"; sourceTree = "<group>"; };
+		272AA49E165DC24A008C740E /* donate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donate.png; sourceTree = "<group>"; };
+		272AA49F165DC24A008C740E /* donate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate@2x.png"; sourceTree = "<group>"; };
+		272AA4A1165DC24A008C740E /* JUNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUNButton.h; sourceTree = "<group>"; };
+		272AA4A2165DC24A008C740E /* JUNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUNButton.m; sourceTree = "<group>"; };
+		272AA4A3165DC24A008C740E /* JUNButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUNButtonCell.h; sourceTree = "<group>"; };
+		272AA4A4165DC24A008C740E /* JUNButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUNButtonCell.m; sourceTree = "<group>"; };
+		27B902411914A0FA002A7513 /* NSMutableArray+JUNAddOnce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JUNAddOnce.h"; sourceTree = "<group>"; };
+		27B902421914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JUNAddOnce.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		271EB87F165BFC5600D2E2CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271EB8A1165BFD7500D2E2CD /* OSAKit.framework in Frameworks */,
+				271EB887165BFC5600D2E2CD /* Automator.framework in Frameworks */,
+				271EB889165BFC5600D2E2CD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		271EB879165BFC5600D2E2CD = {
+			isa = PBXGroup;
+			children = (
+				271EB88E165BFC5600D2E2CD /* Download URL Pattern */,
+				271EB885165BFC5600D2E2CD /* Frameworks */,
+				271EB884165BFC5600D2E2CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		271EB884165BFC5600D2E2CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				271EB883165BFC5600D2E2CD /* Download URL Pattern.action */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		271EB885165BFC5600D2E2CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				271EB886165BFC5600D2E2CD /* Automator.framework */,
+				271EB888165BFC5600D2E2CD /* Cocoa.framework */,
+				271EB8A0165BFD7500D2E2CD /* OSAKit.framework */,
+				271EB88A165BFC5600D2E2CD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		271EB88A165BFC5600D2E2CD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				271EB88B165BFC5600D2E2CD /* AppKit.framework */,
+				271EB88C165BFC5600D2E2CD /* CoreData.framework */,
+				271EB88D165BFC5600D2E2CD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		271EB88E165BFC5600D2E2CD /* Download URL Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				271EB894165BFC5600D2E2CD /* Download_URL_Pattern.h */,
+				271EB895165BFC5600D2E2CD /* Download_URL_Pattern.m */,
+				27B902411914A0FA002A7513 /* NSMutableArray+JUNAddOnce.h */,
+				27B902421914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m */,
+				271EB897165BFC5600D2E2CD /* main.xib */,
+				272AA4A0165DC24A008C740E /* JUNButton */,
+				272AA49B165DC24A008C740E /* Images */,
+				271EB88F165BFC5600D2E2CD /* Supporting Files */,
+			);
+			path = "Download URL Pattern";
+			sourceTree = "<group>";
+		};
+		271EB88F165BFC5600D2E2CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				271EB890165BFC5600D2E2CD /* Download URL Pattern-Info.plist */,
+				271EB891165BFC5600D2E2CD /* InfoPlist.strings */,
+				271EB89A165BFC5600D2E2CD /* Download URL Pattern-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		272AA49B165DC24A008C740E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				272AA49C165DC24A008C740E /* donate-red.png */,
+				272AA49D165DC24A008C740E /* donate-red@2x.png */,
+				272AA49E165DC24A008C740E /* donate.png */,
+				272AA49F165DC24A008C740E /* donate@2x.png */,
+			);
+			name = Images;
+			path = ../../Shared/Images;
+			sourceTree = "<group>";
+		};
+		272AA4A0165DC24A008C740E /* JUNButton */ = {
+			isa = PBXGroup;
+			children = (
+				272AA4A1165DC24A008C740E /* JUNButton.h */,
+				272AA4A2165DC24A008C740E /* JUNButton.m */,
+				272AA4A3165DC24A008C740E /* JUNButtonCell.h */,
+				272AA4A4165DC24A008C740E /* JUNButtonCell.m */,
+			);
+			name = JUNButton;
+			path = ../../Shared/JUNButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		271EB882165BFC5600D2E2CD /* Download URL Pattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271EB89D165BFC5600D2E2CD /* Build configuration list for PBXNativeTarget "Download URL Pattern" */;
+			buildPhases = (
+				271EB87E165BFC5600D2E2CD /* Sources */,
+				271EB87F165BFC5600D2E2CD /* Frameworks */,
+				271EB880165BFC5600D2E2CD /* Resources */,
+				271EB881165BFC5600D2E2CD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Download URL Pattern";
+			productName = "Download URL Pattern";
+			productReference = 271EB883165BFC5600D2E2CD /* Download URL Pattern.action */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		271EB87A165BFC5600D2E2CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Junecloud LLC";
+			};
+			buildConfigurationList = 271EB87D165BFC5600D2E2CD /* Build configuration list for PBXProject "Download URL Pattern" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 271EB879165BFC5600D2E2CD;
+			productRefGroup = 271EB884165BFC5600D2E2CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				271EB882165BFC5600D2E2CD /* Download URL Pattern */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		271EB880165BFC5600D2E2CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271EB893165BFC5600D2E2CD /* InfoPlist.strings in Resources */,
+				271EB899165BFC5600D2E2CD /* main.xib in Resources */,
+				272AA4A5165DC24A008C740E /* donate-red.png in Resources */,
+				272AA4A6165DC24A008C740E /* donate-red@2x.png in Resources */,
+				272AA4A7165DC24A008C740E /* donate.png in Resources */,
+				272AA4A8165DC24A008C740E /* donate@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		271EB881165BFC5600D2E2CD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "amlint \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\"\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    osascript -e \"tell application \\\"Automator\\\" to quit\"\n    rm -rf \"$INSTALL_PATH/${FULL_PRODUCT_NAME}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"$INSTALL_PATH\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		271EB87E165BFC5600D2E2CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271EB896165BFC5600D2E2CD /* Download_URL_Pattern.m in Sources */,
+				272AA4A9165DC24A008C740E /* JUNButton.m in Sources */,
+				27B902431914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m in Sources */,
+				272AA4AA165DC24A008C740E /* JUNButtonCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		271EB891165BFC5600D2E2CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271EB892165BFC5600D2E2CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		271EB897165BFC5600D2E2CD /* main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271EB898165BFC5600D2E2CD /* en */,
+			);
+			name = main.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		271EB89B165BFC5600D2E2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		271EB89C165BFC5600D2E2CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		271EB89E165BFC5600D2E2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Download URL Pattern/Download URL Pattern-Prefix.pch";
+				INFOPLIST_FILE = "Download URL Pattern/Download URL Pattern-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Debug;
+		};
+		271EB89F165BFC5600D2E2CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Download URL Pattern/Download URL Pattern-Prefix.pch";
+				INFOPLIST_FILE = "Download URL Pattern/Download URL Pattern-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		271EB87D165BFC5600D2E2CD /* Build configuration list for PBXProject "Download URL Pattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271EB89B165BFC5600D2E2CD /* Debug */,
+				271EB89C165BFC5600D2E2CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		271EB89D165BFC5600D2E2CD /* Build configuration list for PBXNativeTarget "Download URL Pattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271EB89E165BFC5600D2E2CD /* Debug */,
+				271EB89F165BFC5600D2E2CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 271EB87A165BFC5600D2E2CD /* Project object */;
+}
