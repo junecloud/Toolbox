@@ -18,8 +18,32 @@ class ViewController: NSViewController {
 
 	}
 
-	@IBAction func installService(_ sender: NSButton) {
+	@IBAction func openAutomator(_ sender: NSButton) {
+		let workspace = NSWorkspace.shared()
+		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: .default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+	}
 
+	@IBAction func installService(_ sender: NSButton) {
+		var identifier: String
+		switch (sender.tag) {
+			case 0: identifier = "Save for Web"
+				break
+			case 1: identifier = "Make Names Web-Friendly"
+				break
+			case 2: identifier = "Create Clean Archive"
+				break
+			case 3: identifier = "Create Symbolic Link"
+				break
+			case 4: identifier = "Hide Extensions"
+				break
+			default: identifier = ""
+				break
+		}
+		if (identifier.isEmpty == false) {
+			installService(identifier)
+		} else {
+			NSLog("Unrecognized tag \(sender.tag)")
+		}
 	}
 
 	private func installService(_ name: String) {

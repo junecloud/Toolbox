@@ -11,16 +11,36 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+	var instructionsWindowController: NSWindowController?
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
-		// Insert code here to initialize your application
+		showInstructions(nil)
 	}
 
 	func applicationWillTerminate(_ aNotification: Notification) {
-		// Insert code here to tear down your application
+
 	}
 
+	@IBAction func showInstructions(_ sender: Any?) {
+		if (self.instructionsWindowController == nil) {
+			let storyboard = NSStoryboard.init(name: "Main", bundle: nil)
+			let controller = storyboard.instantiateController(withIdentifier: "instructionsWindow")
+			self.instructionsWindowController = controller as? NSWindowController
+		}
+		self.instructionsWindowController?.showWindow(sender)
+	}
+
+	@IBAction func openAutomator(_ sender: Any?) {
+		let workspace = NSWorkspace.shared()
+		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: .default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+	}
+
+	@IBAction func showHelp(_ sender: Any?) {
+		let workspace = NSWorkspace.shared()
+		let urlString = "https://junecloud.com/support/junecloud-automator-actions/"
+		guard let url = URL.init(string: urlString) else { return }
+		workspace.open(url)
+	}
 
 }
 
