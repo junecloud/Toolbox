@@ -49,7 +49,7 @@
 		<key>AMDResult</key>
 		<string>ZIP archives</string>
 		<key>AMDSummary</key>
-		<string>This action creates a clean zip format archive (.zip) that&apos;s ready to share with others. Macintosh resource forks and desktop files will be ignored so they don&apos;t get in the way on other operating systems. If you&apos;re uploading the file online, use the action &quot;Make Names Web-Friendly&quot; afterward to ensure the archive has a web-friendly file name.</string>
+		<string>This action creates a clean zip format archive (.zip) that's ready to share with others. Macintosh resource forks and desktop files will be ignored so they don't get in the way on other operating systems. If you're uploading the file online, use the action "Make Names Web-Friendly" afterward to ensure the archive has a web-friendly file name.</string>
 		<key>AMDWebsite</key>
 		<string>http://junecloud.com</string>
 	</dict>
@@ -104,9 +104,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.1</string>
+	<string>4.0</string>
 	<key>CFBundleVersion</key>
-	<string>2.0.1</string>
+	<string>${CURRENT_PROJECT_VERSION}</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2006–2017 Junecloud LLC</string>
 	<key>NSPrincipalClass</key>

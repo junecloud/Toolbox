@@ -808,6 +808,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 13;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -831,6 +832,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -857,6 +859,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 13;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -872,6 +875,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -918,6 +922,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Create-Clean-Archive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -933,6 +938,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Create-Clean-Archive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
@@ -948,6 +954,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Create-Symbolic-Link";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -963,6 +970,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Create-Symbolic-Link";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
@@ -978,6 +986,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Hide-or-Show-Extensions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -993,6 +1002,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Hide-or-Show-Extensions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
@@ -1008,6 +1018,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Make-Names-Web-Friendly";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -1023,6 +1034,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Make-Names-Web-Friendly";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
@@ -1038,6 +1050,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Save-for-Web";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -1053,6 +1066,7 @@
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Save-for-Web";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
