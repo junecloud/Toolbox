@@ -43,7 +43,7 @@
 		<key>AMDInput</key>
 		<string></string>
 		<key>AMDNote</key>
-		<string>Setting the "Don't Change" option for spaces is not recommended for web use. It is provided for those that would like to simplify file names for other uses.</string>
+		<string>Setting the &quot;Don&apos;t Change&quot; option for spaces is not recommended for web use. It is provided for those that would like to simplify file names for other uses.</string>
 		<key>AMDOptions</key>
 		<string></string>
 		<key>AMDRelatedActions</key>
@@ -55,7 +55,7 @@
 		<key>AMDSummary</key>
 		<string>This action converts the names of the selected files to all lowercase (if selected), removes accents, changes spaces to underscores or dashes, and converts other special characters to underscores or dashes.</string>
 		<key>AMDWebsite</key>
-		<string>http://junecloud.com</string>
+		<string>https://junecloud.com</string>
 	</dict>
 	<key>AMIconName</key>
 	<string>Finder</string>
@@ -93,7 +93,7 @@
 		<key>ApplyButton</key>
 		<string>Add “Copy” Action</string>
 		<key>IgnoreButton</key>
-		<string>Don't Add</string>
+		<string>Don&apos;t Add</string>
 		<key>Level</key>
 		<integer>2</integer>
 		<key>Message</key>

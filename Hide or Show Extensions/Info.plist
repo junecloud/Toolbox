@@ -47,7 +47,7 @@
 		<key>AMDSummary</key>
 		<string>This action will hide the file extension of the selected files.</string>
 		<key>AMDWebsite</key>
-		<string>http://junecloud.com</string>
+		<string>https://junecloud.com</string>
 	</dict>
 	<key>AMIconName</key>
 	<string>Finder</string>

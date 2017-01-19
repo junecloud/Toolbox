@@ -59,7 +59,7 @@
 		<key>AMDSummary</key>
 		<string>This action will export images in JPEG, GIF, or PNG format using Adobe Photoshop CS or its own built-in image processing. The built-in image processing is generally faster, while Photoshop may create higher quality images and work with more file types. Additional options allow you to constrain the image to a maximum width and height, and sharpen the image after resizing.</string>
 		<key>AMDWebsite</key>
-		<string>http://junecloud.com</string>
+		<string>https://junecloud.com</string>
 	</dict>
 	<key>AMIconName</key>
 	<string>Preview</string>

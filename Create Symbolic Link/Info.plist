@@ -31,7 +31,7 @@
 	<key>AMDescription</key>
 	<dict>
 		<key>AMDAlert</key>
-		<string>This action will output the symbolic links it creates. Due to the nature of these links, however, some actions might still affect the original files. Test your workflow carefully if you're doing anything with the output of this action.</string>
+		<string>This action will output the symbolic links it creates. Due to the nature of these links, however, some actions might still affect the original files. Test your workflow carefully if you&apos;re doing anything with the output of this action.</string>
 		<key>AMDInput</key>
 		<string></string>
 		<key>AMDNote</key>
@@ -47,7 +47,7 @@
 		<key>AMDSummary</key>
 		<string>This action will create symbolic links to the selected files. Symbolic links are similar to aliases, but they will always point to the same path even if you move the files around. Some applications will also treat symbolic links like the actual files. The Create Clean Archive action, for example, will zip the file a symbolic link points to rather than the link itself.</string>
 		<key>AMDWebsite</key>
-		<string>http://junecloud.com</string>
+		<string>https://junecloud.com</string>
 	</dict>
 	<key>AMIconName</key>
 	<string>Finder</string>
