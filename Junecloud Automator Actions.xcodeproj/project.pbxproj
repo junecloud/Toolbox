@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27359A391E3037EC008ABD17 /* Create Clean Archive.workflow in Resources */ = {isa = PBXBuildFile; fileRef = 27359A341E3037EC008ABD17 /* Create Clean Archive.workflow */; };
+		27359A3A1E3037EC008ABD17 /* Create Symbolic Link.workflow in Resources */ = {isa = PBXBuildFile; fileRef = 27359A351E3037EC008ABD17 /* Create Symbolic Link.workflow */; };
+		27359A3B1E3037EC008ABD17 /* Hide Extensions.workflow in Resources */ = {isa = PBXBuildFile; fileRef = 27359A361E3037EC008ABD17 /* Hide Extensions.workflow */; };
+		27359A3C1E3037EC008ABD17 /* Make Names Web-Friendly.workflow in Resources */ = {isa = PBXBuildFile; fileRef = 27359A371E3037EC008ABD17 /* Make Names Web-Friendly.workflow */; };
+		27359A3D1E3037EC008ABD17 /* Save for Web.workflow in Resources */ = {isa = PBXBuildFile; fileRef = 27359A381E3037EC008ABD17 /* Save for Web.workflow */; };
 		279510121E30137B0095AA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279510111E30137B0095AA8D /* AppDelegate.swift */; };
 		279510141E30137B0095AA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279510131E30137B0095AA8D /* ViewController.swift */; };
 		279510161E30137B0095AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279510151E30137B0095AA8D /* Assets.xcassets */; };
@@ -90,6 +95,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27359A341E3037EC008ABD17 /* Create Clean Archive.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Create Clean Archive.workflow"; sourceTree = "<group>"; };
+		27359A351E3037EC008ABD17 /* Create Symbolic Link.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Create Symbolic Link.workflow"; sourceTree = "<group>"; };
+		27359A361E3037EC008ABD17 /* Hide Extensions.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Hide Extensions.workflow"; sourceTree = "<group>"; };
+		27359A371E3037EC008ABD17 /* Make Names Web-Friendly.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Make Names Web-Friendly.workflow"; sourceTree = "<group>"; };
+		27359A381E3037EC008ABD17 /* Save for Web.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Save for Web.workflow"; sourceTree = "<group>"; };
 		2795100E1E30137B0095AA8D /* Junecloud Automator Actions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Junecloud Automator Actions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279510111E30137B0095AA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279510131E30137B0095AA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +185,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27359A331E3037EC008ABD17 /*  ​Services */ = {
+			isa = PBXGroup;
+			children = (
+				27359A341E3037EC008ABD17 /* Create Clean Archive.workflow */,
+				27359A351E3037EC008ABD17 /* Create Symbolic Link.workflow */,
+				27359A361E3037EC008ABD17 /* Hide Extensions.workflow */,
+				27359A371E3037EC008ABD17 /* Make Names Web-Friendly.workflow */,
+				27359A381E3037EC008ABD17 /* Save for Web.workflow */,
+			);
+			path = " ​Services";
+			sourceTree = "<group>";
+		};
 		279510051E30137B0095AA8D = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +232,7 @@
 				279510151E30137B0095AA8D /* Assets.xcassets */,
 				279510171E30137B0095AA8D /* Main.storyboard */,
 				2795101A1E30137B0095AA8D /* Info.plist */,
+				27359A331E3037EC008ABD17 /*  ​Services */,
 			);
 			path = "Junecloud Automator Actions";
 			sourceTree = "<group>";
@@ -466,7 +489,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				279510161E30137B0095AA8D /* Assets.xcassets in Resources */,
+				27359A391E3037EC008ABD17 /* Create Clean Archive.workflow in Resources */,
+				27359A3C1E3037EC008ABD17 /* Make Names Web-Friendly.workflow in Resources */,
+				27359A3A1E3037EC008ABD17 /* Create Symbolic Link.workflow in Resources */,
 				279510191E30137B0095AA8D /* Main.storyboard in Resources */,
+				27359A3D1E3037EC008ABD17 /* Save for Web.workflow in Resources */,
+				27359A3B1E3037EC008ABD17 /* Hide Extensions.workflow in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

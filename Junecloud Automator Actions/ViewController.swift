@@ -12,16 +12,22 @@ class ViewController: NSViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-		// Do any additional setup after loading the view.
 	}
 
-	override var representedObject: Any? {
-		didSet {
-		// Update the view, if already loaded.
-		}
+	override func viewDidAppear() {
+
 	}
 
+	@IBAction func installService(_ sender: NSButton) {
+
+	}
+
+	private func installService(_ name: String) {
+		let bundle = Bundle.main
+		let workspace = NSWorkspace.shared()
+		guard let servicePath = bundle.path(forResource: name, ofType: "workflow") else { return }
+		workspace.openFile(servicePath)
+	}
 
 }
 
