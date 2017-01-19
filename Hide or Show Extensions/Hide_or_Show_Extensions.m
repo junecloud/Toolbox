@@ -72,8 +72,4 @@
 
 }
 
-- (IBAction)openSite:(id)sender {
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://junecloud.com/software/donate/"]];
-}
-
 @end

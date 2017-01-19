@@ -19,6 +19,5 @@ typedef NS_ENUM(NSUInteger,JUNFileType) {
 @property (weak) IBOutlet NSButton *sharpenBox;
 
 - (id)runWithInput:(id)input fromAction:(AMAction *)anAction error:(NSDictionary **)errorInfo;
-- (IBAction)openSite:(id)sender;
 
 @end

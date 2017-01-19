@@ -12,6 +12,5 @@
 
 - (id)runWithInput:(id)input fromAction:(AMAction *)anAction error:(NSDictionary **)errorInfo;
 - (BOOL)showExtensions:(BOOL)showExtensions ofItemAtPath:(NSString *)path recursive:(BOOL)recursive error:(NSError **)error;
-- (IBAction)openSite:(id)sender;
 
 @end

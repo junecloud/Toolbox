@@ -41,26 +41,6 @@
 			};
 		}
 
-		/* NSTask *task = [[NSTask alloc] init];
-		[task setLaunchPath:@"/bin/ln"];
-		[task setArguments:@[@"-s",path,outputPath]];
-		[task setStandardInput:[NSPipe pipe]];
-		[task setStandardOutput:[NSPipe pipe]];
-		[task setStandardError:[NSPipe pipe]];
-		[task launch];
-		[task waitUntilExit];
-
-		if ([task terminationStatus] == 0) {
-			[output addObject:outputPath];
-		} else {
-			NSData *errorData = [[[task standardError] fileHandleForReading] readDataToEndOfFile];
-			NSString *errorString = [[NSString alloc] initWithData:errorData encoding:NSUTF8StringEncoding];
-			*errorInfo = @{
-				OSAScriptErrorNumber: [NSNumber numberWithInt:errOSASystemError],
-				OSAScriptErrorMessage: errorString
-			};
-		} */
-
 	}
 
 	return output;
@@ -81,10 +61,6 @@
 		}
 	}
 	return newPath;
-}
-
-- (IBAction)openSite:(id)sender {
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://junecloud.com/software/donate/"]];
 }
 
 @end

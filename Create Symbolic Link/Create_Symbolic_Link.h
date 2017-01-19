@@ -11,6 +11,5 @@
 @interface Create_Symbolic_Link : AMBundleAction
 
 - (id)runWithInput:(id)input fromAction:(AMAction *)anAction error:(NSDictionary **)errorInfo;
-- (IBAction)openSite:(id)sender;
 
 @end

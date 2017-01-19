@@ -12,6 +12,5 @@
 
 - (id)runWithInput:(id)input fromAction:(AMAction *)anAction error:(NSDictionary **)errorInfo;
 - (NSString *)pathForPath:(NSString *)path name:(NSString *)name extension:(NSString *)extension uniqueOrInPaths:(NSArray *)paths;
-- (IBAction)openSite:(id)sender;
 
 @end
