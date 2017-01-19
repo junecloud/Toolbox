@@ -106,7 +106,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>4.0</string>
 	<key>CFBundleVersion</key>
-	<string>${CURRENT_PROJECT_VERSION}</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2006–2017 Junecloud LLC</string>
 	<key>NSPrincipalClass</key>
