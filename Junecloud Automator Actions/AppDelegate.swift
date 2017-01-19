@@ -24,8 +24,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	@IBAction func showInstructions(_ sender: Any?) {
 		if (self.instructionsWindowController == nil) {
 			let storyboard = NSStoryboard.init(name: "Main", bundle: nil)
-			let controller = storyboard.instantiateController(withIdentifier: "instructionsWindow")
-			self.instructionsWindowController = controller as? NSWindowController
+			let controller = storyboard.instantiateController(withIdentifier: "instructionsWindow") as? NSWindowController
+			controller?.window?.center()
+			self.instructionsWindowController = controller
 		}
 		self.instructionsWindowController?.showWindow(sender)
 	}
