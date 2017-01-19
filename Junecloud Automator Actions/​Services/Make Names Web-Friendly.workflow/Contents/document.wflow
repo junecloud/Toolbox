@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409</string>
+	<string>428</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.7</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>3.0.1</string>
+				<string>12</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Finder</string>
@@ -57,7 +57,7 @@
 				<key>AMRequiredResources</key>
 				<array/>
 				<key>ActionBundlePath</key>
-				<string>/Users/mike/Library/Automator/Make Names Web-Friendly.action</string>
+				<string>/Applications/Junecloud Automator Actions.app/Contents/Library/Automator/Make Names Web-Friendly.action</string>
 				<key>ActionName</key>
 				<string>Make Names Web-Friendly</string>
 				<key>ActionParameters</key>
@@ -78,7 +78,7 @@
 				<key>BundleIdentifier</key>
 				<string>com.junecloud.Make-Names-Web-Friendly</string>
 				<key>CFBundleVersion</key>
-				<string>3.0.1</string>
+				<string>12</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -197,9 +197,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>447.500000:286.000000</string>
+				<string>309.000000:286.000000</string>
 				<key>nibPath</key>
-				<string>/Users/mike/Library/Automator/Make Names Web-Friendly.action/Contents/Resources/en.lproj/main.nib</string>
+				<string>/Applications/Junecloud Automator Actions.app/Contents/Library/Automator/Make Names Web-Friendly.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409</string>
+	<string>428</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.7</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>3.0.1</string>
+				<string>12</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Preview</string>
@@ -68,7 +68,7 @@
 				<key>AMRequiredResources</key>
 				<array/>
 				<key>ActionBundlePath</key>
-				<string>/Users/mike/Library/Automator/Save for Web.action</string>
+				<string>/Applications/Junecloud Automator Actions.app/Contents/Library/Automator/Save for Web.action</string>
 				<key>ActionName</key>
 				<string>Save for Web</string>
 				<key>ActionParameters</key>
@@ -95,7 +95,7 @@
 				<key>BundleIdentifier</key>
 				<string>com.junecloud.Save-for-Web</string>
 				<key>CFBundleVersion</key>
-				<string>3.0.1</string>
+				<string>12</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -136,9 +136,9 @@
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<string></string>
 						<key>name</key>
-						<string>sharpenImage</string>
+						<string>outputPath</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -149,9 +149,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<integer>0</integer>
 						<key>name</key>
-						<string>outputPath</string>
+						<string>constrainSize</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -164,7 +164,7 @@
 						<key>default value</key>
 						<integer>0</integer>
 						<key>name</key>
-						<string>constrainSize</string>
+						<string>replaceExisting</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -175,9 +175,9 @@
 					<key>3</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<integer>800</integer>
 						<key>name</key>
-						<string>replaceExisting</string>
+						<string>maxHeight</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -188,9 +188,9 @@
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<integer>800</integer>
+						<integer>0</integer>
 						<key>name</key>
-						<string>maxHeight</string>
+						<string>deleteOriginals</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -201,9 +201,9 @@
 					<key>5</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<integer>800</integer>
 						<key>name</key>
-						<string>deleteOriginals</string>
+						<string>maxWidth</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -214,9 +214,9 @@
 					<key>6</key>
 					<dict>
 						<key>default value</key>
-						<integer>800</integer>
+						<integer>0</integer>
 						<key>name</key>
-						<string>maxWidth</string>
+						<string>fileType</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -229,7 +229,7 @@
 						<key>default value</key>
 						<integer>0</integer>
 						<key>name</key>
-						<string>fileType</string>
+						<string>sharpenImage</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -237,26 +237,13 @@
 						<key>uuid</key>
 						<string>7</string>
 					</dict>
-					<key>8</key>
-					<dict>
-						<key>default value</key>
-						<integer>0</integer>
-						<key>name</key>
-						<string>useApplication</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>8</string>
-					</dict>
 				</dict>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>447.500000:307.000000</string>
+				<string>309.000000:288.000000</string>
 				<key>nibPath</key>
-				<string>/Users/mike/Library/Automator/Save for Web.action/Contents/Resources/en.lproj/main.nib</string>
+				<string>/Applications/Junecloud Automator Actions.app/Contents/Library/Automator/Save for Web.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>

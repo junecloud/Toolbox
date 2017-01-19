@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409</string>
+	<string>428</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.7</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>2.0.1</string>
+				<string>12</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Finder</string>
@@ -54,7 +54,7 @@
 				<key>AMRequiredResources</key>
 				<array/>
 				<key>ActionBundlePath</key>
-				<string>/Users/mike/Library/Automator/Create Symbolic Link.action</string>
+				<string>/Applications/Junecloud Automator Actions.app/Contents/Library/Automator/Create Symbolic Link.action</string>
 				<key>ActionName</key>
 				<string>Create Symbolic Link</string>
 				<key>ActionParameters</key>
@@ -67,7 +67,7 @@
 				<key>BundleIdentifier</key>
 				<string>com.junecloud.Create-Symbolic-Link</string>
 				<key>CFBundleVersion</key>
-				<string>2.0.1</string>
+				<string>12</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -124,9 +124,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>447.500000:205.000000</string>
+				<string>309.000000:205.000000</string>
 				<key>nibPath</key>
-				<string>/Users/mike/Library/Automator/Create Symbolic Link.action/Contents/Resources/en.lproj/main.nib</string>
+				<string>/Applications/Junecloud Automator Actions.app/Contents/Library/Automator/Create Symbolic Link.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
