@@ -13,12 +13,6 @@
 		271EB896165BFC5600D2E2CD /* Download_URL_Pattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 271EB895165BFC5600D2E2CD /* Download_URL_Pattern.m */; };
 		271EB899165BFC5600D2E2CD /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271EB897165BFC5600D2E2CD /* main.xib */; };
 		271EB8A1165BFD7500D2E2CD /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271EB8A0165BFD7500D2E2CD /* OSAKit.framework */; };
-		272AA4A5165DC24A008C740E /* donate-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA49C165DC24A008C740E /* donate-red.png */; };
-		272AA4A6165DC24A008C740E /* donate-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA49D165DC24A008C740E /* donate-red@2x.png */; };
-		272AA4A7165DC24A008C740E /* donate.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA49E165DC24A008C740E /* donate.png */; };
-		272AA4A8165DC24A008C740E /* donate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272AA49F165DC24A008C740E /* donate@2x.png */; };
-		272AA4A9165DC24A008C740E /* JUNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 272AA4A2165DC24A008C740E /* JUNButton.m */; };
-		272AA4AA165DC24A008C740E /* JUNButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 272AA4A4165DC24A008C740E /* JUNButtonCell.m */; };
 		27B902431914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B902421914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m */; };
 /* End PBXBuildFile section */
 
@@ -36,14 +30,6 @@
 		271EB898165BFC5600D2E2CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
 		271EB89A165BFC5600D2E2CD /* Download URL Pattern-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Download URL Pattern-Prefix.pch"; sourceTree = "<group>"; };
 		271EB8A0165BFD7500D2E2CD /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = System/Library/Frameworks/OSAKit.framework; sourceTree = SDKROOT; };
-		272AA49C165DC24A008C740E /* donate-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-red.png"; sourceTree = "<group>"; };
-		272AA49D165DC24A008C740E /* donate-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-red@2x.png"; sourceTree = "<group>"; };
-		272AA49E165DC24A008C740E /* donate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donate.png; sourceTree = "<group>"; };
-		272AA49F165DC24A008C740E /* donate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate@2x.png"; sourceTree = "<group>"; };
-		272AA4A1165DC24A008C740E /* JUNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUNButton.h; sourceTree = "<group>"; };
-		272AA4A2165DC24A008C740E /* JUNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUNButton.m; sourceTree = "<group>"; };
-		272AA4A3165DC24A008C740E /* JUNButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUNButtonCell.h; sourceTree = "<group>"; };
-		272AA4A4165DC24A008C740E /* JUNButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUNButtonCell.m; sourceTree = "<group>"; };
 		27B902411914A0FA002A7513 /* NSMutableArray+JUNAddOnce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JUNAddOnce.h"; sourceTree = "<group>"; };
 		27B902421914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JUNAddOnce.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,8 +94,6 @@
 				27B902411914A0FA002A7513 /* NSMutableArray+JUNAddOnce.h */,
 				27B902421914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m */,
 				271EB897165BFC5600D2E2CD /* main.xib */,
-				272AA4A0165DC24A008C740E /* JUNButton */,
-				272AA49B165DC24A008C740E /* Images */,
 				271EB88F165BFC5600D2E2CD /* Supporting Files */,
 			);
 			path = "Download URL Pattern";
@@ -123,30 +107,6 @@
 				271EB89A165BFC5600D2E2CD /* Download URL Pattern-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		272AA49B165DC24A008C740E /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				272AA49C165DC24A008C740E /* donate-red.png */,
-				272AA49D165DC24A008C740E /* donate-red@2x.png */,
-				272AA49E165DC24A008C740E /* donate.png */,
-				272AA49F165DC24A008C740E /* donate@2x.png */,
-			);
-			name = Images;
-			path = ../../Shared/Images;
-			sourceTree = "<group>";
-		};
-		272AA4A0165DC24A008C740E /* JUNButton */ = {
-			isa = PBXGroup;
-			children = (
-				272AA4A1165DC24A008C740E /* JUNButton.h */,
-				272AA4A2165DC24A008C740E /* JUNButton.m */,
-				272AA4A3165DC24A008C740E /* JUNButtonCell.h */,
-				272AA4A4165DC24A008C740E /* JUNButtonCell.m */,
-			);
-			name = JUNButton;
-			path = ../../Shared/JUNButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +163,6 @@
 			files = (
 				271EB893165BFC5600D2E2CD /* InfoPlist.strings in Resources */,
 				271EB899165BFC5600D2E2CD /* main.xib in Resources */,
-				272AA4A5165DC24A008C740E /* donate-red.png in Resources */,
-				272AA4A6165DC24A008C740E /* donate-red@2x.png in Resources */,
-				272AA4A7165DC24A008C740E /* donate.png in Resources */,
-				272AA4A8165DC24A008C740E /* donate@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,9 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				271EB896165BFC5600D2E2CD /* Download_URL_Pattern.m in Sources */,
-				272AA4A9165DC24A008C740E /* JUNButton.m in Sources */,
 				27B902431914A0FA002A7513 /* NSMutableArray+JUNAddOnce.m in Sources */,
-				272AA4AA165DC24A008C740E /* JUNButtonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
