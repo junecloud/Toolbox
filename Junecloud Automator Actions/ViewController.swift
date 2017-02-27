@@ -10,21 +10,13 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-
-	override func viewDidAppear() {
-
-	}
-
 	@IBAction func openAutomator(_ sender: NSButton) {
 		let workspace = NSWorkspace.shared()
 		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: .default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
 	}
 
 	@IBAction func installService(_ sender: NSButton) {
-		var identifier: String
+		let identifier: String
 		switch (sender.tag) {
 			case 0: identifier = "Save for Web"
 				break

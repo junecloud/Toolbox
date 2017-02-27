@@ -138,6 +138,12 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Junecloud LLC";
+				TargetAttributes = {
+					271EB882165BFC5600D2E2CD = {
+						DevelopmentTeam = PB4R74AA4J;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 271EB87D165BFC5600D2E2CD /* Build configuration list for PBXProject "Download URL Pattern" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -276,7 +282,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PB4R74AA4J;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Download URL Pattern/Download URL Pattern-Prefix.pch";
 				INFOPLIST_FILE = "Download URL Pattern/Download URL Pattern-Info.plist";
@@ -291,7 +299,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PB4R74AA4J;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Download URL Pattern/Download URL Pattern-Prefix.pch";
 				INFOPLIST_FILE = "Download URL Pattern/Download URL Pattern-Info.plist";

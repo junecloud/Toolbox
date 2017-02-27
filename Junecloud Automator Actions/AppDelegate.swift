@@ -17,10 +17,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		showInstructions(nil)
 	}
 
-	func applicationWillTerminate(_ aNotification: Notification) {
-
-	}
-
 	@IBAction func showInstructions(_ sender: Any?) {
 		if (self.instructionsWindowController == nil) {
 			let storyboard = NSStoryboard.init(name: "Main", bundle: nil)
