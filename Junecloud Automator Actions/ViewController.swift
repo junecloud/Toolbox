@@ -11,8 +11,8 @@ import Cocoa
 class ViewController: NSViewController {
 
 	@IBAction func openAutomator(_ sender: NSButton) {
-		let workspace = NSWorkspace.shared()
-		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: .default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+		let workspace = NSWorkspace.shared
+		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
 	}
 
 	@IBAction func installService(_ sender: NSButton) {
@@ -40,10 +40,9 @@ class ViewController: NSViewController {
 
 	private func installService(_ name: String) {
 		let bundle = Bundle.main
-		let workspace = NSWorkspace.shared()
+		let workspace = NSWorkspace.shared
 		guard let servicePath = bundle.path(forResource: name, ofType: "workflow") else { return }
 		workspace.openFile(servicePath)
 	}
 
 }
-

@@ -19,23 +19,23 @@
 		279510291E3013B50095AA8D /* Create_Clean_Archive.m in Sources */ = {isa = PBXBuildFile; fileRef = 279510281E3013B50095AA8D /* Create_Clean_Archive.m */; };
 		2795102C1E3013B50095AA8D /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2795102A1E3013B50095AA8D /* main.xib */; };
 		279510301E3013B50095AA8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2795102E1E3013B50095AA8D /* InfoPlist.strings */; };
-		279510371E30157A0095AA8D /* Create Clean Archive.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 279510251E3013B50095AA8D /* Create Clean Archive.action */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		279510371E30157A0095AA8D /* Create Clean Archive.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 279510251E3013B50095AA8D /* Create Clean Archive.action */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		279510411E3016410095AA8D /* Create_Symbolic_Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 279510401E3016410095AA8D /* Create_Symbolic_Link.m */; };
 		279510441E3016410095AA8D /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279510421E3016410095AA8D /* main.xib */; };
 		279510481E3016410095AA8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 279510461E3016410095AA8D /* InfoPlist.strings */; };
-		2795104E1E3017050095AA8D /* Create Symbolic Link.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 2795103D1E3016410095AA8D /* Create Symbolic Link.action */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2795104E1E3017050095AA8D /* Create Symbolic Link.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 2795103D1E3016410095AA8D /* Create Symbolic Link.action */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		279510581E3019990095AA8D /* Hide_or_Show_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 279510571E3019990095AA8D /* Hide_or_Show_Extensions.m */; };
 		2795105B1E3019990095AA8D /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279510591E3019990095AA8D /* main.xib */; };
 		2795105F1E3019990095AA8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2795105D1E3019990095AA8D /* InfoPlist.strings */; };
-		279510651E301A610095AA8D /* Hide or Show Extensions.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 279510541E3019990095AA8D /* Hide or Show Extensions.action */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		279510651E301A610095AA8D /* Hide or Show Extensions.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 279510541E3019990095AA8D /* Hide or Show Extensions.action */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2795106F1E301AA60095AA8D /* Make_Names_Web_Friendly.m in Sources */ = {isa = PBXBuildFile; fileRef = 2795106E1E301AA60095AA8D /* Make_Names_Web_Friendly.m */; };
 		279510721E301AA60095AA8D /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279510701E301AA60095AA8D /* main.xib */; };
 		279510761E301AA60095AA8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 279510741E301AA60095AA8D /* InfoPlist.strings */; };
-		2795107C1E301B560095AA8D /* Make Names Web-Friendly.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 2795106B1E301AA60095AA8D /* Make Names Web-Friendly.action */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2795107C1E301B560095AA8D /* Make Names Web-Friendly.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 2795106B1E301AA60095AA8D /* Make Names Web-Friendly.action */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2795109A1E301C810095AA8D /* Save_for_Web.m in Sources */ = {isa = PBXBuildFile; fileRef = 279510991E301C810095AA8D /* Save_for_Web.m */; };
 		2795109D1E301C810095AA8D /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2795109B1E301C810095AA8D /* main.xib */; };
 		279510A11E301C810095AA8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2795109F1E301C810095AA8D /* InfoPlist.strings */; };
-		279510A71E3033460095AA8D /* Save for Web.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 279510961E301C810095AA8D /* Save for Web.action */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		279510A71E3033460095AA8D /* Save for Web.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 279510961E301C810095AA8D /* Save for Web.action */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -420,12 +420,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Junecloud LLC";
 				TargetAttributes = {
 					2795100D1E30137B0095AA8D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PB4R74AA4J;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -794,7 +795,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -802,7 +805,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -832,6 +839,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -845,7 +853,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -853,7 +863,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -875,6 +889,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -891,7 +906,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Junecloud-Automator-Actions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -907,7 +922,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Junecloud-Automator-Actions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

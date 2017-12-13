@@ -19,8 +19,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBAction func showInstructions(_ sender: Any?) {
 		if (self.instructionsWindowController == nil) {
-			let storyboard = NSStoryboard.init(name: "Main", bundle: nil)
-			let controller = storyboard.instantiateController(withIdentifier: "instructionsWindow") as? NSWindowController
+			let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
+			let controller = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "instructionsWindow")) as? NSWindowController
 			controller?.window?.center()
 			self.instructionsWindowController = controller
 		}
@@ -28,14 +28,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	}
 
 	@IBAction func openAutomator(_ sender: Any?) {
-		let workspace = NSWorkspace.shared()
-		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: .default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+		let workspace = NSWorkspace.shared
+		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
 	}
 
 	@IBAction func showHelp(_ sender: Any?) {
-		let workspace = NSWorkspace.shared()
+		let workspace = NSWorkspace.shared
 		let urlString = "https://junecloud.com/support/junecloud-automator-actions/"
-		guard let url = URL.init(string: urlString) else { return }
+		guard let url = URL(string: urlString) else { return }
 		workspace.open(url)
 	}
 
