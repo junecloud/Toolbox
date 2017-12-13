@@ -12,6 +12,7 @@
 		2722EDC21E3081B00073E1D7 /* Hide Extensions.workflow in Resources */ = {isa = PBXBuildFile; fileRef = 2722EDBD1E3081B00073E1D7 /* Hide Extensions.workflow */; };
 		2722EDC31E3081B00073E1D7 /* Make Names Web-Friendly.workflow in Resources */ = {isa = PBXBuildFile; fileRef = 2722EDBE1E3081B00073E1D7 /* Make Names Web-Friendly.workflow */; };
 		2722EDC41E3081B00073E1D7 /* Save for Web.workflow in Resources */ = {isa = PBXBuildFile; fileRef = 2722EDBF1E3081B00073E1D7 /* Save for Web.workflow */; };
+		2786EC8A1FE1C9BD002D4678 /* URL+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */; };
 		279510121E30137B0095AA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279510111E30137B0095AA8D /* AppDelegate.swift */; };
 		279510141E30137B0095AA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279510131E30137B0095AA8D /* ViewController.swift */; };
 		279510161E30137B0095AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279510151E30137B0095AA8D /* Assets.xcassets */; };
@@ -100,6 +101,7 @@
 		2722EDBD1E3081B00073E1D7 /* Hide Extensions.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Hide Extensions.workflow"; sourceTree = "<group>"; };
 		2722EDBE1E3081B00073E1D7 /* Make Names Web-Friendly.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Make Names Web-Friendly.workflow"; sourceTree = "<group>"; };
 		2722EDBF1E3081B00073E1D7 /* Save for Web.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Save for Web.workflow"; sourceTree = "<group>"; };
+		2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Utilities.swift"; sourceTree = "<group>"; };
 		2795100E1E30137B0095AA8D /* Junecloud Automator Actions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Junecloud Automator Actions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279510111E30137B0095AA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279510131E30137B0095AA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				279510A81E3033920095AA8D /* Junecloud Automator Actions.entitlements */,
 				279510111E30137B0095AA8D /* AppDelegate.swift */,
 				279510131E30137B0095AA8D /* ViewController.swift */,
+				2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */,
 				279510151E30137B0095AA8D /* Assets.xcassets */,
 				279510171E30137B0095AA8D /* Main.storyboard */,
 				2795101A1E30137B0095AA8D /* Info.plist */,
@@ -620,6 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				279510141E30137B0095AA8D /* ViewController.swift in Sources */,
+				2786EC8A1FE1C9BD002D4678 /* URL+Utilities.swift in Sources */,
 				279510121E30137B0095AA8D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
