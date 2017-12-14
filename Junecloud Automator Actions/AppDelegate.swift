@@ -43,8 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	private func checkForOldVersions() {
 
 		guard let homeURL = URL.actualHomeFolderURL else { return }
-		let libraryURL = homeURL.appendingPathComponent("Library")
-		let automatorURL = libraryURL.appendingPathComponent("Automator")
+		let automatorURL = homeURL.appendingPathComponents("Library","Automator")
 		let actionNames = [
 			"Create Clean Archive.action",
 			"Create Symbolic Link.action",

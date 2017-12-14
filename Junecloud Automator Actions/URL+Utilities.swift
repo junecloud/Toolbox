@@ -16,4 +16,12 @@ extension URL {
 		return URL(fileURLWithFileSystemRepresentation: dir, isDirectory: true, relativeTo: nil)
 	}
 
+	public func appendingPathComponents(_ components: String...) -> URL {
+		var url = self
+		for component in components {
+			url.appendPathComponent(component)
+		}
+		return url
+	}
+
 }

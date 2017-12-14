@@ -37,6 +37,7 @@
 		2795109D1E301C810095AA8D /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2795109B1E301C810095AA8D /* main.xib */; };
 		279510A11E301C810095AA8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2795109F1E301C810095AA8D /* InfoPlist.strings */; };
 		279510A71E3033460095AA8D /* Save for Web.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 279510961E301C810095AA8D /* Save for Web.action */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27E587F81FE1F056009771EE /* Data+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E587F71FE1F056009771EE /* Data+SHA1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,8 @@
 		2795109E1E301C810095AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279510A01E301C810095AA8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		279510A81E3033920095AA8D /* Junecloud Automator Actions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Junecloud Automator Actions.entitlements"; sourceTree = "<group>"; };
+		27E587F61FE1EFBB009771EE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		27E587F71FE1F056009771EE /* Data+SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+SHA1.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,13 +231,15 @@
 		279510101E30137B0095AA8D /* Junecloud Automator Actions */ = {
 			isa = PBXGroup;
 			children = (
-				279510A81E3033920095AA8D /* Junecloud Automator Actions.entitlements */,
 				279510111E30137B0095AA8D /* AppDelegate.swift */,
 				279510131E30137B0095AA8D /* ViewController.swift */,
+				27E587F71FE1F056009771EE /* Data+SHA1.swift */,
 				2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */,
 				279510151E30137B0095AA8D /* Assets.xcassets */,
 				279510171E30137B0095AA8D /* Main.storyboard */,
 				2795101A1E30137B0095AA8D /* Info.plist */,
+				279510A81E3033920095AA8D /* Junecloud Automator Actions.entitlements */,
+				27E587F61FE1EFBB009771EE /* Bridging-Header.h */,
 				2722EDBA1E3081B00073E1D7 /* ​Services */,
 			);
 			path = "Junecloud Automator Actions";
@@ -625,6 +630,7 @@
 				279510141E30137B0095AA8D /* ViewController.swift in Sources */,
 				2786EC8A1FE1C9BD002D4678 /* URL+Utilities.swift in Sources */,
 				279510121E30137B0095AA8D /* AppDelegate.swift in Sources */,
+				27E587F81FE1F056009771EE /* Data+SHA1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,6 +916,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Junecloud-Automator-Actions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Junecloud Automator Actions/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -926,6 +933,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Junecloud-Automator-Actions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Junecloud Automator Actions/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
