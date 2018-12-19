@@ -33,7 +33,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		if (self.instructionsWindowController == nil) {
 			let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
 			let controller = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "instructionsWindow")) as? NSWindowController
-			controller?.window?.center()
 			self.instructionsWindowController = controller
 		}
 		self.instructionsWindowController?.showWindow(sender)
