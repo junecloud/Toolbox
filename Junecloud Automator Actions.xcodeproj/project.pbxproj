@@ -437,6 +437,9 @@
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
 							com.apple.Sandbox = {
 								enabled = 1;
 							};
@@ -916,6 +919,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = PB4R74AA4J;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Junecloud Automator Actions/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Junecloud-Automator-Actions";
@@ -933,6 +937,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = PB4R74AA4J;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Junecloud Automator Actions/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Junecloud-Automator-Actions";

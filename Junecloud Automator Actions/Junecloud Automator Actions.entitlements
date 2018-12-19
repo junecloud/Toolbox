@@ -4,10 +4,10 @@
 <dict>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>
-    <key>com.apple.security.temporary-exception.files.home-relative-path.read-write</key>
-    <array>
-        <string>/Library/Automator/</string>
-        <string>/Library/Services/</string>
-    </array>
+	<key>com.apple.security.temporary-exception.files.home-relative-path.read-write</key>
+	<array>
+		<string>/Library/Automator/</string>
+		<string>/Library/Services/</string>
+	</array>
 </dict>
 </plist>
