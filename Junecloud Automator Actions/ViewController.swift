@@ -10,11 +10,7 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-	@IBOutlet public var saveForWebStack: NSStackView?
-	@IBOutlet public var makeNamesStack: NSStackView?
-	@IBOutlet public var cleanArchiveStack: NSStackView?
-	@IBOutlet public var symbolicLinkStack: NSStackView?
-	@IBOutlet public var hideExtensionsStack: NSStackView?
+	@IBOutlet public var gridView: NSGridView?
 
 	private var servicesURL: URL? {
 		guard let homeURL = URL.actualHomeFolderURL else { return nil }
@@ -40,16 +36,16 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction func installService(_ sender: NSButton) {
-		let tag = sender.tag
-		if let name = serviceNameForTag(tag) {
+		let index = sender.tag
+		if let name = serviceNameForIndex(index) {
 			installService(named: name)
 		} else {
-			NSLog("Unrecognized tag \(tag)")
+			NSLog("Unrecognized index \(index)")
 		}
 	}
 
-	private func serviceNameForTag(_ tag: Int) -> String? {
-		switch (tag) {
+	private func serviceNameForIndex(_ index: Int) -> String? {
+		switch index {
 			case 0: return "Save for Web"
 			case 1: return "Make Names Web-Friendly"
 			case 2: return "Create Clean Archive"
@@ -70,44 +66,55 @@ class ViewController: NSViewController {
 
 	private func updateServices() {
 
-		let stacks = [
-			saveForWebStack,
-			makeNamesStack,
-			cleanArchiveStack,
-			symbolicLinkStack,
-			hideExtensionsStack
-		]
+		guard let gridView = gridView else { return }
 
 		let fileManager = FileManager.default
 		let controlSize = NSControl.ControlSize.small
 		let fontSize = NSFont.systemFontSize(for: controlSize)
 		let font = NSFont.systemFont(ofSize: fontSize)
 
-		for (tag, stack) in stacks.enumerated() {
-			guard let stack = stack else { return }
-			guard let name = serviceNameForTag(tag) else { continue }
-			guard let url = installURLForService(named: name) else { continue }
-			if let subview = stack.views.last {
-				stack.removeView(subview)
+		var statusViews: [NSView] = []
+
+		for index in 0..<gridView.numberOfRows {
+
+			// For some reason removing a column doesn't remove its subviews
+			let cell = gridView.cell(atColumnIndex: 1, rowIndex: index)
+			cell.contentView?.removeFromSuperview()
+
+			guard let name = serviceNameForIndex(index),
+			 	let url = installURLForService(named: name) else {
+				statusViews.append(NSGridCell.emptyContentView)
+				continue
 			}
-			let installed = fileManager.fileExists(atPath: url.path)
-			let verified = verifyInstalledService(named: name, url: url)
-			if verified && installed {
+
+			let isInstalled = fileManager.fileExists(atPath: url.path)
+			let isVerified = verifyInstalledService(named: name, url: url)
+			if isVerified && isInstalled {
+
 				let title = NSLocalizedString("✓ Installed", comment: "")
 				let label = NSTextField(labelWithString: title)
 				label.font = font
 				label.textColor = NSColor.disabledControlTextColor
-				stack.addView(label, in: .trailing)
+				statusViews.append(label)
+
 			} else {
-				let title = (installed) ? NSLocalizedString("Update", comment: "") :  NSLocalizedString("Install", comment: "")
+
+				let title = isInstalled ? NSLocalizedString("Update", comment: "") :  NSLocalizedString("Install", comment: "")
 				let button = NSButton(title: title, target: self, action: #selector(installService(_:)))
 				button.font = font
 				button.controlSize = controlSize
-				button.tag = tag
-				button.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-				stack.addView(button, in: .trailing)
+				button.tag = index
+				button.setContentHuggingPriority(.defaultHigh - 5, for: .horizontal)
+				button.setContentCompressionResistancePriority(.defaultHigh + 5, for: .vertical)
+				statusViews.append(button)
+
 			}
+
 		}
+
+		gridView.removeColumn(at: 1)
+		gridView.insertColumn(at: 1, with: statusViews)
+
 	}
 
 	private func installService(named name: String) {

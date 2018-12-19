@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
-        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -352,7 +350,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController storyboardIdentifier="instructionsWindow" id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Instructions" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
+                    <window key="window" title="Instructions" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -374,198 +372,19 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Junecloud_Automator_Actions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="340" height="466"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="466"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="horizontal" alignment="firstBaseline" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yxP-ff-8d8">
-                                <rect key="frame" x="20" y="120" width="300" height="18"/>
-                                <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jc8-Wt-Op0">
-                                        <rect key="frame" x="-2" y="1" width="248" height="17"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Save for Web" id="rPW-ff-dGh">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <button horizontalHuggingPriority="255" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-SD-aFP">
-                                        <rect key="frame" x="247" y="-6" width="58" height="28"/>
-                                        <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FDg-Hr-Zhi">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="smallSystem"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="installService:" target="XfG-lQ-9wD" id="z53-ga-epM"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="rXi-fk-wxh"/>
-                                </constraints>
-                                <visibilityPriorities>
-                                    <integer value="1000"/>
-                                    <integer value="1000"/>
-                                </visibilityPriorities>
-                                <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                    <real value="3.4028234663852886e+38"/>
-                                </customSpacing>
-                            </stackView>
-                            <stackView distribution="fill" orientation="horizontal" alignment="firstBaseline" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pF5-QV-1qH">
-                                <rect key="frame" x="20" y="95" width="300" height="18"/>
-                                <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-AG-ZD0">
-                                        <rect key="frame" x="-2" y="1" width="248" height="17"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Make Names Web-Friendly" id="Y3w-E8-7bK">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <button horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="gjT-jL-6lm">
-                                        <rect key="frame" x="247" y="-6" width="58" height="28"/>
-                                        <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SSn-9v-KTY">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="smallSystem"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="installService:" target="XfG-lQ-9wD" id="b9i-aL-xaq"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="7qu-tg-rBV"/>
-                                </constraints>
-                                <visibilityPriorities>
-                                    <integer value="1000"/>
-                                    <integer value="1000"/>
-                                </visibilityPriorities>
-                                <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                    <real value="3.4028234663852886e+38"/>
-                                </customSpacing>
-                            </stackView>
-                            <stackView distribution="fill" orientation="horizontal" alignment="firstBaseline" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mx-PS-iIJ">
-                                <rect key="frame" x="20" y="70" width="300" height="18"/>
-                                <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Nx-vC-Mdj">
-                                        <rect key="frame" x="-2" y="1" width="248" height="17"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Clean Archive" id="atd-Ye-8qD">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <button horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="fwR-f9-fKb">
-                                        <rect key="frame" x="247" y="-6" width="58" height="28"/>
-                                        <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q2A-J7-CeT">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="smallSystem"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="installService:" target="XfG-lQ-9wD" id="pCP-cg-aDe"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="rE3-6Z-tEL"/>
-                                </constraints>
-                                <visibilityPriorities>
-                                    <integer value="1000"/>
-                                    <integer value="1000"/>
-                                </visibilityPriorities>
-                                <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                    <real value="3.4028234663852886e+38"/>
-                                </customSpacing>
-                            </stackView>
-                            <stackView distribution="fill" orientation="horizontal" alignment="firstBaseline" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5GU-KA-xGA">
-                                <rect key="frame" x="20" y="45" width="300" height="18"/>
-                                <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-QI-3Kp">
-                                        <rect key="frame" x="-2" y="1" width="248" height="17"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Symbolic Link" id="FYl-Rv-d0D">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <button horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="KQ4-DJ-Iny">
-                                        <rect key="frame" x="247" y="-6" width="58" height="28"/>
-                                        <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u9s-F4-iWo">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="smallSystem"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="installService:" target="XfG-lQ-9wD" id="Fao-VC-Wse"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="24g-oW-WCr"/>
-                                </constraints>
-                                <visibilityPriorities>
-                                    <integer value="1000"/>
-                                    <integer value="1000"/>
-                                </visibilityPriorities>
-                                <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                    <real value="3.4028234663852886e+38"/>
-                                </customSpacing>
-                            </stackView>
-                            <stackView distribution="fill" orientation="horizontal" alignment="firstBaseline" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fl-Qa-1xh">
-                                <rect key="frame" x="20" y="20" width="300" height="18"/>
-                                <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-Xt-hhg">
-                                        <rect key="frame" x="-2" y="1" width="248" height="17"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hide Extensions" id="kkc-aC-M3r">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <button horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="obk-Y6-eg4">
-                                        <rect key="frame" x="247" y="-6" width="58" height="28"/>
-                                        <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wox-zf-efq">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="smallSystem"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="installService:" target="XfG-lQ-9wD" id="CQr-IN-JoN"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="2B9-ip-ZGh"/>
-                                </constraints>
-                                <visibilityPriorities>
-                                    <integer value="1000"/>
-                                    <integer value="1000"/>
-                                </visibilityPriorities>
-                                <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                    <real value="3.4028234663852886e+38"/>
-                                </customSpacing>
-                            </stackView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="paW-cm-aaN">
-                                <rect key="frame" x="18" y="230" width="70" height="19"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Services" id="Mwy-qD-zSR">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-Kb-ylA">
+                                <rect key="frame" x="18" y="427" width="122" height="19"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Getting Started" id="NSg-4G-W9M">
                                     <font key="font" metaFont="systemSemibold" size="16"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-qN-vl9">
-                                <rect key="frame" x="18" y="158" width="304" height="64"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="OsQ-NX-uun">
-                                    <font key="font" metaFont="cellTitle"/>
-                                    <string key="title">You can install these pre-made services to use the actions in Finder. Once they're installed, you can control-click a file in Finder, open the Services menu, and then select a service to use it.</string>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sts-ic-RYr">
-                                <rect key="frame" x="18" y="323" width="304" height="96"/>
+                                <rect key="frame" x="18" y="323" width="310" height="96"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="aze-Pv-SSR">
                                     <font key="font" metaFont="cellTitle"/>
                                     <string key="title">You can use Junecloud Automator Actions right now by opening Automator and adding them to a workflow. If you’re new to Automator, you may want to focus on the basics first. Open Automator and choose “Automator Help” from the Help menu to learn how to get started.</string>
@@ -584,16 +403,151 @@
                                 </connections>
                             </button>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="hc3-eV-je8">
-                                <rect key="frame" x="20" y="267" width="300" height="5"/>
+                                <rect key="frame" x="20" y="267" width="306" height="5"/>
                             </box>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-Kb-ylA">
-                                <rect key="frame" x="18" y="427" width="122" height="19"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Getting Started" id="NSg-4G-W9M">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="paW-cm-aaN">
+                                <rect key="frame" x="18" y="230" width="70" height="19"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Services" id="Mwy-qD-zSR">
                                     <font key="font" metaFont="systemSemibold" size="16"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-qN-vl9">
+                                <rect key="frame" x="18" y="158" width="310" height="64"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="OsQ-NX-uun">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <string key="title">You can install these pre-made services to use the actions in Finder. Once they're installed, you can control-click a file in Finder, open the Services menu, and then select a service to use it.</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <gridView verticalHuggingPriority="750" xPlacement="fill" yPlacement="center" rowAlignment="none" rowSpacing="7" columnSpacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="LRa-2Q-vFO">
+                                <rect key="frame" x="20" y="20" width="306" height="118"/>
+                                <rows>
+                                    <gridRow id="a7Q-SS-2eh"/>
+                                    <gridRow id="35l-DT-Aiz"/>
+                                    <gridRow id="4S6-Ky-0Rb"/>
+                                    <gridRow id="uFO-jT-wvz"/>
+                                    <gridRow id="GcR-XC-LJT"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="Dir-S8-QcA"/>
+                                    <gridColumn xPlacement="trailing" id="swR-oS-Vkp"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="a7Q-SS-2eh" column="Dir-S8-QcA" id="zQA-EH-Jo4">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jc8-Wt-Op0">
+                                            <rect key="frame" x="-2" y="101" width="168" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Save for Web" id="rPW-ff-dGh">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="a7Q-SS-2eh" column="swR-oS-Vkp" id="GDc-G3-krW">
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-SD-aFP">
+                                            <rect key="frame" x="253" y="94" width="58" height="27"/>
+                                            <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FDg-Hr-Zhi">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="smallSystem"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="installService:" target="XfG-lQ-9wD" id="z53-ga-epM"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="35l-DT-Aiz" column="Dir-S8-QcA" id="BZY-Pk-0yG">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-AG-ZD0">
+                                            <rect key="frame" x="-2" y="76" width="168" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Make Names Web-Friendly" id="Y3w-E8-7bK">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="35l-DT-Aiz" column="swR-oS-Vkp" id="NfR-3K-Rxr">
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="gjT-jL-6lm">
+                                            <rect key="frame" x="253" y="69" width="58" height="27"/>
+                                            <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SSn-9v-KTY">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="smallSystem"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="installService:" target="XfG-lQ-9wD" id="b9i-aL-xaq"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4S6-Ky-0Rb" column="Dir-S8-QcA" id="e8w-gE-pPJ">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Nx-vC-Mdj">
+                                            <rect key="frame" x="-2" y="51" width="168" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Clean Archive" id="atd-Ye-8qD">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="4S6-Ky-0Rb" column="swR-oS-Vkp" id="rCM-Tn-Idx">
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="fwR-f9-fKb">
+                                            <rect key="frame" x="253" y="44" width="58" height="27"/>
+                                            <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q2A-J7-CeT">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="smallSystem"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="installService:" target="XfG-lQ-9wD" id="pCP-cg-aDe"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="uFO-jT-wvz" column="Dir-S8-QcA" id="Nal-Gp-hnR">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-QI-3Kp">
+                                            <rect key="frame" x="-2" y="26" width="168" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Symbolic Link" id="FYl-Rv-d0D">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="uFO-jT-wvz" column="swR-oS-Vkp" id="BqK-qX-1zq">
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="KQ4-DJ-Iny">
+                                            <rect key="frame" x="253" y="19" width="58" height="27"/>
+                                            <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u9s-F4-iWo">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="smallSystem"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="installService:" target="XfG-lQ-9wD" id="Fao-VC-Wse"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="GcR-XC-LJT" column="Dir-S8-QcA" id="nyM-1f-Ypt">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-Xt-hhg">
+                                            <rect key="frame" x="-2" y="1" width="168" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hide Extensions" id="kkc-aC-M3r">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="GcR-XC-LJT" column="swR-oS-Vkp" id="s6f-nx-WuT">
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="obk-Y6-eg4">
+                                            <rect key="frame" x="253" y="-6" width="58" height="27"/>
+                                            <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wox-zf-efq">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="smallSystem"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="installService:" target="XfG-lQ-9wD" id="CQr-IN-JoN"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="sts-ic-RYr" firstAttribute="top" secondItem="KpR-Kb-ylA" secondAttribute="bottom" constant="8" id="26r-R3-IvH"/>
@@ -603,46 +557,30 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Eb4-ee-09M" secondAttribute="trailing" constant="20" id="6cX-dD-uP8"/>
                             <constraint firstItem="KpR-Kb-ylA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="85O-1a-c4f"/>
                             <constraint firstAttribute="trailing" secondItem="CDE-qN-vl9" secondAttribute="trailing" constant="20" id="ACo-gm-T88"/>
-                            <constraint firstItem="4mx-PS-iIJ" firstAttribute="top" secondItem="pF5-QV-1qH" secondAttribute="bottom" constant="7" id="AnT-H3-Bpg"/>
                             <constraint firstItem="CDE-qN-vl9" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="B8B-AY-Kx8"/>
                             <constraint firstItem="Eb4-ee-09M" firstAttribute="top" secondItem="sts-ic-RYr" secondAttribute="bottom" constant="12" id="BB5-3I-Jol"/>
-                            <constraint firstAttribute="trailing" secondItem="pF5-QV-1qH" secondAttribute="trailing" constant="20" id="EUB-Hl-RvU"/>
-                            <constraint firstItem="5GU-KA-xGA" firstAttribute="top" secondItem="4mx-PS-iIJ" secondAttribute="bottom" constant="7" id="FJE-T2-Fwr"/>
                             <constraint firstItem="CDE-qN-vl9" firstAttribute="top" secondItem="paW-cm-aaN" secondAttribute="bottom" constant="8" symbolic="YES" id="KqH-Eo-D69"/>
-                            <constraint firstAttribute="trailing" secondItem="yxP-ff-8d8" secondAttribute="trailing" constant="20" id="LT5-6c-2gI"/>
                             <constraint firstItem="hc3-eV-je8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Mb4-9h-hyr"/>
-                            <constraint firstItem="pF5-QV-1qH" firstAttribute="top" secondItem="yxP-ff-8d8" secondAttribute="bottom" constant="7" id="NnI-Vl-Sim"/>
-                            <constraint firstItem="9fl-Qa-1xh" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="OPr-Le-D8V"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="paW-cm-aaN" secondAttribute="trailing" constant="20" id="Pqg-67-EDf"/>
-                            <constraint firstItem="9fl-Qa-1xh" firstAttribute="top" secondItem="5GU-KA-xGA" secondAttribute="bottom" constant="7" id="Qb8-64-rkV"/>
-                            <constraint firstItem="yxP-ff-8d8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Shd-n8-inW"/>
+                            <constraint firstAttribute="trailing" secondItem="LRa-2Q-vFO" secondAttribute="trailing" constant="20" id="QCq-dq-OZh"/>
                             <constraint firstItem="hc3-eV-je8" firstAttribute="top" secondItem="Eb4-ee-09M" secondAttribute="bottom" constant="20" id="VVO-6q-xLT"/>
-                            <constraint firstAttribute="trailing" secondItem="4mx-PS-iIJ" secondAttribute="trailing" constant="20" id="YVL-Zr-eLx"/>
-                            <constraint firstItem="5GU-KA-xGA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="c30-sb-QMI"/>
                             <constraint firstItem="KpR-Kb-ylA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="hHS-To-CQ7"/>
                             <constraint firstAttribute="trailing" secondItem="sts-ic-RYr" secondAttribute="trailing" constant="20" id="i61-b0-ru0"/>
-                            <constraint firstItem="yxP-ff-8d8" firstAttribute="top" secondItem="CDE-qN-vl9" secondAttribute="bottom" constant="20" id="ins-0C-qWH"/>
-                            <constraint firstAttribute="trailing" secondItem="9fl-Qa-1xh" secondAttribute="trailing" constant="20" id="kVH-sf-73H"/>
                             <constraint firstAttribute="trailing" secondItem="hc3-eV-je8" secondAttribute="trailing" constant="20" id="mWY-OI-DMJ"/>
-                            <constraint firstItem="pF5-QV-1qH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="rYx-34-EC0"/>
+                            <constraint firstAttribute="bottom" secondItem="LRa-2Q-vFO" secondAttribute="bottom" constant="20" id="oeL-Yf-9MT"/>
+                            <constraint firstItem="LRa-2Q-vFO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="sq7-7W-isU"/>
                             <constraint firstItem="Eb4-ee-09M" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="tBw-Vd-jUh"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9fl-Qa-1xh" secondAttribute="bottom" constant="20" id="tgU-QQ-BG3"/>
+                            <constraint firstItem="LRa-2Q-vFO" firstAttribute="top" secondItem="CDE-qN-vl9" secondAttribute="bottom" constant="20" id="ttO-l9-uPf"/>
                             <constraint firstItem="sts-ic-RYr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="uCE-37-SZi"/>
-                            <constraint firstAttribute="trailing" secondItem="5GU-KA-xGA" secondAttribute="trailing" constant="20" id="wgE-cA-uqq"/>
-                            <constraint firstItem="4mx-PS-iIJ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="zqF-sa-Wog"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cleanArchiveStack" destination="4mx-PS-iIJ" id="QPm-ol-oEj"/>
-                        <outlet property="hideExtensionsStack" destination="9fl-Qa-1xh" id="F12-OE-ThK"/>
-                        <outlet property="makeNamesStack" destination="pF5-QV-1qH" id="MVf-cu-bLL"/>
-                        <outlet property="saveForWebStack" destination="yxP-ff-8d8" id="yr1-9r-RA0"/>
-                        <outlet property="symbolicLinkStack" destination="5GU-KA-xGA" id="8eo-bh-ERD"/>
+                        <outlet property="gridView" destination="LRa-2Q-vFO" id="bLb-ZN-tK5"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="739.5"/>
+            <point key="canvasLocation" x="75" y="739"/>
         </scene>
     </scenes>
 </document>
