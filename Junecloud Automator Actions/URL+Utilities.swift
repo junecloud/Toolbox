@@ -10,10 +10,15 @@ import Foundation
 
 extension URL {
 
-	static var actualHomeFolderURL: URL? {
+	static var actualHomeFolder: URL? {
 		guard let pw = getpwuid(getuid()) else { return nil }
 		guard let dir = pw.pointee.pw_dir else { return nil }
 		return URL(fileURLWithFileSystemRepresentation: dir, isDirectory: true, relativeTo: nil)
+	}
+
+	static var servicesFolder: URL? {
+		guard let homeURL = URL.actualHomeFolder else { return nil }
+		return homeURL.appendingPathComponents("Library","Services")
 	}
 
 	public func appendingPathComponents(_ components: String...) -> URL {

@@ -12,11 +12,6 @@ class ViewController: NSViewController {
 
 	@IBOutlet public var gridView: NSGridView?
 
-	private var servicesURL: URL? {
-		guard let homeURL = URL.actualHomeFolderURL else { return nil }
-		return homeURL.appendingPathComponents("Library","Services")
-	}
-
 	override func viewWillAppear() {
 		updateServices()
 		NotificationCenter.default.addObserver(self, selector: #selector(applicationWillBecomeActive(_:)), name: NSApplication.willBecomeActiveNotification, object: nil)
@@ -31,8 +26,11 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction func openAutomator(_ sender: NSButton) {
-		let workspace = NSWorkspace.shared
-		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+		AppDelegate.openAutomator()
+	}
+
+	@IBAction func showServices(_ sender: Any?) {
+		AppDelegate.showServices()
 	}
 
 	@IBAction func installService(_ sender: NSButton) {
@@ -60,7 +58,7 @@ class ViewController: NSViewController {
 	}
 
 	private func installURLForService(named name: String) -> URL? {
-		guard let servicesURL = servicesURL else { return nil }
+		guard let servicesURL = URL.servicesFolder else { return nil }
 		return servicesURL.appendingPathComponent(name).appendingPathExtension("workflow")
 	}
 

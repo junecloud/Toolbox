@@ -64,10 +64,17 @@
                                                 <action selector="showInstructions:" target="Voe-Tx-rLC" id="nFO-be-YLj"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="91l-CP-BRm"/>
                                         <menuItem title="Open Automator" id="hOX-RJ-5OO">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="openAutomator:" target="Voe-Tx-rLC" id="tG6-iE-xa6"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show Services" id="VMt-cj-VSp">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="showServices:" target="Voe-Tx-rLC" id="0GS-Tu-QO1"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
@@ -372,11 +379,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Junecloud_Automator_Actions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="346" height="476"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="517"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-Kb-ylA">
-                                <rect key="frame" x="18" y="427" width="122" height="19"/>
+                                <rect key="frame" x="18" y="468" width="122" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Getting Started" id="NSg-4G-W9M">
                                     <font key="font" metaFont="systemSemibold" size="16"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -384,7 +391,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sts-ic-RYr">
-                                <rect key="frame" x="18" y="323" width="310" height="96"/>
+                                <rect key="frame" x="18" y="364" width="310" height="96"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="aze-Pv-SSR">
                                     <font key="font" metaFont="cellTitle"/>
                                     <string key="title">You can use Junecloud Automator Actions right now by opening Automator and adding them to a workflow. If you’re new to Automator, you may want to focus on the basics first. Open Automator and choose “Automator Help” from the Help menu to learn how to get started.</string>
@@ -393,7 +400,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Eb4-ee-09M">
-                                <rect key="frame" x="14" y="283" width="140" height="32"/>
+                                <rect key="frame" x="14" y="324" width="140" height="32"/>
                                 <buttonCell key="cell" type="push" title="Open Automator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M2O-8u-opc">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -403,10 +410,10 @@
                                 </connections>
                             </button>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="hc3-eV-je8">
-                                <rect key="frame" x="20" y="267" width="306" height="5"/>
+                                <rect key="frame" x="20" y="308" width="306" height="5"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="paW-cm-aaN">
-                                <rect key="frame" x="18" y="230" width="138" height="19"/>
+                                <rect key="frame" x="18" y="271" width="138" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Optional Services" id="Mwy-qD-zSR">
                                     <font key="font" metaFont="systemSemibold" size="16"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -414,16 +421,16 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-qN-vl9">
-                                <rect key="frame" x="18" y="158" width="310" height="64"/>
+                                <rect key="frame" x="18" y="183" width="310" height="80"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="OsQ-NX-uun">
                                     <font key="font" metaFont="cellTitle"/>
-                                    <string key="title">You can install these pre-made services to use the actions in Finder. Once they're installed, you can control-click a file in Finder, open the Services menu, and then select a service to use it.</string>
+                                    <string key="title">You can install these pre-made services to use the actions in Finder. Once they're installed, you can control-click a file in Finder, open the Services menu, and then select a service to use it. Use the “Show Services” button to edit or remove a service.</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <gridView verticalHuggingPriority="750" xPlacement="fill" yPlacement="fill" rowAlignment="none" rowSpacing="7" columnSpacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="LRa-2Q-vFO">
-                                <rect key="frame" x="20" y="20" width="306" height="118"/>
+                                <rect key="frame" x="20" y="53" width="306" height="118"/>
                                 <rows>
                                     <gridRow id="a7Q-SS-2eh"/>
                                     <gridRow id="35l-DT-Aiz"/>
@@ -548,8 +555,19 @@
                                     </gridCell>
                                 </gridCells>
                             </gridView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="17s-SA-ncB">
+                                <rect key="frame" x="14" y="13" width="129" height="32"/>
+                                <buttonCell key="cell" type="push" title="Show Services" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tNp-rB-Xt9">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showServices:" target="XfG-lQ-9wD" id="1ns-4L-5wk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="17s-SA-ncB" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="0gA-cP-NKI"/>
                             <constraint firstItem="sts-ic-RYr" firstAttribute="top" secondItem="KpR-Kb-ylA" secondAttribute="bottom" constant="8" id="26r-R3-IvH"/>
                             <constraint firstItem="paW-cm-aaN" firstAttribute="top" secondItem="hc3-eV-je8" secondAttribute="bottom" constant="20" id="4DC-Cb-qXr"/>
                             <constraint firstItem="paW-cm-aaN" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="4TF-sv-BaF"/>
@@ -561,16 +579,18 @@
                             <constraint firstItem="Eb4-ee-09M" firstAttribute="top" secondItem="sts-ic-RYr" secondAttribute="bottom" constant="12" id="BB5-3I-Jol"/>
                             <constraint firstItem="CDE-qN-vl9" firstAttribute="top" secondItem="paW-cm-aaN" secondAttribute="bottom" constant="8" symbolic="YES" id="KqH-Eo-D69"/>
                             <constraint firstItem="hc3-eV-je8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Mb4-9h-hyr"/>
+                            <constraint firstAttribute="bottom" secondItem="17s-SA-ncB" secondAttribute="bottom" constant="20" id="NTz-ks-qqK"/>
+                            <constraint firstItem="17s-SA-ncB" firstAttribute="top" secondItem="LRa-2Q-vFO" secondAttribute="bottom" constant="12" id="OdC-VW-45f"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="paW-cm-aaN" secondAttribute="trailing" constant="20" id="Pqg-67-EDf"/>
                             <constraint firstAttribute="trailing" secondItem="LRa-2Q-vFO" secondAttribute="trailing" constant="20" id="QCq-dq-OZh"/>
                             <constraint firstItem="hc3-eV-je8" firstAttribute="top" secondItem="Eb4-ee-09M" secondAttribute="bottom" constant="20" id="VVO-6q-xLT"/>
                             <constraint firstItem="KpR-Kb-ylA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="30" id="hHS-To-CQ7"/>
                             <constraint firstAttribute="trailing" secondItem="sts-ic-RYr" secondAttribute="trailing" constant="20" id="i61-b0-ru0"/>
                             <constraint firstAttribute="trailing" secondItem="hc3-eV-je8" secondAttribute="trailing" constant="20" id="mWY-OI-DMJ"/>
-                            <constraint firstAttribute="bottom" secondItem="LRa-2Q-vFO" secondAttribute="bottom" constant="20" id="oeL-Yf-9MT"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="17s-SA-ncB" secondAttribute="trailing" constant="20" id="pGR-fE-Us4"/>
                             <constraint firstItem="LRa-2Q-vFO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="sq7-7W-isU"/>
                             <constraint firstItem="Eb4-ee-09M" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="tBw-Vd-jUh"/>
-                            <constraint firstItem="LRa-2Q-vFO" firstAttribute="top" secondItem="CDE-qN-vl9" secondAttribute="bottom" constant="20" id="ttO-l9-uPf"/>
+                            <constraint firstItem="LRa-2Q-vFO" firstAttribute="top" secondItem="CDE-qN-vl9" secondAttribute="bottom" constant="12" id="ttO-l9-uPf"/>
                             <constraint firstItem="sts-ic-RYr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="uCE-37-SZi"/>
                         </constraints>
                     </view>

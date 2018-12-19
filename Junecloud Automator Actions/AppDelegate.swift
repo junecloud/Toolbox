@@ -18,6 +18,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		showInstructions(nil)
 	}
 
+	static func openAutomator() {
+		let workspace = NSWorkspace.shared
+		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+	}
+
+	static func showServices() {
+		let workspace = NSWorkspace.shared
+		guard let url = URL.servicesFolder else { return }
+		workspace.open(url)
+	}
+
 	@IBAction func showInstructions(_ sender: Any?) {
 		if (self.instructionsWindowController == nil) {
 			let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
@@ -29,8 +40,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	}
 
 	@IBAction func openAutomator(_ sender: Any?) {
-		let workspace = NSWorkspace.shared
-		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+		AppDelegate.openAutomator()
+	}
+
+	@IBAction func showServices(_ sender: Any?) {
+		AppDelegate.showServices()
 	}
 
 	@IBAction func showHelp(_ sender: Any?) {
@@ -42,7 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	private func checkForOldVersions() {
 
-		guard let homeURL = URL.actualHomeFolderURL else { return }
+		guard let homeURL = URL.actualHomeFolder else { return }
 		let automatorURL = homeURL.appendingPathComponents("Library","Automator")
 		let actionNames = [
 			"Create Clean Archive.action",
