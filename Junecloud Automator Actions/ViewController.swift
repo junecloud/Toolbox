@@ -59,6 +59,15 @@ class ViewController: NSViewController {
 		}
 	}
 
+	private func sourceURLForService(named name: String) -> URL? {
+		return Bundle.main.url(forResource: name, withExtension: "workflow")
+	}
+
+	private func installURLForService(named name: String) -> URL? {
+		guard let servicesURL = servicesURL else { return nil }
+		return servicesURL.appendingPathComponent(name).appendingPathExtension("workflow")
+	}
+
 	private func updateServices() {
 
 		let stacks = [
@@ -69,7 +78,6 @@ class ViewController: NSViewController {
 			hideExtensionsStack
 		]
 
-		guard let servicesURL = self.servicesURL else { return }
 		let fileManager = FileManager.default
 		let controlSize = NSControl.ControlSize.small
 		let fontSize = NSFont.systemFontSize(for: controlSize)
@@ -78,7 +86,7 @@ class ViewController: NSViewController {
 		for (tag, stack) in stacks.enumerated() {
 			guard let stack = stack else { return }
 			guard let name = serviceNameForTag(tag) else { continue }
-			let url = servicesURL.appendingPathComponent(name+".workflow")
+			guard let url = installURLForService(named: name) else { continue }
 			if let subview = stack.views.last {
 				stack.removeView(subview)
 			}
@@ -102,26 +110,48 @@ class ViewController: NSViewController {
 		}
 	}
 
-	private func urlForService(named name: String) -> URL? {
-		return Bundle.main.url(forResource: name, withExtension: "workflow")
-	}
-
 	private func installService(named name: String) {
+
+		guard let sourceURL = sourceURLForService(named: name) else { return }
+		guard let installURL = installURLForService(named: name) else { return }
+		let fileManager = FileManager.default
+
+		if fileManager.fileExists(atPath: installURL.path) {
+			let alert = NSAlert()
+			alert.alertStyle = .critical
+			alert.messageText = String(format: NSLocalizedString("Replace the service named “%@”?", comment: ""), name)
+			alert.informativeText = NSLocalizedString("If you modified the service then your changes will be lost. The old service will be moved to the Trash.", comment: "")
+			alert.addButton(withTitle: NSLocalizedString("Replace", comment: ""))
+			alert.addButton(withTitle: NSLocalizedString("Cancel", comment: ""))
+			let response = alert.runModal()
+			if response == .alertFirstButtonReturn {
+				do {
+					try fileManager.trashItem(at: installURL, resultingItemURL: nil)
+				} catch {
+					NSLog("Error trashing existing service: \(error)")
+					let alert = NSAlert(error: error)
+					alert.runModal()
+					return
+				}
+			} else {
+				NSLog("Installation was cancelled by the user")
+				return
+			}
+		}
+
 		do {
-			guard let url = urlForService(named: name) else { return }
-			let fileManager = FileManager.default
-			let tempFolderURL = try? fileManager.url(for: .itemReplacementDirectory, in: .userDomainMask, appropriateFor: servicesURL, create: true)
-			guard let tempURL = tempFolderURL?.appendingPathComponent(url.lastPathComponent) else { return }
-			try fileManager.copyItem(at: url, to: tempURL)
-			NSWorkspace.shared.openFile(tempURL.path)
+			try fileManager.copyItem(at: sourceURL, to: installURL)
 		} catch {
 			NSLog("Error installing service: \(error)")
-			return
+			let alert = NSAlert(error: error)
+			alert.runModal()
 		}
+		updateServices()
+
 	}
 
 	private func verifyInstalledService(named name: String, url: URL) -> Bool {
-		guard let bundledURL = urlForService(named: name) else { return false }
+		guard let bundledURL = sourceURLForService(named: name) else { return false }
 		guard let bundledSHA1 = hashForService(at: bundledURL) else { return false }
 		let installedSHA1 = hashForService(at: url)
 		return (bundledSHA1 == installedSHA1)
