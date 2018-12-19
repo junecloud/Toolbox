@@ -350,8 +350,8 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController storyboardIdentifier="instructionsWindow" id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Instructions" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" title="Instructions" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="maxSize" type="size" width="640" height="640"/>
@@ -372,7 +372,7 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Junecloud_Automator_Actions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="346" height="466"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="476"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-Kb-ylA">
@@ -482,7 +482,7 @@
                                     </gridCell>
                                     <gridCell row="4S6-Ky-0Rb" column="Dir-S8-QcA" id="e8w-gE-pPJ">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Nx-vC-Mdj">
-                                            <rect key="frame" x="-2" y="51" width="168" height="17"/>
+                                            <rect key="frame" x="-2" y="50" width="168" height="18"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Clean Archive" id="atd-Ye-8qD">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -564,7 +564,7 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="paW-cm-aaN" secondAttribute="trailing" constant="20" id="Pqg-67-EDf"/>
                             <constraint firstAttribute="trailing" secondItem="LRa-2Q-vFO" secondAttribute="trailing" constant="20" id="QCq-dq-OZh"/>
                             <constraint firstItem="hc3-eV-je8" firstAttribute="top" secondItem="Eb4-ee-09M" secondAttribute="bottom" constant="20" id="VVO-6q-xLT"/>
-                            <constraint firstItem="KpR-Kb-ylA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="hHS-To-CQ7"/>
+                            <constraint firstItem="KpR-Kb-ylA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="30" id="hHS-To-CQ7"/>
                             <constraint firstAttribute="trailing" secondItem="sts-ic-RYr" secondAttribute="trailing" constant="20" id="i61-b0-ru0"/>
                             <constraint firstAttribute="trailing" secondItem="hc3-eV-je8" secondAttribute="trailing" constant="20" id="mWY-OI-DMJ"/>
                             <constraint firstAttribute="bottom" secondItem="LRa-2Q-vFO" secondAttribute="bottom" constant="20" id="oeL-Yf-9MT"/>
