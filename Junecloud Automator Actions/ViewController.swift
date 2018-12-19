@@ -91,7 +91,7 @@ class ViewController: NSViewController {
 			let isVerified = verifyInstalledService(named: name, url: url)
 			if isVerified && isInstalled {
 
-				let title = NSLocalizedString("✓ Installed", comment: "")
+				let title = NSLocalizedString("✓ Installed ", comment: "")
 				let label = NSTextField(labelWithString: title)
 				label.font = font
 				label.textColor = NSColor.disabledControlTextColor

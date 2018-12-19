@@ -422,7 +422,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <gridView verticalHuggingPriority="750" xPlacement="fill" yPlacement="center" rowAlignment="none" rowSpacing="7" columnSpacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="LRa-2Q-vFO">
+                            <gridView verticalHuggingPriority="750" xPlacement="fill" yPlacement="fill" rowAlignment="none" rowSpacing="7" columnSpacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="LRa-2Q-vFO">
                                 <rect key="frame" x="20" y="20" width="306" height="118"/>
                                 <rows>
                                     <gridRow id="a7Q-SS-2eh"/>
@@ -437,8 +437,8 @@
                                 </columns>
                                 <gridCells>
                                     <gridCell row="a7Q-SS-2eh" column="Dir-S8-QcA" id="zQA-EH-Jo4">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jc8-Wt-Op0">
-                                            <rect key="frame" x="-2" y="101" width="168" height="17"/>
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="Jc8-Wt-Op0">
+                                            <rect key="frame" x="-2" y="100" width="168" height="18"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Save for Web" id="rPW-ff-dGh">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -459,8 +459,8 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="35l-DT-Aiz" column="Dir-S8-QcA" id="BZY-Pk-0yG">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-AG-ZD0">
-                                            <rect key="frame" x="-2" y="76" width="168" height="17"/>
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-AG-ZD0">
+                                            <rect key="frame" x="-2" y="75" width="168" height="18"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Make Names Web-Friendly" id="Y3w-E8-7bK">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -481,7 +481,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="4S6-Ky-0Rb" column="Dir-S8-QcA" id="e8w-gE-pPJ">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Nx-vC-Mdj">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="5Nx-vC-Mdj">
                                             <rect key="frame" x="-2" y="50" width="168" height="18"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Clean Archive" id="atd-Ye-8qD">
                                                 <font key="font" metaFont="system"/>
@@ -503,8 +503,8 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="uFO-jT-wvz" column="Dir-S8-QcA" id="Nal-Gp-hnR">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-QI-3Kp">
-                                            <rect key="frame" x="-2" y="26" width="168" height="17"/>
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-QI-3Kp">
+                                            <rect key="frame" x="-2" y="25" width="168" height="18"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Symbolic Link" id="FYl-Rv-d0D">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -525,8 +525,8 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="GcR-XC-LJT" column="Dir-S8-QcA" id="nyM-1f-Ypt">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-Xt-hhg">
-                                            <rect key="frame" x="-2" y="1" width="168" height="17"/>
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-Xt-hhg">
+                                            <rect key="frame" x="-2" y="0.0" width="168" height="18"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hide Extensions" id="kkc-aC-M3r">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
