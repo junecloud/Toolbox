@@ -78,6 +78,13 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
+                                        <menuItem title="Open Safari" id="J1W-Ho-lVx">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="openSafari:" target="Voe-Tx-rLC" id="xNy-MG-pcO"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="3xO-6T-QkQ"/>
                                         <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
                                             <connections>
                                                 <action selector="performClose:" target="Ady-hI-5gd" id="HmO-Ls-i7Q"/>
@@ -351,50 +358,83 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Junecloud_Automator_Actions" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="-40"/>
+            <point key="canvasLocation" x="76" y="-162"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController storyboardIdentifier="instructionsWindow" id="B8D-0N-5wS" customClass="WindowController" customModule="Junecloud_Automator_Actions" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Instructions" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                <windowController storyboardIdentifier="instructionsWindow" showSeguePresentationStyle="single" id="B8D-0N-5wS" customClass="WindowController" customModule="Junecloud_Automator_Actions" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Instructions" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" titleVisibility="hidden" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="320" height="320"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="maxSize" type="size" width="640" height="640"/>
+                        <value key="minSize" type="size" width="320" height="100"/>
+                        <value key="maxSize" type="size" width="320" height="1024"/>
+                        <toolbar key="toolbar" implicitIdentifier="5723F065-63D4-48C5-AAAF-820D78F78C86" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="zg3-VE-CcN">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="376285D4-D1E4-4837-9FB1-5F36D61DDDA9" label="Section" paletteLabel="Section" sizingBehavior="auto" id="WW5-dS-EoY">
+                                    <nil key="toolTip"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" id="HB8-PM-UTS">
+                                        <rect key="frame" x="0.0" y="14" width="155" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="selectOne" id="rSs-pW-6Gg">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment label="Automator" selected="YES"/>
+                                                <segment label="Safari"/>
+                                            </segments>
+                                        </segmentedCell>
+                                        <connections>
+                                            <action selector="selectTab:" target="B8D-0N-5wS" id="Fw3-7v-uEa"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="Wpv-Fk-34S"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="4nv-HQ-XAA"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="4nv-HQ-XAA"/>
+                                <toolbarItem reference="WW5-dS-EoY"/>
+                                <toolbarItem reference="4nv-HQ-XAA"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="GsB-Ky-h6w"/>
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="1XV-sv-65G" kind="relationship" relationship="window.shadowedContentViewController" id="5Ln-EJ-zgN"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="241"/>
+            <point key="canvasLocation" x="75" y="173"/>
         </scene>
-        <!--View Controller-->
+        <!--Automator Actions-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Junecloud_Automator_Actions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Automator Actions" id="XfG-lQ-9wD" customClass="AutomatorViewController" customModule="Junecloud_Automator_Actions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="346" height="517"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="555"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-Kb-ylA">
-                                <rect key="frame" x="18" y="468" width="122" height="19"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Getting Started" id="NSg-4G-W9M">
+                                <rect key="frame" x="18" y="516" width="146" height="19"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Automator Actions" id="NSg-4G-W9M">
                                     <font key="font" metaFont="systemSemibold" size="16"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sts-ic-RYr">
-                                <rect key="frame" x="18" y="364" width="310" height="96"/>
+                                <rect key="frame" x="18" y="364" width="310" height="144"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="aze-Pv-SSR">
                                     <font key="font" metaFont="cellTitle"/>
-                                    <string key="title">You can use Junecloud Automator Actions right now by opening Automator and adding them to a workflow. If you’re new to Automator, you may want to focus on the basics first. Open Automator and choose “Automator Help” from the Help menu to learn how to get started.</string>
+                                    <string key="title">There‘s no need to install anything—you can use the Automator Actions right now by opening Automator and adding them to a workflow.
+
+If you’re new to Automator, focus on the basics first. Open Automator and choose “Automator Help” from the Help menu to learn how to get started.
+
+This app does not need to be open to use the actions.</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -424,13 +464,16 @@
                                 <rect key="frame" x="18" y="183" width="310" height="80"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="OsQ-NX-uun">
                                     <font key="font" metaFont="cellTitle"/>
-                                    <string key="title">You can install these pre-made services to use the actions in Finder. Once they're installed, you can control-click a file in Finder, open the Services menu, and then select a service to use it. Use the “Show Services” button to edit or remove a service.</string>
+                                    <string key="title">You can install these pre-made services to use the actions in Finder. Once they're installed, control-click a file in Finder, select Services, and then select a service to use it. Use the “Show Services” button to edit or remove a service.</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <gridView verticalHuggingPriority="750" xPlacement="fill" yPlacement="fill" rowAlignment="none" rowSpacing="7" columnSpacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="LRa-2Q-vFO">
                                 <rect key="frame" x="20" y="53" width="306" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="995" constant="118" id="7Ef-ww-QZL"/>
+                                </constraints>
                                 <rows>
                                     <gridRow id="a7Q-SS-2eh"/>
                                     <gridRow id="35l-DT-Aiz"/>
@@ -584,7 +627,7 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="paW-cm-aaN" secondAttribute="trailing" constant="20" id="Pqg-67-EDf"/>
                             <constraint firstAttribute="trailing" secondItem="LRa-2Q-vFO" secondAttribute="trailing" constant="20" id="QCq-dq-OZh"/>
                             <constraint firstItem="hc3-eV-je8" firstAttribute="top" secondItem="Eb4-ee-09M" secondAttribute="bottom" constant="20" id="VVO-6q-xLT"/>
-                            <constraint firstItem="KpR-Kb-ylA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="30" id="hHS-To-CQ7"/>
+                            <constraint firstItem="KpR-Kb-ylA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="hHS-To-CQ7"/>
                             <constraint firstAttribute="trailing" secondItem="sts-ic-RYr" secondAttribute="trailing" constant="20" id="i61-b0-ru0"/>
                             <constraint firstAttribute="trailing" secondItem="hc3-eV-je8" secondAttribute="trailing" constant="20" id="mWY-OI-DMJ"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="17s-SA-ncB" secondAttribute="trailing" constant="20" id="pGR-fE-Us4"/>
@@ -600,7 +643,90 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="739"/>
+            <point key="canvasLocation" x="-113" y="1219"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="dyQ-WD-1vo">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="unspecified" id="1XV-sv-65G" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem id="K8D-LN-kZf"/>
+                        <tabViewItem identifier="" id="y2Z-k1-bm5"/>
+                    </tabViewItems>
+                    <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
+                    <tabView key="tabView" type="noTabsNoBorder" id="WPP-gq-aJ1">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <outlet property="delegate" destination="1XV-sv-65G" id="KRs-ob-g6n"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="WPP-gq-aJ1" id="8dx-fB-YFs"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="tabItems" id="JTr-ee-cr1"/>
+                        <segue destination="PJb-DH-2Um" kind="relationship" relationship="tabItems" id="Qdp-2d-dZy"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="eFM-fc-yku" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="646"/>
+        </scene>
+        <!--Safari Extensions-->
+        <scene sceneID="Z9C-E8-hZj">
+            <objects>
+                <viewController title="Safari Extensions" id="PJb-DH-2Um" customClass="SafariViewController" customModule="Junecloud_Automator_Actions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="w7b-dH-Izr">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="212"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nrv-ke-xwg">
+                                <rect key="frame" x="18" y="173" width="127" height="19"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Safari Extension" id="Sle-45-GEg">
+                                    <font key="font" metaFont="systemSemibold" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fWd-he-JZo">
+                                <rect key="frame" x="18" y="53" width="307" height="112"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="IDi-Kn-zCi">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <string key="title">To enable the Safari extension, open Safari. Open the Safari menu, and choose “Preferences…” Select the Extensions tab. Click the checkbox next to the extension name to enable it.
+
+This app does not need to be open to use the extension.</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e1x-bD-93q">
+                                <rect key="frame" x="14" y="13" width="112" height="32"/>
+                                <buttonCell key="cell" type="push" title="Open Safari" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ptV-t8-kB4">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openSafari:" target="PJb-DH-2Um" id="Dk2-68-Uju"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nrv-ke-xwg" firstAttribute="top" secondItem="w7b-dH-Izr" secondAttribute="top" constant="20" id="4YC-pZ-lv7"/>
+                            <constraint firstItem="e1x-bD-93q" firstAttribute="top" secondItem="fWd-he-JZo" secondAttribute="bottom" constant="12" id="AId-kk-HP8"/>
+                            <constraint firstItem="fWd-he-JZo" firstAttribute="top" secondItem="nrv-ke-xwg" secondAttribute="bottom" constant="8" id="Mlg-56-4ar"/>
+                            <constraint firstItem="e1x-bD-93q" firstAttribute="leading" secondItem="w7b-dH-Izr" secondAttribute="leading" constant="20" id="QDf-3p-26S"/>
+                            <constraint firstItem="nrv-ke-xwg" firstAttribute="leading" secondItem="w7b-dH-Izr" secondAttribute="leading" constant="20" id="Z9h-QL-CM8"/>
+                            <constraint firstAttribute="trailing" secondItem="fWd-he-JZo" secondAttribute="trailing" constant="20" id="amw-10-tpC"/>
+                            <constraint firstItem="fWd-he-JZo" firstAttribute="leading" secondItem="w7b-dH-Izr" secondAttribute="leading" constant="20" id="dW5-Hp-Wag"/>
+                            <constraint firstAttribute="bottom" secondItem="e1x-bD-93q" secondAttribute="bottom" constant="20" id="hVU-cE-Vf1"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="e1x-bD-93q" secondAttribute="trailing" constant="20" id="ny3-vS-2db"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nrv-ke-xwg" secondAttribute="trailing" constant="20" id="udw-b5-f7q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="zve-pX-GXg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="1047"/>
         </scene>
     </scenes>
 </document>

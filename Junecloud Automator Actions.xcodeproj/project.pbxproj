@@ -14,7 +14,7 @@
 		2722EDC41E3081B00073E1D7 /* Save for Web.workflow in Resources */ = {isa = PBXBuildFile; fileRef = 2722EDBF1E3081B00073E1D7 /* Save for Web.workflow */; };
 		2786EC8A1FE1C9BD002D4678 /* URL+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */; };
 		279510121E30137B0095AA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279510111E30137B0095AA8D /* AppDelegate.swift */; };
-		279510141E30137B0095AA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279510131E30137B0095AA8D /* ViewController.swift */; };
+		279510141E30137B0095AA8D /* AutomatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279510131E30137B0095AA8D /* AutomatorViewController.swift */; };
 		279510161E30137B0095AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279510151E30137B0095AA8D /* Assets.xcassets */; };
 		279510191E30137B0095AA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279510171E30137B0095AA8D /* Main.storyboard */; };
 		279510291E3013B50095AA8D /* Create_Clean_Archive.m in Sources */ = {isa = PBXBuildFile; fileRef = 279510281E3013B50095AA8D /* Create_Clean_Archive.m */; };
@@ -38,6 +38,13 @@
 		279510A11E301C810095AA8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2795109F1E301C810095AA8D /* InfoPlist.strings */; };
 		279510A71E3033460095AA8D /* Save for Web.action in Embed Automator Actions */ = {isa = PBXBuildFile; fileRef = 279510961E301C810095AA8D /* Save for Web.action */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27CD015121CAF6760030FBB3 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD015021CAF6760030FBB3 /* WindowController.swift */; };
+		27CD016121CB36FC0030FBB3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CD016021CB36FC0030FBB3 /* Cocoa.framework */; };
+		27CD016421CB36FC0030FBB3 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD016321CB36FC0030FBB3 /* SafariExtensionHandler.swift */; };
+		27CD016C21CB36FC0030FBB3 /* CopyShortLink.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CD016B21CB36FC0030FBB3 /* CopyShortLink.js */; };
+		27CD017221CB36FC0030FBB3 /* Copy Short Link.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27CD015E21CB36FC0030FBB3 /* Copy Short Link.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27CD017821CB4BD60030FBB3 /* CopyShortLink.css in Resources */ = {isa = PBXBuildFile; fileRef = 27CD017721CB4BD60030FBB3 /* CopyShortLink.css */; };
+		27CD017A21CB67110030FBB3 /* CopyShortLink.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 27CD017921CB67110030FBB3 /* CopyShortLink.pdf */; };
+		27CD018021CB7D2F0030FBB3 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD017F21CB7D2F0030FBB3 /* SafariViewController.swift */; };
 		27E587F81FE1F056009771EE /* Data+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E587F71FE1F056009771EE /* Data+SHA1.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +84,13 @@
 			remoteGlobalIDString = 279510951E301C810095AA8D;
 			remoteInfo = "Save for Web";
 		};
+		27CD017021CB36FC0030FBB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279510061E30137B0095AA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27CD015D21CB36FC0030FBB3;
+			remoteInfo = "Copy Short Link";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,6 +109,17 @@
 			name = "Embed Automator Actions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27CD017621CB36FC0030FBB3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27CD017221CB36FC0030FBB3 /* Copy Short Link.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -106,7 +131,7 @@
 		2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Utilities.swift"; sourceTree = "<group>"; };
 		2795100E1E30137B0095AA8D /* Junecloud Automator Actions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Junecloud Automator Actions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279510111E30137B0095AA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		279510131E30137B0095AA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		279510131E30137B0095AA8D /* AutomatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatorViewController.swift; sourceTree = "<group>"; };
 		279510151E30137B0095AA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279510181E30137B0095AA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2795101A1E30137B0095AA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,6 +167,15 @@
 		279510A01E301C810095AA8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		279510A81E3033920095AA8D /* Junecloud Automator Actions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Junecloud Automator Actions.entitlements"; sourceTree = "<group>"; };
 		27CD015021CAF6760030FBB3 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		27CD015E21CB36FC0030FBB3 /* Copy Short Link.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Copy Short Link.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CD016021CB36FC0030FBB3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		27CD016321CB36FC0030FBB3 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		27CD016A21CB36FC0030FBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27CD016B21CB36FC0030FBB3 /* CopyShortLink.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = CopyShortLink.js; sourceTree = "<group>"; };
+		27CD016F21CB36FC0030FBB3 /* CopyShortLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CopyShortLink.entitlements; sourceTree = "<group>"; };
+		27CD017721CB4BD60030FBB3 /* CopyShortLink.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = CopyShortLink.css; sourceTree = "<group>"; };
+		27CD017921CB67110030FBB3 /* CopyShortLink.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CopyShortLink.pdf; sourceTree = "<group>"; };
+		27CD017F21CB7D2F0030FBB3 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		27E587F61FE1EFBB009771EE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		27E587F71FE1F056009771EE /* Data+SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+SHA1.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +223,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27CD015B21CB36FC0030FBB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CD016121CB36FC0030FBB3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -213,6 +255,8 @@
 				279510551E3019990095AA8D /* Hide or Show Extensions */,
 				2795106C1E301AA60095AA8D /* Make Names Web-Friendly */,
 				279510971E301C810095AA8D /* Save for Web */,
+				27CD016221CB36FC0030FBB3 /* Copy Short Link */,
+				27CD015F21CB36FC0030FBB3 /* Frameworks */,
 				2795100F1E30137B0095AA8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -226,6 +270,7 @@
 				279510541E3019990095AA8D /* Hide or Show Extensions.action */,
 				2795106B1E301AA60095AA8D /* Make Names Web-Friendly.action */,
 				279510961E301C810095AA8D /* Save for Web.action */,
+				27CD015E21CB36FC0030FBB3 /* Copy Short Link.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,7 +280,8 @@
 			children = (
 				279510111E30137B0095AA8D /* AppDelegate.swift */,
 				27CD015021CAF6760030FBB3 /* WindowController.swift */,
-				279510131E30137B0095AA8D /* ViewController.swift */,
+				279510131E30137B0095AA8D /* AutomatorViewController.swift */,
+				27CD017F21CB7D2F0030FBB3 /* SafariViewController.swift */,
 				27E587F71FE1F056009771EE /* Data+SHA1.swift */,
 				2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */,
 				279510151E30137B0095AA8D /* Assets.xcassets */,
@@ -308,6 +354,27 @@
 			path = "Save for Web";
 			sourceTree = "<group>";
 		};
+		27CD015F21CB36FC0030FBB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27CD016021CB36FC0030FBB3 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27CD016221CB36FC0030FBB3 /* Copy Short Link */ = {
+			isa = PBXGroup;
+			children = (
+				27CD016321CB36FC0030FBB3 /* SafariExtensionHandler.swift */,
+				27CD016A21CB36FC0030FBB3 /* Info.plist */,
+				27CD017721CB4BD60030FBB3 /* CopyShortLink.css */,
+				27CD016B21CB36FC0030FBB3 /* CopyShortLink.js */,
+				27CD017921CB67110030FBB3 /* CopyShortLink.pdf */,
+				27CD016F21CB36FC0030FBB3 /* CopyShortLink.entitlements */,
+			);
+			path = "Copy Short Link";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,6 +386,7 @@
 				2795100B1E30137B0095AA8D /* Frameworks */,
 				2795100C1E30137B0095AA8D /* Resources */,
 				279510361E30154F0095AA8D /* Embed Automator Actions */,
+				27CD017621CB36FC0030FBB3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -328,6 +396,7 @@
 				279510641E301A5D0095AA8D /* PBXTargetDependency */,
 				2795104D1E3016FF0095AA8D /* PBXTargetDependency */,
 				279510351E3014B90095AA8D /* PBXTargetDependency */,
+				27CD017121CB36FC0030FBB3 /* PBXTargetDependency */,
 			);
 			name = "Junecloud Automator Actions";
 			productName = "Junecloud Automator Actions";
@@ -424,13 +493,30 @@
 			productReference = 279510961E301C810095AA8D /* Save for Web.action */;
 			productType = "com.apple.product-type.bundle";
 		};
+		27CD015D21CB36FC0030FBB3 /* Copy Short Link */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27CD017521CB36FC0030FBB3 /* Build configuration list for PBXNativeTarget "Copy Short Link" */;
+			buildPhases = (
+				27CD015A21CB36FC0030FBB3 /* Sources */,
+				27CD015B21CB36FC0030FBB3 /* Frameworks */,
+				27CD015C21CB36FC0030FBB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Copy Short Link";
+			productName = "Copy Short Link";
+			productReference = 27CD015E21CB36FC0030FBB3 /* Copy Short Link.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		279510061E30137B0095AA8D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Junecloud LLC";
 				TargetAttributes = {
@@ -473,6 +559,11 @@
 						DevelopmentTeam = PB4R74AA4J;
 						ProvisioningStyle = Automatic;
 					};
+					27CD015D21CB36FC0030FBB3 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = PB4R74AA4J;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 279510091E30137B0095AA8D /* Build configuration list for PBXProject "Junecloud Automator Actions" */;
@@ -494,6 +585,7 @@
 				279510531E3019990095AA8D /* Hide or Show Extensions */,
 				2795106A1E301AA60095AA8D /* Make Names Web-Friendly */,
 				279510951E301C810095AA8D /* Save for Web */,
+				27CD015D21CB36FC0030FBB3 /* Copy Short Link */,
 			);
 		};
 /* End PBXProject section */
@@ -555,6 +647,16 @@
 			files = (
 				2795109D1E301C810095AA8D /* main.xib in Resources */,
 				279510A11E301C810095AA8D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CD015C21CB36FC0030FBB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CD017821CB4BD60030FBB3 /* CopyShortLink.css in Resources */,
+				27CD017A21CB67110030FBB3 /* CopyShortLink.pdf in Resources */,
+				27CD016C21CB36FC0030FBB3 /* CopyShortLink.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,10 +735,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279510141E30137B0095AA8D /* ViewController.swift in Sources */,
+				279510141E30137B0095AA8D /* AutomatorViewController.swift in Sources */,
 				27CD015121CAF6760030FBB3 /* WindowController.swift in Sources */,
 				2786EC8A1FE1C9BD002D4678 /* URL+Utilities.swift in Sources */,
 				279510121E30137B0095AA8D /* AppDelegate.swift in Sources */,
+				27CD018021CB7D2F0030FBB3 /* SafariViewController.swift in Sources */,
 				27E587F81FE1F056009771EE /* Data+SHA1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,6 +784,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27CD015A21CB36FC0030FBB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CD016421CB36FC0030FBB3 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -708,6 +819,11 @@
 			isa = PBXTargetDependency;
 			target = 279510951E301C810095AA8D /* Save for Web */;
 			targetProxy = 279510A51E3033420095AA8D /* PBXContainerItemProxy */;
+		};
+		27CD017121CB36FC0030FBB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27CD015D21CB36FC0030FBB3 /* Copy Short Link */;
+			targetProxy = 27CD017021CB36FC0030FBB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -918,6 +1034,7 @@
 		2795101E1E30137B0095AA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Junecloud Automator Actions/Junecloud Automator Actions.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -936,6 +1053,7 @@
 		2795101F1E30137B0095AA8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Junecloud Automator Actions/Junecloud Automator Actions.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -1111,6 +1229,53 @@
 			};
 			name = Release;
 		};
+		27CD017321CB36FC0030FBB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Copy Short Link/CopyShortLink.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB4R74AA4J;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Copy Short Link/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Junecloud-Automator-Actions.CopyShortLink";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		27CD017421CB36FC0030FBB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Copy Short Link/CopyShortLink.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB4R74AA4J;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Copy Short Link/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Junecloud-Automator-Actions.CopyShortLink";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1173,6 +1338,15 @@
 			buildConfigurations = (
 				279510A31E301C810095AA8D /* Debug */,
 				279510A41E301C810095AA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27CD017521CB36FC0030FBB3 /* Build configuration list for PBXNativeTarget "Copy Short Link" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CD017321CB36FC0030FBB3 /* Debug */,
+				27CD017421CB36FC0030FBB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

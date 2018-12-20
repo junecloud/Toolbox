@@ -1,0 +1,45 @@
+#com-junecloud-copyshortlink-overlay {
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: center !important;
+	justify-content: center !important;
+	position: fixed !important;
+	box-sizing: content-box !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	z-index: 9999999999 !important;
+	padding: 30px !important;
+	background-color: rgba(0,0,0,0.65) !important;
+	text-align: center !important;
+	text-shadow: 0 1px 3px rgba(0,0,0,1) !important;
+	opacity: 0;
+	transition: opacity 0.3s !important;
+	-webkit-backdrop-filter: blur(15px) !important;
+}
+#com-junecloud-copyshortlink-overlay-message {
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	justify-content: center !important;
+	position: fixed !important;
+	box-sizing: content-box !important;
+}
+#com-junecloud-copyshortlink-overlay span {
+	margin: 3px !important;
+}
+#com-junecloud-copyshortlink-icon {
+	font: 22px -apple-system !important;
+	color: #fff !important;
+}
+#com-junecloud-copyshortlink-text {
+	font: 600 20px -apple-system !important;
+	color: #fff !important;
+}
+#com-junecloud-copyshortlink-details {
+	font: 12px -apple-system !important;
+	color: #fff !important;
+	line-height: 150% !important;
+	margin: 10px 0 0 0 !important;
+}

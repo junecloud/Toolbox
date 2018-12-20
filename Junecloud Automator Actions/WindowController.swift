@@ -10,6 +10,10 @@ import Cocoa
 
 class WindowController: NSWindowController {
 
+	private var tabViewController: NSTabViewController? {
+		return contentViewController as? NSTabViewController
+	}
+
     override func windowDidLoad() {
         super.windowDidLoad()
         guard let window = window else { return }
@@ -17,9 +21,14 @@ class WindowController: NSWindowController {
 			// Handled in the storyboard
 		} else {
 			window.titleVisibility = .hidden
-			window.titlebarAppearsTransparent = true
 		}
 		window.center()
     }
+
+	@IBAction func selectTab(_ sender: Any?) {
+		guard let control = sender as? NSSegmentedControl else { return }
+		let index = control.selectedSegment
+		tabViewController?.selectedTabViewItemIndex = index
+	}
 
 }

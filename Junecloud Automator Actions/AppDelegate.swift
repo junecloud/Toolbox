@@ -29,6 +29,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		workspace.open(url)
 	}
 
+	static func openSafari() {
+		let workspace = NSWorkspace.shared
+		workspace.launchApplication(withBundleIdentifier: "com.apple.Safari", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+	}
+
 	@IBAction func showInstructions(_ sender: Any?) {
 		if (self.instructionsWindowController == nil) {
 			let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
@@ -44,6 +49,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBAction func showServices(_ sender: Any?) {
 		AppDelegate.showServices()
+	}
+
+	@IBAction func openSafari(_ sender: Any?) {
+		AppDelegate.openSafari()
 	}
 
 	@IBAction func showHelp(_ sender: Any?) {

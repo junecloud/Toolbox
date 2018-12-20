@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AutomatorViewController.swift
 //  Junecloud Automator Actions
 //
 //  Created by Mike Piontek on 1/18/17.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class AutomatorViewController: NSViewController {
 
 	@IBOutlet public var gridView: NSGridView?
 
