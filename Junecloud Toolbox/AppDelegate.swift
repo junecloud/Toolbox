@@ -18,6 +18,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		showInstructions(nil)
 	}
 
+	func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+		return true
+	}
+
 	static func openAutomator() {
 		let workspace = NSWorkspace.shared
 		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
