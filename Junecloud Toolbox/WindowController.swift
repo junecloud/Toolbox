@@ -22,6 +22,12 @@ class WindowController: NSWindowController {
 		} else {
 			window.titleVisibility = .hidden
 		}
+		if let view = window.contentView {
+			// With resizing disabled, the window is too wide. If constraints are added,
+			// the window is no longer centered, unless the size is set here.
+			let size = view.fittingSize
+			window.setContentSize(size)
+		}
 		window.center()
     }
 

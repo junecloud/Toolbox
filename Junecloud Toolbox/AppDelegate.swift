@@ -15,7 +15,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		checkForOldVersions()
-		showInstructions(nil)
 	}
 
 	func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
@@ -36,15 +35,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	static func openSafari() {
 		let workspace = NSWorkspace.shared
 		workspace.launchApplication(withBundleIdentifier: "com.apple.Safari", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
-	}
-
-	@IBAction func showInstructions(_ sender: Any?) {
-		if (self.instructionsWindowController == nil) {
-			let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
-			let controller = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "instructionsWindow")) as? NSWindowController
-			self.instructionsWindowController = controller
-		}
-		self.instructionsWindowController?.showWindow(sender)
 	}
 
 	@IBAction func openAutomator(_ sender: Any?) {
