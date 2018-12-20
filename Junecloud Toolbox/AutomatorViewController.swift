@@ -93,6 +93,7 @@ class AutomatorViewController: NSViewController {
 				let label = NSTextField(labelWithString: title)
 				label.font = font
 				label.textColor = NSColor.disabledControlTextColor
+				label.heightAnchor.constraint(greaterThanOrEqualToConstant: 15.0).isActive = true
 				statusViews.append(label)
 
 			} else {
@@ -112,6 +113,19 @@ class AutomatorViewController: NSViewController {
 
 		gridView.removeColumn(at: 1)
 		gridView.insertColumn(at: 1, with: statusViews)
+
+		let column = gridView.column(at: 1)
+		column.xPlacement = .trailing
+
+		for index in 0..<gridView.numberOfRows {
+			let cell = gridView.cell(atColumnIndex: 1, rowIndex: index)
+			guard let contentView = cell.contentView else { continue }
+			if contentView is NSTextField {
+				cell.rowAlignment = .firstBaseline
+			} else {
+				cell.rowAlignment = .none
+			}
+		}
 
 	}
 
