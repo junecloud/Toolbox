@@ -523,7 +523,7 @@
 					2795100D1E30137B0095AA8D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PB4R74AA4J;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HardenedRuntime = {
@@ -1046,7 +1046,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.junecloud.Toolbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Junecloud Toolbox/Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1065,7 +1065,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.junecloud.Toolbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Junecloud Toolbox/Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1246,7 +1246,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Toolbox.CopyShortLink";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junecloud.Toolbox.CopyShortLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -1269,7 +1269,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.junecloud.Toolbox.CopyShortLink";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junecloud.Toolbox.CopyShortLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
