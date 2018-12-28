@@ -58,7 +58,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBAction func showHelp(_ sender: Any?) {
 		let workspace = NSWorkspace.shared
-		let urlString = "https://junecloud.com/support/junecloud-automator-actions/"
+		let urlString = "https://junecloud.com/support/junecloud-toolbox/"
 		guard let url = URL(string: urlString) else { return }
 		workspace.open(url)
 	}
