@@ -12,6 +12,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 	var instructionsWindowController: NSWindowController?
+	var aboutWindowController: JUNAboutWindowController?
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		checkForOldVersions()
@@ -35,6 +36,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	static func openSafari() {
 		let workspace = NSWorkspace.shared
 		workspace.launchApplication(withBundleIdentifier: "com.apple.Safari", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+	}
+
+	@IBAction func showAbout(_ sender: Any?) {
+		let controller = JUNAboutWindowController.instantiate()
+		aboutWindowController = controller
+		controller?.showWindow(sender)
 	}
 
 	@IBAction func openAutomator(_ sender: Any?) {

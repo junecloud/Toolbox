@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="el5-o9-mCi">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="Xvi-Z5-Njx">
+            <objects>
+                <windowController showSeguePresentationStyle="single" id="el5-o9-mCi" customClass="JUNAboutWindowController" customModule="Junecloud_Toolbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="2tW-4G-bgh">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="461" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <connections>
+                            <outlet property="delegate" destination="el5-o9-mCi" id="pRb-E4-ch6"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="xpM-p7-ErK" kind="relationship" relationship="window.shadowedContentViewController" id="v0n-UJ-GQu"/>
+                    </connections>
+                </windowController>
+                <customObject id="mmH-Sq-N5W" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-403" y="-45"/>
+        </scene>
+        <!--Custom About View Controller-->
+        <scene sceneID="D6o-I4-uPn">
+            <objects>
+                <viewController id="xpM-p7-ErK" customClass="JUNCustomAboutViewController" customModule="Junecloud_Toolbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="giU-z8-jV1">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <visualEffectView appearanceType="inheritedVibrantLight" blendingMode="behindWindow" material="underWindowBackground" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="iwb-iy-oJD">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <subviews>
+                                    <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="3Dk-oS-YKi">
+                                        <rect key="frame" x="87" y="0.0" width="363" height="300"/>
+                                        <clipView key="contentView" focusRingType="none" drawsBackground="NO" copiesOnScroll="NO" id="rUt-HG-d1Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="363" height="300"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textView editable="NO" selectable="NO" drawsBackground="NO" importsGraphics="NO" verticallyResizable="YES" linkDetection="YES" spellingCorrection="YES" id="KjW-tg-Z9h" customClass="JUNLinkTextView" customModule="Junecloud_Toolbox" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="300"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <size key="minSize" width="363" height="300"/>
+                                                    <size key="maxSize" width="463" height="10000000"/>
+                                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="WHN-pp-XHv">
+                                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="CPE-gX-sEw">
+                                            <rect key="frame" x="276" y="0.0" width="16" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hha-ur-ZT6">
+                                        <rect key="frame" x="53" y="110" width="32" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="GFS-m1-wH2"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="AaI-s7-bhZ"/>
+                                    </imageView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GD5-gT-PPi">
+                                        <rect key="frame" x="38" y="78" width="61" height="24"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Name" id="iS7-ZK-ZNv">
+                                            <font key="font" metaFont="systemMedium" size="20"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VEL-gd-STf" customClass="JUNVersionButton" customModule="Junecloud_Toolbox" customModuleProvider="target">
+                                        <rect key="frame" x="49" y="65" width="40" height="13"/>
+                                        <buttonCell key="cell" type="roundRect" title="Version" bezelStyle="roundedRect" alignment="center" inset="2" id="409-gv-ABq">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="10"/>
+                                            <connections>
+                                                <action selector="versionNumberWasPressed:" target="xpM-p7-ErK" id="pRC-KA-TV3"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsHandCursor" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GD5-gT-PPi" firstAttribute="leading" secondItem="iwb-iy-oJD" secondAttribute="leading" constant="40" id="5j7-a6-WRZ"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VEL-gd-STf" secondAttribute="bottom" constant="50" id="9Gr-zp-w8X"/>
+                                    <constraint firstItem="3Dk-oS-YKi" firstAttribute="leading" secondItem="GD5-gT-PPi" secondAttribute="trailing" constant="-10" id="J9q-6q-Uoz"/>
+                                    <constraint firstItem="Hha-ur-ZT6" firstAttribute="top" secondItem="iwb-iy-oJD" secondAttribute="top" constant="62" id="JAt-GN-R1f"/>
+                                    <constraint firstItem="3Dk-oS-YKi" firstAttribute="top" secondItem="iwb-iy-oJD" secondAttribute="top" id="TEW-Jn-f1i"/>
+                                    <constraint firstItem="Hha-ur-ZT6" firstAttribute="centerX" secondItem="GD5-gT-PPi" secondAttribute="centerX" id="VjW-hj-sTP"/>
+                                    <constraint firstItem="GD5-gT-PPi" firstAttribute="centerX" secondItem="VEL-gd-STf" secondAttribute="centerX" id="cFF-PU-dwJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Dk-oS-YKi" secondAttribute="trailing" id="cxt-Ku-RGx"/>
+                                    <constraint firstItem="GD5-gT-PPi" firstAttribute="top" secondItem="Hha-ur-ZT6" secondAttribute="bottom" constant="8" id="f2W-SP-HEe"/>
+                                    <constraint firstItem="Hha-ur-ZT6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iwb-iy-oJD" secondAttribute="leading" constant="40" id="h0U-dS-WNi"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Dk-oS-YKi" secondAttribute="bottom" id="pG2-4o-ZqD"/>
+                                    <constraint firstItem="3Dk-oS-YKi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hha-ur-ZT6" secondAttribute="trailing" constant="-10" id="ttP-Zt-Ave"/>
+                                    <constraint firstItem="VEL-gd-STf" firstAttribute="top" secondItem="GD5-gT-PPi" secondAttribute="bottom" id="yRt-Ah-FaP"/>
+                                </constraints>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="iwb-iy-oJD" secondAttribute="bottom" id="9bg-VF-tv3"/>
+                            <constraint firstAttribute="trailing" secondItem="iwb-iy-oJD" secondAttribute="trailing" id="P2a-hE-OWh"/>
+                            <constraint firstItem="iwb-iy-oJD" firstAttribute="top" secondItem="giU-z8-jV1" secondAttribute="top" id="mzQ-uT-YaD"/>
+                            <constraint firstItem="iwb-iy-oJD" firstAttribute="leading" secondItem="giU-z8-jV1" secondAttribute="leading" id="xA7-93-ez5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="creditsView" destination="3Dk-oS-YKi" id="dEJ-YF-uGW"/>
+                        <outlet property="nameField" destination="GD5-gT-PPi" id="Lph-8i-Ol9"/>
+                        <outlet property="versionButton" destination="VEL-gd-STf" id="9HQ-iO-6TM"/>
+                    </connections>
+                </viewController>
+                <customObject id="OVl-Dm-EAj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="-45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSApplicationIcon" width="32" height="32"/>
+    </resources>
+</document>
