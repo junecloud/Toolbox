@@ -10,8 +10,8 @@ import Cocoa
 
 class SafariViewController: NSViewController {
 
-	@IBAction func openSafari(_ sender: NSButton) {
-		AppDelegate.openSafari()
+	@IBAction func openSafariPreferences(_ sender: NSButton) {
+		AppDelegate.openSafariPreferences()
 	}
 
 }

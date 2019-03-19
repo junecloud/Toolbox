@@ -7,11 +7,24 @@
 //
 
 import Cocoa
+import SafariServices.SFSafariApplication
+import os.log
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+	public static let automatorIdentifier = "com.apple.Automator"
+
+	public static let safariIdentifier = "com.apple.Safari"
+
+	public static let safariExtensionIdentifier = "com.junecloud.Toolbox.CopyShortLink"
+
+	private static let log: OSLog = {
+	 	return OSLog(subsystem: "com.junecloud.Toolbox", category: "Application")
+	}()
+
 	var instructionsWindowController: NSWindowController?
+
 	var aboutWindowController: JUNAboutWindowController?
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -24,7 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	static func openAutomator() {
 		let workspace = NSWorkspace.shared
-		workspace.launchApplication(withBundleIdentifier: "com.apple.Automator", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+		workspace.launchApplication(withBundleIdentifier: AppDelegate.automatorIdentifier, options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
 	}
 
 	static func showServices() {
@@ -35,7 +48,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	static func openSafari() {
 		let workspace = NSWorkspace.shared
-		workspace.launchApplication(withBundleIdentifier: "com.apple.Safari", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+		workspace.launchApplication(withBundleIdentifier: AppDelegate.safariIdentifier, options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+	}
+
+	static func openSafariPreferences() {
+		SFSafariApplication.showPreferencesForExtension(withIdentifier: AppDelegate.safariExtensionIdentifier) { error in
+			if let error = error {
+				os_log("Error opening Safari preferences: %@", log: AppDelegate.log, type: .error, error as CVarArg)
+			}
+		}
 	}
 
 	@IBAction func showAbout(_ sender: Any?) {
@@ -54,6 +75,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBAction func openSafari(_ sender: Any?) {
 		AppDelegate.openSafari()
+	}
+
+	@IBAction func openSafariPreferences(_ sender: Any?) {
+		AppDelegate.openSafariPreferences()
 	}
 
 	@IBAction func showHelp(_ sender: Any?) {

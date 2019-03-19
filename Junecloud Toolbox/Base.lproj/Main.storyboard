@@ -42,6 +42,12 @@
                                                 <action selector="openSafari:" target="Voe-Tx-rLC" id="xNy-MG-pcO"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Manage Extensions" id="KiI-8y-2Vb">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="openSafariPreferences:" target="Voe-Tx-rLC" id="Q9L-Jt-LVV"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
                                         <menuItem title="Hide Junecloud Toolbox" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
@@ -495,7 +501,7 @@ This app does not need to be open to use the actions.</string>
                                 <rect key="frame" x="18" y="53" width="284" height="112"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="IDi-Kn-zCi">
                                     <font key="font" metaFont="cellTitle"/>
-                                    <string key="title">To enable the Safari extension, open Safari. Open the Safari menu, and choose “Preferences…” Select the Extensions tab. Click the checkbox next to the extension name to enable it.
+                                    <string key="title">To enable the “Copy Short Link” Safari extension, click Manage Extensions below. Find the extension in the list and make sure the checkbox next to it is checked.
 
 This app does not need to be open to use the extension.</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -503,13 +509,13 @@ This app does not need to be open to use the extension.</string>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e1x-bD-93q">
-                                <rect key="frame" x="14" y="13" width="112" height="32"/>
-                                <buttonCell key="cell" type="push" title="Open Safari" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ptV-t8-kB4">
+                                <rect key="frame" x="14" y="13" width="158" height="32"/>
+                                <buttonCell key="cell" type="push" title="Manage Extensions" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ptV-t8-kB4">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="openSafari:" target="PJb-DH-2Um" id="Dk2-68-Uju"/>
+                                    <action selector="openSafariPreferences:" target="PJb-DH-2Um" id="NLN-db-VF5"/>
                                 </connections>
                             </button>
                         </subviews>
