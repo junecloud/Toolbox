@@ -552,7 +552,7 @@
 					2795100D1E30137B0095AA8D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PB4R74AA4J;
-						LastSwiftMigration = "";
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HardenedRuntime = {
@@ -591,6 +591,7 @@
 					27CD015D21CB36FC0030FBB3 = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = PB4R74AA4J;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HardenedRuntime = {
@@ -1103,7 +1104,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.junecloud.Toolbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Junecloud Toolbox/Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1122,7 +1123,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.junecloud.Toolbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Junecloud Toolbox/Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1307,7 +1308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.junecloud.Toolbox.CopyShortLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1331,7 +1332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.junecloud.Toolbox.CopyShortLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
