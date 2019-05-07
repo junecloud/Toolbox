@@ -546,7 +546,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Junecloud LLC";
 				TargetAttributes = {
 					2795100D1E30137B0095AA8D = {
@@ -602,7 +602,7 @@
 			};
 			buildConfigurationList = 279510091E30137B0095AA8D /* Build configuration list for PBXProject "Junecloud Toolbox" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
