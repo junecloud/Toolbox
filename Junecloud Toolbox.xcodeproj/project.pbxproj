@@ -19,7 +19,7 @@
 		2727C6F321D5B597008E99D9 /* JUNCustomAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727C6EE21D5B597008E99D9 /* JUNCustomAboutViewController.swift */; };
 		2727C6F621D5B5BE008E99D9 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2727C6F421D5B5BE008E99D9 /* About.storyboard */; };
 		2727C6FD21D5B827008E99D9 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 2727C6FB21D5B827008E99D9 /* Credits.html */; };
-		2786EC8A1FE1C9BD002D4678 /* URL+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */; };
+		2786EC8A1FE1C9BD002D4678 /* URL+HomeFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786EC891FE1C9BD002D4678 /* URL+HomeFolder.swift */; };
 		279510121E30137B0095AA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279510111E30137B0095AA8D /* AppDelegate.swift */; };
 		279510141E30137B0095AA8D /* AutomatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279510131E30137B0095AA8D /* AutomatorViewController.swift */; };
 		279510161E30137B0095AA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279510151E30137B0095AA8D /* Assets.xcassets */; };
@@ -142,7 +142,7 @@
 		2727C6EE21D5B597008E99D9 /* JUNCustomAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUNCustomAboutViewController.swift; sourceTree = "<group>"; };
 		2727C6F521D5B5BE008E99D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
 		2727C6FC21D5B827008E99D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Credits.html; sourceTree = "<group>"; };
-		2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Utilities.swift"; sourceTree = "<group>"; };
+		2786EC891FE1C9BD002D4678 /* URL+HomeFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+HomeFolder.swift"; sourceTree = "<group>"; };
 		2795100E1E30137B0095AA8D /* Junecloud Toolbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Junecloud Toolbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279510111E30137B0095AA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279510131E30137B0095AA8D /* AutomatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatorViewController.swift; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 				279510131E30137B0095AA8D /* AutomatorViewController.swift */,
 				27CD017F21CB7D2F0030FBB3 /* SafariViewController.swift */,
 				27E587F71FE1F056009771EE /* Data+SHA1.swift */,
-				2786EC891FE1C9BD002D4678 /* URL+Utilities.swift */,
+				2786EC891FE1C9BD002D4678 /* URL+HomeFolder.swift */,
 				279510151E30137B0095AA8D /* Assets.xcassets */,
 				279510171E30137B0095AA8D /* Main.storyboard */,
 				2727C6F421D5B5BE008E99D9 /* About.storyboard */,
@@ -779,7 +779,7 @@
 				2727C6F321D5B597008E99D9 /* JUNCustomAboutViewController.swift in Sources */,
 				279510141E30137B0095AA8D /* AutomatorViewController.swift in Sources */,
 				27CD015121CAF6760030FBB3 /* WindowController.swift in Sources */,
-				2786EC8A1FE1C9BD002D4678 /* URL+Utilities.swift in Sources */,
+				2786EC8A1FE1C9BD002D4678 /* URL+HomeFolder.swift in Sources */,
 				2727C6F121D5B597008E99D9 /* JUNAboutViewController.swift in Sources */,
 				279510121E30137B0095AA8D /* AppDelegate.swift in Sources */,
 				2727C6F021D5B597008E99D9 /* JUNAboutWindowController.swift in Sources */,

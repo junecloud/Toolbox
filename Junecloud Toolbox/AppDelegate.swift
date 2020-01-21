@@ -42,7 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	static func showServices() {
 		let workspace = NSWorkspace.shared
-		guard let url = URL.servicesFolder else { return }
+		guard let url = URL.userServicesFolder else { return }
 		workspace.open(url)
 	}
 
@@ -90,7 +90,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	private func checkForOldVersions() {
 
-		guard let homeURL = URL.actualHomeFolder else { return }
+		guard let homeURL = URL.userHomeFolder else { return }
 		let automatorURL = homeURL.appendingPathComponents("Library","Automator")
 		let actionNames = [
 			"Create Clean Archive.action",

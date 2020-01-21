@@ -58,7 +58,7 @@ class AutomatorViewController: NSViewController {
 	}
 
 	private func installURLForService(named name: String) -> URL? {
-		guard let servicesURL = URL.servicesFolder else { return nil }
+		guard let servicesURL = URL.userServicesFolder else { return nil }
 		return servicesURL.appendingPathComponent(name).appendingPathExtension("workflow")
 	}
 
