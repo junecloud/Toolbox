@@ -69,7 +69,7 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2010–2019 Junecloud LLC. All rights reserved.</string>
+	<string>Copyright © 2010–2021 Junecloud LLC. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
 	<string>This extension makes it easy to copy official short links to web pages. It looks for links mainly in shortlink and shorturl meta tags.</string>
 </dict>

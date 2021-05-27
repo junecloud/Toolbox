@@ -116,7 +116,7 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2009–2017 Junecloud LLC</string>
+	<string>Copyright © 2009–2021 Junecloud LLC</string>
 	<key>NSPrincipalClass</key>
 	<string>Make_Names_Web_Friendly</string>
 </dict>
