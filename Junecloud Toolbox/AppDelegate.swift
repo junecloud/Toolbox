@@ -23,7 +23,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	 	return OSLog(subsystem: "com.junecloud.Toolbox", category: "Application")
 	}()
 
-	var instructionsWindowController: NSWindowController?
+	var mainWindowController: WindowController? {
+		return NSApplication.shared.mainWindow?.windowController as? WindowController
+	}
 
 	var aboutWindowController: JUNAboutWindowController?
 
@@ -134,3 +136,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 }
 
+extension AppDelegate: NSMenuDelegate {
+
+	func menuNeedsUpdate(_ menu: NSMenu) {
+		let selectedIndex = mainWindowController?.selectedSectionIndex ?? 0
+		let items = menu.items
+		for item in items {
+			guard item.action == #selector(WindowController.showSection(_:)) else { continue }
+			item.state = (selectedIndex == item.tag) ? .on : .off
+		}
+	}
+
+}

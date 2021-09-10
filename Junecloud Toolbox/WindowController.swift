@@ -10,12 +10,17 @@ import Cocoa
 
 class WindowController: NSWindowController {
 
+	public var selectedSectionIndex: Int {
+		return tabViewController?.selectedTabViewItemIndex ?? 0
+	}
+
 	private var tabViewController: NSTabViewController? {
 		return contentViewController as? NSTabViewController
 	}
 
     override func windowDidLoad() {
         super.windowDidLoad()
+        updateTitle()
         guard let window = window else { return }
         if #available(macOS 10.13, *) {
 			// Handled in the storyboard
@@ -31,10 +36,36 @@ class WindowController: NSWindowController {
 		window.center()
     }
 
-	@IBAction func selectTab(_ sender: Any?) {
-		guard let control = sender as? NSSegmentedControl else { return }
-		let index = control.selectedSegment
-		tabViewController?.selectedTabViewItemIndex = index
+	@IBAction func showMoreMenu(_ sender: Any?) {
+
+		let index = tabViewController?.selectedTabViewItemIndex
+
+		let menu = NSMenu(title: "More")
+
+		let automatorItem = NSMenuItem(title: "Automator Actions", action: #selector(showSection), keyEquivalent: "")
+		automatorItem.tag = 0
+		automatorItem.state = (index == 0) ? .on : .off
+		menu.addItem(automatorItem)
+
+		let safariItem = NSMenuItem(title: "Safari Extension", action: #selector(showSection), keyEquivalent: "")
+		safariItem.tag = 1
+		safariItem.state = (index == 1) ? .on : .off
+		menu.addItem(safariItem)
+
+		guard let view = sender as? NSView else { return }
+		let point = NSPoint(x: view.frame.origin.x + 7, y: view.frame.origin.y + view.frame.size.height)
+		menu.popUp(positioning: nil, at: point, in: view)
+
+	}
+
+	@IBAction func showSection(_ sender: Any?) {
+		guard let menuItem = sender as? NSMenuItem else { return }
+		tabViewController?.selectedTabViewItemIndex = menuItem.tag
+		updateTitle()
+	}
+
+	private func updateTitle() {
+		window?.title = tabViewController?.title ?? ""
 	}
 
 }
