@@ -205,8 +205,8 @@
                                 <toolbarItem implicitItemIdentifier="B6D432DB-4592-490D-B05E-3872F3BC20B0" label="More" paletteLabel="More" image="ellipsis" catalog="system" title="More" sizingBehavior="auto" id="06Y-ac-GCZ">
                                     <nil key="toolTip"/>
                                     <button key="view" verticalHuggingPriority="750" id="4Mc-tY-xqg">
-                                        <rect key="frame" x="0.0" y="14" width="84" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <rect key="frame" x="4" y="14" width="26" height="23"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                         <buttonCell key="cell" type="roundTextured" title="More" bezelStyle="texturedRounded" image="ellipsis" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QRz-Us-fUB">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -259,7 +259,7 @@
                                 <rect key="frame" x="18" y="345" width="284" height="165"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="aze-Pv-SSR">
                                     <font key="font" metaFont="cellTitle"/>
-                                    <string key="title">Third-party actions must be enabled before you use them. Use the button below to open Automator. Open the Automator menu, and choose "Enable Third Party Actions…" Check the box "Enable Automator actions from third parties" and click OK.
+                                    <string key="title">On macOS 10.14 or later, third-party actions must be enabled first. Use the button below to open Automator. Open the Automator menu, and choose "Third Party Automator Actions…" Check the box "Enable Automator actions from third parties" and click OK.
 
 You can create your own workflows in Automator, or use the buttons below to install our pre-made services. This app does not need to be open to use the actions.</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
