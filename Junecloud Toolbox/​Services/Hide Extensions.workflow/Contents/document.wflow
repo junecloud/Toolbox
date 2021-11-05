@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.39</string>
+	<string>512</string>
 	<key>AMApplicationVersion</key>
-	<string>2.9</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>17</string>
+				<string>26</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Finder</string>
@@ -62,7 +62,7 @@
 				<key>BundleIdentifier</key>
 				<string>com.junecloud.Hide-or-Show-Extensions</string>
 				<key>CFBundleVersion</key>
-				<string>17</string>
+				<string>26</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -72,7 +72,7 @@
 					<string>AMCategoryFilesAndFolders</string>
 				</array>
 				<key>Class Name</key>
-				<string>Hide_or_Show_Extensions</string>
+				<string>AMRemoteAction</string>
 				<key>InputUUID</key>
 				<string>DF04B998-A02E-48E0-9A7E-FC42A22F2AF2</string>
 				<key>Keywords</key>
@@ -119,7 +119,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>409.000000:250.000000</string>
+				<string>309.000000:250.000000</string>
 				<key>nibPath</key>
 				<string>/Applications/Junecloud Toolbox.app/Contents/Library/Automator/Hide or Show Extensions.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -207,6 +207,32 @@
 		<dict/>
 		<key>applicationPaths</key>
 		<array/>
+		<key>customImageFileData</key>
+		<data>
+		iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c
+		6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAAB
+		AAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAC/0lEQVRY
+		Ce2Wy29NURTGr1fMiEci2iYEY48oRlWCiAgpIwYkTKQkJCgagzsTYiCp+DM8
+		BiakctuRiAGhFY/ExKPRIBLPeP8+3avZd51dPee0M77ky9p77bXXWmfttfe9
+		lcq/jgkFC7AM+21wNWwI/IkcgC9hD7wM78FxRRveHsBfOXkfu81wzGjCQy/M
+		G9jb3WDv3LJZrGKjSuudFp0/x0dz0SRWsuHTOAS3ZD/ia3neJNRcL0JwNVh/
+		GJuzslKVyHUcOjcLYt18ONLZWhnZjZ86TKqbDXXuyUg3h/Fr2AXfw43wC5Sj
+		i/ASvA7vwkHYCKfCkbCAhdvwyUgG+uLUlx0IG44gv8OdYe7FFBRb4E2Y8iOd
+		VZVhPRYzTW16h15BfRJ70bXAVjgNeuxA8QamfCpWBlU03ljZqmy7YJzEUWf7
+		gfk+6NGEog96v4qVQQ1NbKjunxlZ7WacSkLdrT7RjUklMQO9f0UVK4PHaCwB
+		3duFGYtKpT3Y2HF0MFdSqshbqH3TocciFPG7olgZqMstgXOZ1SHFushmf7BR
+		Et+gvR1rg96L8yjMv2L9wWQbOKmvSsGu7TMWu4LBWaR+Vc+EuY4ihR8pZayL
+		j0AZzosXw3gW8jPUuavsStQqcYyxvlC94jEfhRrVKvDIG2heiwxkqBuQOs+D
+		wU5JqBKytSSOM9ZxbIcGXdE70IJL1mwxllVnJEO9cKn3+xB6vYiyEVX2OImv
+		zPXHpQHegmZnsoouAz0OZhDLQfRy5jEbxSa4Hip4fBwnmCuJVzD2ZWPFSkJl
+		NyMve1jbACfCFPagVBLtYVFJeB+aK8Yw/C3oZOXq8Gr9oJWpqEfnGtQPin2h
+		frSWQH31BSichrodpzSJoMT+im5WU5kX0aknrBJPI3/yPSrUOPaoFAmasn2I
+		L9PLZ6qhkwk1o42fTnNSVsqXfBbCCqz1X79sUNsnH/JVCo3sqkFzVlRqr3yM
+		GVvx0A/zJtCHrf4ZjQpdkyJYinEbXAPVrNZUA4zVZL3wCtQL+h+5KvAbXGCr
+		H6GN45oAAAAASUVORK5CYII=
+		</data>
+		<key>customImageFileExtension</key>
+		<string>png</string>
 		<key>inputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject</string>
 		<key>outputTypeIdentifier</key>
@@ -214,17 +240,15 @@
 		<key>presentationMode</key>
 		<integer>15</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
-		<key>systemImageName</key>
-		<string>NSActionTemplate</string>
+		<false/>
 		<key>useAutomaticInputType</key>
-		<integer>0</integer>
+		<false/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>

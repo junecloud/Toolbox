@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.39</string>
+	<string>512</string>
 	<key>AMApplicationVersion</key>
-	<string>2.9</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>17</string>
+				<string>26</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Preview</string>
@@ -95,7 +95,7 @@
 				<key>BundleIdentifier</key>
 				<string>com.junecloud.Save-for-Web</string>
 				<key>CFBundleVersion</key>
-				<string>17</string>
+				<string>26</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -105,7 +105,7 @@
 					<string>AMCategoryPhotos</string>
 				</array>
 				<key>Class Name</key>
-				<string>Save_for_Web</string>
+				<string>AMRemoteAction</string>
 				<key>InputUUID</key>
 				<string>C945EE5A-8D67-408B-AA14-E14F66D488DA</string>
 				<key>Keywords</key>
@@ -241,7 +241,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>409.000000:340.000000</string>
+				<string>309.000000:340.000000</string>
 				<key>nibPath</key>
 				<string>/Applications/Junecloud Toolbox.app/Contents/Library/Automator/Save for Web.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -257,6 +257,25 @@
 		<dict/>
 		<key>applicationPaths</key>
 		<array/>
+		<key>customImageFileData</key>
+		<data>
+		iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c
+		6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAAB
+		AAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAB3klEQVRY
+		Ce1WvS4GQRT9PolWQqIkRKFUabU6HgTB0/gKiUTzVV5APACFBhEFjY4WIRHh
+		HDtnMjuzk5m1u43sTU7uzP05c3f2zs4OBr30O1DswATUHnADfALfDfFuuLag
+		yZ2UbUQ0XTSWv5tcHQF8chIcAdNAU5kDwTFAzuscMm4Zg+dzgjNjlgwnX2lS
+		uDjRtiR5Uw1CP/uDr0i7JNIcrQdS7AcMtwD7orS2ApQgzZMhX9uaJ8SKyK3B
+		DFgtfSOgjeYkx6HhLDVnrABuGX0zQFui5uQrtRIrIGbnaTkDXoyue3oC3sBg
+		SovZubh81JzXEeXanMBgPDE7n1w+as7riHLLR6EGw7kXe+HNa09tRV5mzJ7q
+		gUnwrANrwNDj5DTgDQwmKWav4LSmRYyuAOWeYjxlvcVAPmvWFewftyDQZlQP
+		VmF+ApQnfQnbrJMiuzW5tyFvMokfuALHCcCbbgFwZROTN0A5vr6DT9zy2fzU
+		J5eBG4C7wDPmfGIK74svQMQx/YiYZScOw0J4MewD/PTq6+eS7MBetcAr7GPA
+		jU2NWbhiKjsUfisM7FKGpSuxYiXuRlfyy50q4KGr1cF7T+5UAaMOCzjI4WaB
+		bMC//hGp2aR5BfM/IPt3HbG9/PMd+AHl1Q0Uk4ON2gAAAABJRU5ErkJggg==
+		</data>
+		<key>customImageFileExtension</key>
+		<string>png</string>
 		<key>inputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject.image</string>
 		<key>outputTypeIdentifier</key>
@@ -264,17 +283,15 @@
 		<key>presentationMode</key>
 		<integer>15</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject.image</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
-		<key>systemImageName</key>
-		<string>NSActionTemplate</string>
+		<false/>
 		<key>useAutomaticInputType</key>
-		<integer>0</integer>
+		<false/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>

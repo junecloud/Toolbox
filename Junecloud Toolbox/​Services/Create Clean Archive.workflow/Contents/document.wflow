@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.39</string>
+	<string>512</string>
 	<key>AMApplicationVersion</key>
-	<string>2.9</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>17</string>
+				<string>26</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Finder</string>
@@ -75,7 +75,7 @@
 				<key>BundleIdentifier</key>
 				<string>com.junecloud.Create-Clean-Archive</string>
 				<key>CFBundleVersion</key>
-				<string>17</string>
+				<string>26</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -85,7 +85,7 @@
 					<string>AMCategoryFilesAndFolders</string>
 				</array>
 				<key>Class Name</key>
-				<string>Create_Clean_Archive</string>
+				<string>AMRemoteAction</string>
 				<key>InputUUID</key>
 				<string>F8251FFF-1C97-4893-9818-9388765E09F3</string>
 				<key>Keywords</key>
@@ -113,9 +113,9 @@
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<string></string>
 						<key>name</key>
-						<string>cleanFiles</string>
+						<string>archivePath</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -126,9 +126,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<integer>0</integer>
 						<key>name</key>
-						<string>archivePath</string>
+						<string>cleanFiles</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -166,7 +166,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>409.000000:303.000000</string>
+				<string>309.000000:303.000000</string>
 				<key>nibPath</key>
 				<string>/Applications/Junecloud Toolbox.app/Contents/Library/Automator/Create Clean Archive.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -254,6 +254,26 @@
 		<dict/>
 		<key>applicationPaths</key>
 		<array/>
+		<key>customImageFileData</key>
+		<data>
+		iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c
+		6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAAB
+		AAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACA0lEQVRY
+		Ce1XTS8EQRAd4g8gSLhw8YOwfoWTm4OTuHCU+AFISNx83BwkJMQeuIgLEpFI
+		RIKsG/Hxnq3a7fRMzfT0rohEJbXVXfXqVU1vz0xPkvxhmUfvH6Jzv3EdNyj6
+		KXr9Ew2Mg/QY+iRFtFgZ+4jcI+gYtJRUgC5TKARLzmCpAknSdehgRtaixN3C
+		Cxk45m4I9iQjbrpqkjRgIA7h5wbcge7K+AA2S8jBRskZLHplVsILAiyuwiby
+		Cph8ncpQ0r4CzxVQecfgTSftsGbHQr4Gy6Jb0G0om1mFWlLEl8orSuhBxgpU
+		cRx3p1iaDsU1PQWj0ISWcbF7wO+fe4J66geK5l1FgIz4MHxDnn9a5leeP3qa
+		t7S3YNW42qJCJq7DyGQCJSveC78+oM6/UUkyI5YrsClj1+TxubjG2Oy4gagP
+		FPeAKXW/7k79Ki4ViNkDS2AZ9Zj6vHnwNKYBvmKfgytEAs0l8/gUx8cw9cyL
+		61RxOm/YmBUYQTZfs65MyaRtJyOzYxT69duQ74F+ueILsbNiL2F5APGFF0TJ
+		uq3rEe83bwVcqOLu4KTuuUFnrDjHVR/G7IFlpPq3ob8nUoUsR0wD9yDLe/Va
+		tUr5a0Bz2fSRayWbS+skRJ0Jq9KAdSpW/qIG+NfoqZicwTIJpJK3y1aCqwtw
+		ArbVLyN+VZGDXP+SuQJf5qjVbC+zIr4AAAAASUVORK5CYII=
+		</data>
+		<key>customImageFileExtension</key>
+		<string>png</string>
 		<key>inputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject</string>
 		<key>outputTypeIdentifier</key>
@@ -261,17 +281,15 @@
 		<key>presentationMode</key>
 		<integer>15</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
-		<key>systemImageName</key>
-		<string>NSActionTemplate</string>
+		<false/>
 		<key>useAutomaticInputType</key>
-		<integer>0</integer>
+		<false/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>

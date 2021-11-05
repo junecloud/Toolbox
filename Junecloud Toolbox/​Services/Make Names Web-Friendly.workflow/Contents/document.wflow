@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.39</string>
+	<string>512</string>
 	<key>AMApplicationVersion</key>
-	<string>2.9</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>17</string>
+				<string>26</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Finder</string>
@@ -78,7 +78,7 @@
 				<key>BundleIdentifier</key>
 				<string>com.junecloud.Make-Names-Web-Friendly</string>
 				<key>CFBundleVersion</key>
-				<string>17</string>
+				<string>26</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -88,7 +88,7 @@
 					<string>AMCategoryFilesAndFolders</string>
 				</array>
 				<key>Class Name</key>
-				<string>Make_Names_Web_Friendly</string>
+				<string>AMRemoteAction</string>
 				<key>InputUUID</key>
 				<string>552A11DC-E0DC-423C-B0B8-CDABF66783BA</string>
 				<key>Keywords</key>
@@ -131,9 +131,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<integer>0</integer>
 						<key>name</key>
-						<string>includeFilesInsideFolders</string>
+						<string>convertSymbols</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -144,9 +144,9 @@
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<integer>0</integer>
 						<key>name</key>
-						<string>removePeriods</string>
+						<string>convertSpacesTo</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -157,9 +157,9 @@
 					<key>3</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<false/>
 						<key>name</key>
-						<string>convertSpacesTo</string>
+						<string>includeFilesInsideFolders</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -170,9 +170,9 @@
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<false/>
 						<key>name</key>
-						<string>convertSymbols</string>
+						<string>removePeriods</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -197,7 +197,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>409.000000:338.000000</string>
+				<string>309.000000:338.000000</string>
 				<key>nibPath</key>
 				<string>/Applications/Junecloud Toolbox.app/Contents/Library/Automator/Make Names Web-Friendly.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -285,6 +285,35 @@
 		<dict/>
 		<key>applicationPaths</key>
 		<array/>
+		<key>customImageFileData</key>
+		<data>
+		iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c
+		6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAAB
+		AAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADh0lEQVRY
+		Ce2Wx2tVQRSHnwVRsICgsQcLoiJYwIJiBBELGCyI4kJB/wILiCvJSkEQFRe2
+		tQsXtqWxxODKhRqxFzQq9o1YUWzf9zIT5t1czHtG3OgPvjczZ8458+bM3Pte
+		ofCvq1OFBZiM/xKogUEwENRzeAqNcAKa4I9qKdluwY8yuY5fLXRYQ8lwAVz4
+		HeyC+jA+S/sYmsG+PqdgD7wP4wbawfBbmk7UC/gO+6A/zAUXOg6d4SpcDn1L
+		79wcGAAHw/gZ7VSoSC7+CdzJshDZlfY+vITewRa/gENtr+AedAG1Aj4GpmjI
+		yl1kNQSDO+weJkbT9gTvwUjYBm8hK23OjQJ9jRkBVrAHnISyjuM8jgZthktg
+		Wd2FO7e/APqCu4wVsK9tIeijrzH2zbEFzHkOfilvrkH7g5ePqbYjoL0SjFkE
+		8VE/FOLN16o4GQ0+PtVgGd1FlM++x7IT7kD/wGpad3YYPH9jxsAm8Bi8mFG+
+		M7wfzTAe2mgiFne4p81MoVAX5iZk5uIRpGZ9zFOXGkN/L61zrXnSS+gu1bGW
+		puRzbBg9KbHmD6KPlcjqaDBYnTY6j8Wb7IXK6iKGz1kj47wKeKz6GpOVuV2j
+		IU6kFfDd/hi+xcmk7UXfMy5HllhfY7Iyt2u0Po7pJfRV69iLktU4DF6225kJ
+		y+yCXsxU2t3czdQY+r5XzFX8gmkFcnz/rukuy/kY5slfQkuXVd4d0EdfY/Lk
+		Gq5VVFoBf8+HQd4l9HiqihHlfehrTFbmdg3XKir9Ao1YPJdZLVMln48YdQNf
+		t+1JH32bcxxrsLmGaxWVfgHfdGpZS1PyGctZXWLNH0SfGJN6xdxxrULXZNbz
+		vAHrYDs8hyjn1BoYDvFV7KP7HbaCj57ECjbRT+WreC24RsyXzhf7tXz6WB1M
+		ZmaGsfZKOID/jCTPoRDvGr9UA7Puaj2cBRf9Cm9C3134Y9UProE7ta/N6umv
+		rzH2z4C5zGnuduVb6hkY/AV2wABYBdo2QJSl9C9Z1EY6+qwEY4w1hzZzmrss
+		TcPrE3yA5SHC+/IQPOe8v2R9sL+GBxDvlrHm8M/JVKhIfgkvoqXzPKtgPrgb
+		b3EniBWwfwKcmwf6GmOsOcz1W/L/YSOY2BfLbmgI43raR/AQTgfbOVp99DXG
+		WHN0WIvJ4A+LSctBX2PalaWrRJNwXgKzYRAMBGWZvWTu2KO4Av9VVgV+AvOj
+		DzP1xWHrAAAAAElFTkSuQmCC
+		</data>
+		<key>customImageFileExtension</key>
+		<string>png</string>
 		<key>inputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject</string>
 		<key>outputTypeIdentifier</key>
@@ -292,17 +321,15 @@
 		<key>presentationMode</key>
 		<integer>15</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
-		<key>systemImageName</key>
-		<string>NSActionTemplate</string>
+		<false/>
 		<key>useAutomaticInputType</key>
-		<integer>0</integer>
+		<false/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
