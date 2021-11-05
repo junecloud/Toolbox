@@ -29,8 +29,12 @@ class AutomatorViewController: NSViewController {
 		AppDelegate.openAutomator()
 	}
 
-	@IBAction func showServices(_ sender: Any?) {
-		AppDelegate.showServices()
+	@IBAction func showServicesFolder(_ sender: Any?) {
+		AppDelegate.showServicesFolder()
+	}
+
+	@IBAction func showFinderExtensions(_ sender: Any?) {
+		AppDelegate.showFinderExtensions()
 	}
 
 	@IBAction func installService(_ sender: NSButton) {

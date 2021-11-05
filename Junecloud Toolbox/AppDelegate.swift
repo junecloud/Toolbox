@@ -42,10 +42,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		workspace.launchApplication(withBundleIdentifier: AppDelegate.automatorIdentifier, options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
 	}
 
-	static func showServices() {
+	static func showServicesFolder() {
 		let workspace = NSWorkspace.shared
 		guard let url = URL.userServicesFolder else { return }
 		workspace.open(url)
+	}
+
+	static func showFinderExtensions() {
+		let url = URL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane")
+		NSWorkspace.shared.open(url)
+
 	}
 
 	static func openSafari() {
@@ -71,8 +77,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		AppDelegate.openAutomator()
 	}
 
-	@IBAction func showServices(_ sender: Any?) {
-		AppDelegate.showServices()
+	@IBAction func showServicesFolder(_ sender: Any?) {
+		AppDelegate.showServicesFolder()
+	}
+
+	@IBAction func showFinderExtensions(_ sender: Any?) {
+		AppDelegate.showFinderExtensions()
 	}
 
 	@IBAction func openSafari(_ sender: Any?) {

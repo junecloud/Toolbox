@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,10 +29,16 @@
                                                 <action selector="openAutomator:" target="Voe-Tx-rLC" id="tG6-iE-xa6"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Show Services" id="VMt-cj-VSp">
+                                        <menuItem title="Open Folder" id="VMt-cj-VSp">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="showServices:" target="Voe-Tx-rLC" id="0GS-Tu-QO1"/>
+                                                <action selector="showServicesFolder:" target="Voe-Tx-rLC" id="ezI-w3-Kri"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Manage Extensions" id="fed-8b-Swa">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="showFinderExtensions:" target="Voe-Tx-rLC" id="9u5-VS-1FF"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
@@ -240,14 +246,14 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController title="Automator Actions" id="XfG-lQ-9wD" customClass="AutomatorViewController" customModule="Junecloud_Toolbox" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="555"/>
+                    <view key="view" wantsLayer="YES" misplaced="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="655"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-Kb-ylA">
-                                <rect key="frame" x="18" y="518" width="284" height="17"/>
+                                <rect key="frame" x="18" y="625" width="324" height="17"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" priority="745" constant="280" id="etp-KU-uPw"/>
+                                    <constraint firstAttribute="width" priority="745" constant="320" id="etp-KU-uPw"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Instructions" id="NSg-4G-W9M">
                                     <font key="font" metaFont="systemSemibold" size="14"/>
@@ -256,18 +262,18 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sts-ic-RYr">
-                                <rect key="frame" x="18" y="345" width="284" height="165"/>
+                                <rect key="frame" x="18" y="482" width="324" height="135"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="aze-Pv-SSR">
                                     <font key="font" metaFont="cellTitle"/>
                                     <string key="title">On macOS 10.14 or later, third-party actions must be enabled first. Use the button below to open Automator. Open the Automator menu, and choose "Third Party Automator Actions…" Check the box "Enable Automator actions from third parties" and click OK.
 
-You can create your own workflows in Automator, or use the buttons below to install our pre-made services. This app does not need to be open to use the actions.</string>
+You can create your own workflows in Automator, or use the buttons below to install our pre-made Quick Actions. This app does not need to be open to use the actions.</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Eb4-ee-09M">
-                                <rect key="frame" x="13" y="306" width="134" height="32"/>
+                                <rect key="frame" x="13" y="443" width="134" height="32"/>
                                 <buttonCell key="cell" type="push" title="Open Automator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M2O-8u-opc">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -277,27 +283,31 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                 </connections>
                             </button>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="hc3-eV-je8">
-                                <rect key="frame" x="20" y="290" width="280" height="5"/>
+                                <rect key="frame" x="20" y="427" width="320" height="5"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="paW-cm-aaN">
-                                <rect key="frame" x="18" y="255" width="123" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Optional Services" id="Mwy-qD-zSR">
+                                <rect key="frame" x="18" y="392" width="158" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Optional Quick Actions" id="Mwy-qD-zSR">
                                     <font key="font" metaFont="systemSemibold" size="14"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-qN-vl9">
-                                <rect key="frame" x="18" y="172" width="284" height="75"/>
+                                <rect key="frame" x="18" y="219" width="324" height="165"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="OsQ-NX-uun">
                                     <font key="font" metaFont="cellTitle"/>
-                                    <string key="title">You can install these pre-made services to use the actions in Finder. Once they're installed, control-click a file in Finder, select Services, and then select a service to use it. Use the “Show Services” button to edit or remove a service.</string>
+                                    <string key="title">You can use the buttons below to install pre-made Quick Actions to use in Finder. (In older versions of macOS, they're called Services.) Use the “Open Folder” button to edit or remove them after they are installed.
+
+On macOS 12, Quick Actions must be enabled after they are installed. Click “Manage Extensions” below, select "Finder" on the left, and enable each one.
+
+Once they're enabled, control-click a file in Finder, open “Quick Actions” or “Services”, and select an action.</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <gridView verticalHuggingPriority="750" xPlacement="fill" yPlacement="fill" rowAlignment="firstBaseline" rowSpacing="7" columnSpacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="LRa-2Q-vFO">
-                                <rect key="frame" x="20" y="52" width="280" height="108"/>
+                                <rect key="frame" x="20" y="92" width="320" height="107"/>
                                 <rows>
                                     <gridRow id="a7Q-SS-2eh"/>
                                     <gridRow id="35l-DT-Aiz"/>
@@ -311,8 +321,8 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                 </columns>
                                 <gridCells>
                                     <gridCell row="a7Q-SS-2eh" column="Dir-S8-QcA" id="zQA-EH-Jo4">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="Jc8-Wt-Op0">
-                                            <rect key="frame" x="-2" y="92" width="145" height="15"/>
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jc8-Wt-Op0">
+                                            <rect key="frame" x="-2" y="91" width="145" height="16"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Save for Web" id="rPW-ff-dGh">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -321,8 +331,8 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                         </textField>
                                     </gridCell>
                                     <gridCell row="a7Q-SS-2eh" column="swR-oS-Vkp" id="GDc-G3-krW">
-                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-SD-aFP">
-                                            <rect key="frame" x="226" y="85" width="60" height="27"/>
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-SD-aFP">
+                                            <rect key="frame" x="266" y="84" width="60" height="27"/>
                                             <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FDg-Hr-Zhi">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="smallSystem"/>
@@ -333,8 +343,8 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                         </button>
                                     </gridCell>
                                     <gridCell row="35l-DT-Aiz" column="Dir-S8-QcA" id="BZY-Pk-0yG">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-AG-ZD0">
-                                            <rect key="frame" x="-2" y="69" width="145" height="15"/>
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-AG-ZD0">
+                                            <rect key="frame" x="-2" y="68" width="145" height="16"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Make Names Web-Friendly" id="Y3w-E8-7bK">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -343,8 +353,8 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                         </textField>
                                     </gridCell>
                                     <gridCell row="35l-DT-Aiz" column="swR-oS-Vkp" id="NfR-3K-Rxr">
-                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="gjT-jL-6lm">
-                                            <rect key="frame" x="226" y="62" width="60" height="27"/>
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" ambiguous="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="gjT-jL-6lm">
+                                            <rect key="frame" x="266" y="61" width="60" height="27"/>
                                             <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SSn-9v-KTY">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="smallSystem"/>
@@ -355,8 +365,8 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                         </button>
                                     </gridCell>
                                     <gridCell row="4S6-Ky-0Rb" column="Dir-S8-QcA" id="e8w-gE-pPJ">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="5Nx-vC-Mdj">
-                                            <rect key="frame" x="-2" y="46" width="145" height="15"/>
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Nx-vC-Mdj">
+                                            <rect key="frame" x="-2" y="45" width="145" height="16"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Clean Archive" id="atd-Ye-8qD">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -365,8 +375,8 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                         </textField>
                                     </gridCell>
                                     <gridCell row="4S6-Ky-0Rb" column="swR-oS-Vkp" id="rCM-Tn-Idx">
-                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="fwR-f9-fKb">
-                                            <rect key="frame" x="226" y="39" width="60" height="27"/>
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="fwR-f9-fKb">
+                                            <rect key="frame" x="266" y="38" width="60" height="27"/>
                                             <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q2A-J7-CeT">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="smallSystem"/>
@@ -377,8 +387,8 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                         </button>
                                     </gridCell>
                                     <gridCell row="uFO-jT-wvz" column="Dir-S8-QcA" id="Nal-Gp-hnR">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-QI-3Kp">
-                                            <rect key="frame" x="-2" y="23" width="145" height="15"/>
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-QI-3Kp">
+                                            <rect key="frame" x="-2" y="22" width="145" height="16"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Symbolic Link" id="FYl-Rv-d0D">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -387,8 +397,8 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                         </textField>
                                     </gridCell>
                                     <gridCell row="uFO-jT-wvz" column="swR-oS-Vkp" id="BqK-qX-1zq">
-                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="KQ4-DJ-Iny">
-                                            <rect key="frame" x="226" y="16" width="60" height="27"/>
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" ambiguous="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="KQ4-DJ-Iny">
+                                            <rect key="frame" x="266" y="15" width="60" height="27"/>
                                             <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u9s-F4-iWo">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="smallSystem"/>
@@ -399,7 +409,7 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                         </button>
                                     </gridCell>
                                     <gridCell row="GcR-XC-LJT" column="Dir-S8-QcA" id="nyM-1f-Ypt">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-Xt-hhg">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-Xt-hhg">
                                             <rect key="frame" x="-2" y="0.0" width="145" height="15"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hide Extensions" id="kkc-aC-M3r">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -409,8 +419,8 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                         </textField>
                                     </gridCell>
                                     <gridCell row="GcR-XC-LJT" column="swR-oS-Vkp" id="s6f-nx-WuT">
-                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="obk-Y6-eg4">
-                                            <rect key="frame" x="226" y="-7" width="60" height="27"/>
+                                        <button key="contentView" horizontalHuggingPriority="255" verticalHuggingPriority="750" ambiguous="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="obk-Y6-eg4">
+                                            <rect key="frame" x="266" y="-7" width="60" height="26"/>
                                             <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wox-zf-efq">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="smallSystem"/>
@@ -422,14 +432,24 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                     </gridCell>
                                 </gridCells>
                             </gridView>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="17s-SA-ncB">
-                                <rect key="frame" x="13" y="13" width="123" height="32"/>
-                                <buttonCell key="cell" type="push" title="Show Services" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tNp-rB-Xt9">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bgC-8N-yhr">
+                                <rect key="frame" x="13" y="45" width="109" height="32"/>
+                                <buttonCell key="cell" type="push" title="Open Folder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sh9-xN-TLD">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="showServices:" target="XfG-lQ-9wD" id="1ns-4L-5wk"/>
+                                    <action selector="showServicesFolder:" target="XfG-lQ-9wD" id="dxx-DJ-3Um"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="17s-SA-ncB">
+                                <rect key="frame" x="13" y="13" width="152" height="32"/>
+                                <buttonCell key="cell" type="push" title="Manage Extensions" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tNp-rB-Xt9">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showFinderExtensions:" target="XfG-lQ-9wD" id="EGR-Eq-evG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -444,22 +464,24 @@ You can create your own workflows in Automator, or use the buttons below to inst
                             <constraint firstAttribute="trailing" secondItem="CDE-qN-vl9" secondAttribute="trailing" constant="20" id="ACo-gm-T88"/>
                             <constraint firstItem="CDE-qN-vl9" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="B8B-AY-Kx8"/>
                             <constraint firstItem="Eb4-ee-09M" firstAttribute="top" secondItem="sts-ic-RYr" secondAttribute="bottom" constant="12" id="BB5-3I-Jol"/>
+                            <constraint firstAttribute="bottom" secondItem="17s-SA-ncB" secondAttribute="bottom" constant="20" symbolic="YES" id="CGX-rc-rHT"/>
                             <constraint firstItem="CDE-qN-vl9" firstAttribute="top" secondItem="paW-cm-aaN" secondAttribute="bottom" constant="8" symbolic="YES" id="KqH-Eo-D69"/>
                             <constraint firstItem="hc3-eV-je8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Mb4-9h-hyr"/>
-                            <constraint firstAttribute="bottom" secondItem="17s-SA-ncB" secondAttribute="bottom" priority="995" constant="20" id="NTz-ks-qqK"/>
-                            <constraint firstItem="17s-SA-ncB" firstAttribute="top" secondItem="LRa-2Q-vFO" secondAttribute="bottom" constant="12" id="OdC-VW-45f"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="paW-cm-aaN" secondAttribute="trailing" constant="20" id="Pqg-67-EDf"/>
                             <constraint firstAttribute="trailing" secondItem="LRa-2Q-vFO" secondAttribute="trailing" constant="20" id="QCq-dq-OZh"/>
+                            <constraint firstItem="bgC-8N-yhr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="RZj-kZ-vKj"/>
                             <constraint firstItem="hc3-eV-je8" firstAttribute="top" secondItem="Eb4-ee-09M" secondAttribute="bottom" constant="20" id="VVO-6q-xLT"/>
                             <constraint firstItem="KpR-Kb-ylA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="hHS-To-CQ7"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="17s-SA-ncB" secondAttribute="bottom" constant="20" id="hpT-GC-UvR"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bgC-8N-yhr" secondAttribute="trailing" constant="205" id="hhb-FE-x2n"/>
                             <constraint firstAttribute="trailing" secondItem="sts-ic-RYr" secondAttribute="trailing" constant="20" id="i61-b0-ru0"/>
                             <constraint firstAttribute="trailing" secondItem="hc3-eV-je8" secondAttribute="trailing" constant="20" id="mWY-OI-DMJ"/>
+                            <constraint firstItem="17s-SA-ncB" firstAttribute="top" secondItem="bgC-8N-yhr" secondAttribute="bottom" constant="12" symbolic="YES" id="mxM-dJ-vpP"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="17s-SA-ncB" secondAttribute="trailing" constant="20" id="pGR-fE-Us4"/>
                             <constraint firstItem="LRa-2Q-vFO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="sq7-7W-isU"/>
                             <constraint firstItem="Eb4-ee-09M" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="tBw-Vd-jUh"/>
-                            <constraint firstItem="LRa-2Q-vFO" firstAttribute="top" secondItem="CDE-qN-vl9" secondAttribute="bottom" constant="12" id="ttO-l9-uPf"/>
+                            <constraint firstItem="LRa-2Q-vFO" firstAttribute="top" secondItem="CDE-qN-vl9" secondAttribute="bottom" constant="20" id="ttO-l9-uPf"/>
                             <constraint firstItem="sts-ic-RYr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="uCE-37-SZi"/>
+                            <constraint firstItem="bgC-8N-yhr" firstAttribute="top" secondItem="LRa-2Q-vFO" secondAttribute="bottom" constant="20" symbolic="YES" id="utZ-He-iTX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -468,7 +490,7 @@ You can create your own workflows in Automator, or use the buttons below to inst
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-104" y="1224"/>
+            <point key="canvasLocation" x="-115" y="1223"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="dyQ-WD-1vo">
@@ -502,13 +524,13 @@ You can create your own workflows in Automator, or use the buttons below to inst
             <objects>
                 <viewController title="Safari Extensions" id="PJb-DH-2Um" customClass="SafariViewController" customModule="Junecloud_Toolbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="w7b-dH-Izr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="172"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nrv-ke-xwg">
-                                <rect key="frame" x="18" y="165" width="284" height="17"/>
+                                <rect key="frame" x="18" y="135" width="324" height="17"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" priority="745" constant="280" id="2Zs-Bo-6DB"/>
+                                    <constraint firstAttribute="width" priority="745" constant="320" id="2Zs-Bo-6DB"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Instructions" id="Sle-45-GEg">
                                     <font key="font" metaFont="systemSemibold" size="14"/>
@@ -517,10 +539,10 @@ You can create your own workflows in Automator, or use the buttons below to inst
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fWd-he-JZo">
-                                <rect key="frame" x="18" y="52" width="284" height="105"/>
+                                <rect key="frame" x="18" y="52" width="324" height="75"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="IDi-Kn-zCi">
                                     <font key="font" metaFont="cellTitle"/>
-                                    <string key="title">To enable the “Copy Short Link” Safari extension, click Manage Extensions below. Find the extension in the list and make sure the checkbox next to it is checked.
+                                    <string key="title">To enable the “Copy Short Link” Safari extension, click “Manage Extensions” below. Find the extension in the list and make sure the checkbox next to it is checked.
 
 This app does not need to be open to use the extension.</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -554,7 +576,7 @@ This app does not need to be open to use the extension.</string>
                 </viewController>
                 <customObject id="zve-pX-GXg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="1047"/>
+            <point key="canvasLocation" x="266" y="989"/>
         </scene>
     </scenes>
     <resources>
