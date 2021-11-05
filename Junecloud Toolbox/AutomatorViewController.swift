@@ -97,7 +97,7 @@ class AutomatorViewController: NSViewController {
 				let label = NSTextField(labelWithString: title)
 				label.font = font
 				label.textColor = NSColor.disabledControlTextColor
-				label.heightAnchor.constraint(greaterThanOrEqualToConstant: 15.0).isActive = true
+				label.heightAnchor.constraint(greaterThanOrEqualToConstant: 16.0).isActive = true
 				statusViews.append(label)
 
 			} else {
